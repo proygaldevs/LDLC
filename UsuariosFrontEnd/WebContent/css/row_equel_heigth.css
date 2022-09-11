@@ -1,0 +1,22 @@
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+
+.col-bordered {
+    display: flex;
+    flex-flow: column nowrap;
+   
+}
+
+.col-bordered div {
+    flex: 1;
+}
+

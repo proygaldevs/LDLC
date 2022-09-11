@@ -1,0 +1,625 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class=" conefectos no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class=" conefectos no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class=" conefectos no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="conefectos no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Facturación - Decotheco</title>
+<meta name="description" content="Una vez finalizado un proyecto, tendrás que subir una factura. Aquí tendrás un listado de todos tus trabajos finalizados con sus facturas." />
+<link rel="canonical" href="http://decoradores.decotheco.com/facturacion.html" />
+<meta property="fb:app_id" 			   content="437357506649824"> 
+<meta property="og:locale" content="es_ES">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="pinterest" content="nohover" />
+		<link rel="stylesheet" href="css/bootstrap.min.css?versionCssJs=17"/>  
+		<link rel="stylesheet" href="css/bootstrap-dialog.min.css?versionCssJs=17"/> 
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css?versionCssJs=17"/> 
+		<link rel="stylesheet" href="css/dropzone.min.css?versionCssJs=17" type="text/css">
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css?versionCssJs=17" rel="stylesheet" type="text/css"/> 
+		<link rel="stylesheet" type="text/css" href="css/main.css?versionCssJs=17" media="all" /> 
+		<link rel="stylesheet" type="text/css" href="css/home.css?versionCssJs=17" media="all" /> 
+		<link rel="stylesheet" type="text/css" href="css/secciones.css?versionCssJs=17" media="all" />
+		<link rel="stylesheet" href="css/fonts.css?versionCssJs=17"/>
+		<link rel="stylesheet" href="css/buttons.css?versionCssJs=17"/>
+		<link rel="stylesheet" href="css/buttonsreglao.css?versionCssJs=17"/>
+		<link rel="stylesheet" href="css/facturacion.css?versionCssJs=17"/> 
+<style>
+.h1 {
+    line-height: 1.8!important;
+}
+.widthImg {
+	width:30%;
+	margin-bottom:10px
+}
+.input-p2 {
+	padding-left:0;
+	padding-right:0
+} 
+input {
+	letter-spacing: 1pt !important;
+	text-align:center
+} 
+.lineaProyecto, .ultimo {
+    margin-top: 1%;
+    padding-top: 1%;
+}
+@media (max-width: 1428px){ 
+	.paddingCarrousel2 {
+		padding-left:0
+	}
+	.paddingCarrousel { 
+		padding-top:10px;
+    	padding-bottom: 10px;
+	}
+	.estado4, .estado6 { 
+	    padding: 0;
+    }
+	.widthImg {
+		width:24%;
+		margin-bottom:0
+	}
+	.input-p2 {
+	    margin-bottom: 9%;
+	}
+}
+@media (max-width: 1290px){
+	.input-p2 {
+	    margin-bottom: 13%;
+	}
+}
+@media (max-width: 951px){  
+	.lineaProyecto, .ultimo {
+	    margin-top: 0;
+	    padding-top: 0;
+	}
+	.input-p2 {
+	    margin-bottom: 10%;
+	}
+}
+@media (max-width: 768px){  
+		.navbar-collapse {
+		    width: 100%!important;
+		}
+		#ulforsustitution {
+			width:100%!important;
+			text-align:center
+		}
+		.dropdown-menu li, .navbar-nav .open .dropdown-menu>li>a {
+			text-align:center;
+			color: black!important;
+		}
+}
+@media (max-width: 650px){ 
+	.paddingCarrousel { 
+   		padding-bottom: 60px;
+   	}
+	.input-p2 {
+	    margin-bottom: 5%;
+	}
+}
+@media (max-width: 508px){ 
+	.paddingCarrousel2 {
+		padding-left:5px;
+		padding-right:5px;
+	}
+	.paddingCarrousel {
+		padding-left:5px; 
+		padding-right:5px;
+   		padding-bottom: 10px;
+	}
+	.widthImg {
+		margin-bottom:10px
+	}
+	.estado4 {
+	    margin-top: 10%;
+	    margin-bottom: 4%;
+	}
+	.caja { 
+    	padding-top: 7%;
+    }
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108225209-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108225209-1');
+</script> 
+<script language="JavaScript" type="text/javascript">
+		var cerramosONo=false;
+		// var myEvent = window.attachEvent || window.addEventListener;
+		// var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make IE7, IE8 compitable
+		window.addEventListener("beforeunload", function (e) {
+			if(cerramosONo){
+				
+				var confirmationMessage = "\o/";
+				
+		
+				  e.returnValue = confirmationMessage;     // Gecko, Trident, Chrome 34+
+				  return confirmationMessage;              // Gecko, WebKit, Chrome <34
+			}else return;
+			
+		  
+		})
+</script>
+</head>
+<body onload="login('facturas')">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg>   
+<!--[if lt IE 8]>
+       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- COMIENZO NAV -->
+
+<div id="sidebarmenubtnmoodboard" class="sidebarmenubtnmoodboard" onclick="alaAppDentro();">
+    <image style="width: 40px;" id="sidebarmenubtnmoodboardimage" />
+</div>
+	<!--[if lt IE 8]>
+            <p class=" conefectos browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<div id="elcontainerfluid" class=" conefectos supreme-container container-fluid col-xs-12" 
+		style="padding-right: 0px; padding-left: 0px;">
+		<nav class="navbar navbar-default navbar-fixed-top bordeInferior"
+		role="navigation" style="z-index: 5001;">
+		<div class="container-fluid">
+			<!-- Title -->
+			<div class="navbar-header pull-left">
+				<a style="padding-top: 0px;" class="navbar-brand letramodificada"
+					href="javascript:alahomeCom()"><img style="width: 140px;"
+					src="img/other/decotheco-logo.svg" alt="Decotheco"></a>
+			</div>
+
+			<div class="navbar-header  pull-right">
+
+				<button type="button" data-toggle="collapse"
+					data-target=".navbar-collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<!--                      pull-right keeps the drop-down in line -->
+				<ul id="ulforsustitution" class="nav navbar-nav pull-right ">
+				
+						<li><a
+							class=" colornegro letraArial  interspaciado_2  separacionnavbar"
+							href="javascript:alresto('/home.html')">HOME</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/como-funciona.html')">COMO FUNCIONA</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/facturacion.html')">FACTURACIÓN</a></li> 
+						<li id="liforsustitution" ><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar" data-toggle="modal"
+							href="#" data-target="#login-modal">INICIAR	SESIÓN</a></li>
+
+				</ul>
+			</div>
+
+
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+<!-- FIN NAV -->
+
+
+<!-- COMIENZO CONTENIDO -->
+<div class="fondo col-xs-12 ">
+	<div class="container-fluid text-center item active separacionSuperior2"> 
+		<h1 class="titulo_pantalla h1">CONSULTA TUS FACTURAS, PAGOS PENDIENTES E IMPORTES INGRESADOS</h1><br/>
+		
+		<textarea id="dudas_consultaCon"  class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 contacto" placeholder="ESCRÍBENOS SI TIENES DUDAS"></textarea>
+		 
+		<div id="contratarbutton" class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-4 col-lg-2 col-lg-offset-5 letra-s separacionSuperior letra-mayusculas letra-negrita"  style="padding:0;padding-top:1%" >
+			<div class="buttonstandard_invertido letra-xs"  onclick="sendDudas()" style="padding-top:1px;padding-bottom:0;">ENVIAR</div>
+		</div>
+		 
+	</div>
+</div>
+
+ 
+<div class="col-xs-12 sobre" >
+		<h2 style=" padding: 0px; margin-top: 5%;"   class="col-xs-12 letra-m  text-center tusFacturas">
+		 TUS FACTURAS <img style="margin-top:-5px;width:25px;cursor:pointer" onclick="facturacion()" src="img/facturacion/info-256.png" alt="Donde facturar" title="Donde facturar"/></h2> 
+		<div class="col-xs-12 letra-s  text-center">
+			<hr class="v"/>
+		</div>
+</div>
+<div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 facturas">
+
+
+</div>
+</div>
+
+<div class="modal fade" id="factura" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;"> 
+			<div style="max-width: 95%; width: 600px;" class="modal-dialog">
+	<button type="button" data-dismiss="modal"aria-label="Close" style="z-index: 1000;position: absolute;top:10px;right:10px;background-color:transparent;border:none">
+						x
+			</button>
+		<div class="modal-content" style="padding-left: 3vw; padding-right: 3vw; ">
+							<div class="modal-header letra-ms" align="center">
+								  <br/><br/>
+								  <img style="margin-top:-5px;width:25px;cursor:pointer" onclick="facturacion()" src="img/facturacion/info-256.png" alt="Donde facturar" title="Donde facturar"/>
+								  <br/>
+								  <br/>
+								  <h3 class="letra-m h1">ESTOS SON NUESTROS DATOS PARA QUE PUEDAS GENERAR TU FACTURA</h3>
+								  <br/>
+								  <hr width="40%"/>
+								  <br/>
+								  PetiteCandela S.L.
+								  <br/>
+								  C/ Estrada da Granxa, nº17, Esc-A, 7ºB
+								  <br/>
+								  27002 (Lugo)
+								  <br/>
+								  CIF: B27487875
+								  <br/><br/><br/>
+							<form action="FileUploadHandler" id="mydropzonePropuesta1"
+								class="dropzone estilo_bordes_completos letra-s"
+								method="post" enctype="multipart/form-data" style="width:90%;margin-left:0;border:1px solid black;">
+	
+									<div class="letrainputformularios" id="dropzonePreview"></div>
+								</form> 
+								  <br/><br/><br/>
+							</div> 
+		</div>
+	</div> 
+</div>	 
+<div class="modal fade" id="facturacion" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">  
+			<div style="max-width: 95%; width: 600px;" class="modal-dialog">
+	<button type="button" data-dismiss="modal"aria-label="Close" style="z-index: 1000;position: absolute;top:10px;right:10px;background-color:transparent;border:none">
+						x
+			</button>
+		<div class="modal-content" style="padding-left: 3vw; padding-right: 3vw; ">
+							<div class="modal-header letra-ms" align="center">
+								  <br/><br/>
+								  <img style="margin-top:-5px;width:25px;cursor:pointer" onclick="facturacion()" src="img/facturacion/info-256.png" alt="Donde facturar" title="Donde facturar"/>
+								  <br/>
+								  <br/>
+								  <h3 class="letra-m h1">ESTOS SON NUESTROS DATOS PARA QUE PUEDAS GENERAR TU FACTURA</h3>
+								  <br/>
+								  <br/>
+								  <hr width="40%"/>
+								  <br/>
+								  PetiteCandela S.L.
+								  <br/>
+								  C/ Estrada da Granxa, nº17, Esc-A, 7ºB
+								  <br/>
+								  27002 (Lugo)
+								  <br/>
+								  CIF: B27487875 
+								  <br/><br/><br/>
+							</div> 
+		</div>
+	</div> 
+</div>	 
+<div class="modal fade" id="cargando" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	<div style="max-width: 95%; width: 100%;" class="modal-dialog">
+			<div id="loading" class="col-xs-12" style=" height:200px; background: url(img/other/default.svg) center center no-repeat;">
+			</div>
+	</div>
+</div>	
+ <div class="modal fade" id="modalforDudasCon" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	
+	<div style="max-width: 95%; width: 600px;" class="modal-dialog">
+		<div class="modal-content" style="padding-left: 3vw; padding-right: 3vw; ">
+			<div class="modal-header" align="center">
+				<a style="position: absolute;right: 3px; top: 0px; color: black; cursor: pointer;" data-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i></a>
+				
+					<h4 style="padding-top: 30px; " id="titulo_for_advice" class="letra-xxl">¿TIENES ALGUNA DUDA?</h4>
+
+				
+					
+
+				<h4 style="margin-top: 0px;" class="letra-m">
+					<p class="letra-s" style="line-height:1.8!important;padding-top:10px">Envíanos tus consulta y te ayudaremos a resolverla</p>
+				</h4>
+				<div style="width: 100%; text-align: center;  padding-bottom: 0;"> 
+				</div>
+			</div>
+
+			<!-- Begin # DIV Form -->
+			<div id="div-forms">
+
+				<!-- Begin # Login Form -->
+				<form id="dudas-form">
+					<div class="modal-body">
+						<div id="div-login-msg">
+							
+							
+						</div>
+						
+							<input style="min-height: 150px; height: 20vh;  text-align:center; " maxlength="4000"
+							id="dudas_consultaCon" class="form-control  letra-m" type="text"
+							placeholder="INTRODUCE TU CONSULTA" required>
+						
+					</div>
+					<div class="modal-footer">
+						<div>
+							<div class="buttonstandard_invertido letra-xs"  onclick="sendDudas()" style="display: block; margin: 0 auto;padding-top:1px;padding-bottom:0;">ENVIAR</div>
+						<div style="width: 100%; text-align: center; padding-top: 1.5vw; padding-bottom: 2vw;">
+						 
+						</div>
+						</div>
+					</div>
+				</form>
+
+			</div> 
+
+		</div>
+	</div>
+</div> 
+<!-- COMIENZO FOOTER --> 
+	<div id="footer" style="text-align: center;margin-top:75px;background-color:#bfc3c3" class="col-xs-12" >  
+		<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1" style="color:white;margin-top:2%">
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 pie1">
+				<a class="letra-s"  onclick="alresto2('nosotros.html');" style="cursor: pointer;line-height:30px;color:white">SOBRE NOSOTROS</a><br/>
+				<a class="letra-s" onclick="dudasfunction();" style="cursor: pointer;line-height:30px;color:white">CONTACTO</a><br/>
+			</div>
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 pie2">
+				<a  class="letra-s" onclick="alresto('/como-funciona.html');" style="cursor: pointer;line-height:30px;color:white">COMO FUNCIONA</a><br/>   
+				<a class="letra-s"   onclick="alresto2('decoradores-online.html');" style="cursor: pointer;line-height:30px;color:white">DECORADORES</a><br/>  
+			</div>
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0"> 
+						<a  onclick="irainstagram();" style="cursor: pointer; margin-left: 10px;margin-right: 10px"	target="_blank"> 
+							<i class="fa fa-instagram" aria-hidden="true" style="color:white"> </i>
+						</a> 
+						<a  onclick="irafacebook();" style="cursor: pointer; margin-left: 10px;margin-right: 10px"	target="_blank"> 
+							<i class="fa  fa-facebook" style="color:white"> </i>
+						</a> 
+						<a onclick="iratwitter();" style="cursor: pointer; margin-left: 10px;margin-right: 10px" target="_blank"> 
+							<i	class="fa fa-twitter" style="color:white"> </i>
+						</a>
+						<a 
+						onclick="irapinterest();" style="cursor: pointer; margin-left: 10px;margin-right: 10px" target="_blank"> 
+							<i	class="fa fa-pinterest" style="color:white"> </i>
+						</a> 
+ 
+				<!-- Begin MailChimp Signup Form -->
+					
+					<div class="section letra-s" style="width: 100%; margin-top: 5px;">
+					SUSCRÍBETE A LA NEWSLETTER!
+								<form action="//decotheco.us16.list-manage.com/subscribe/post?u=43ef3e467d254af7ac325538d&amp;id=a2f41b6e01" method="post" id="mc-embedded-subscribe-form">
+									<input  type="email"  name="EMAIL" class="letra-s news"   placeholder="EMAIL*" style="margin-top:2px;text-transform:none;color:white;background-color:#bfc3c3;line-height: 22px;;padding-left:10px;border:1px solid #f2f2f2;letter-spacing:2px!" required>
+									<input type="submit" name="subscribe"   class="letra-xs letra-mayusculas newsEnviar" style="color:#bfc3c3;line-height: 22px;border:1px solid #f2f2f2;border-top:2px solid #f2f2f2;background-color:#f2f2f2" value="SUSCRIBIR">
+								</form> 
+					</div>
+					
+						<div id="mce-responses" class="clear" style="margin-top:2%">
+							<div class="response" id="mce-error-response" style="color:#bfc3c3;display:none;background-color:white;border:1px solid grey ;padding-top:2%;padding-bottom:2%"></div>
+							<div class="response letra-xs" id="mce-success-response" style="color:#bfc3c3;display:none;background-color:white;border:1px solid grey;padding-top:2%;padding-bottom:2%"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					   
+					
+					<script type='text/javascript' src='js/comprimido/mc-validate.js'></script>  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text'; /*
+					 * Translated default messages for the $ validation plugin.
+					 * Locale: ES
+					 */
+					$.extend($.validator.messages, {
+					  required: "Este campo es obligatorio.",
+					  remote: "Por favor, rellena este campo.",
+					  email: "Por favor, escribe una dirección de correo válida",
+					  url: "Por favor, escribe una URL válida.",
+					  date: "Por favor, escribe una fecha válida.",
+					  dateISO: "Por favor, escribe una fecha (ISO) válida.",
+					  number: "Por favor, escribe un número entero válido.",
+					  digits: "Por favor, escribe sólo dígitos.",
+					  creditcard: "Por favor, escribe un número de tarjeta válido.",
+					  equalTo: "Por favor, escribe el mismo valor de nuevo.",
+					  accept: "Por favor, escribe un valor con una extensión aceptada.",
+					  maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+					  minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+					  rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+					  range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+					  max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+					  min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+					});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+			</div>
+		</div> 
+		<div class="col-xs-12">
+			<br/>
+			<br/>
+			 <a class="letra-s"  onclick="aCondicionesFunction();" style="cursor: pointer;margin-top:10px;color:white">@decotheco.com 2017 &nbsp;&nbsp;&nbsp;AVISO LEGAL | POLÍTICA DE PRIVACIDAD | POLÍTICA DE COOKIES</a>
+			<br/>
+			<br/>
+		</div>
+		
+		
+		<link href="css/comprimido/mailchimp.css?versionCssJs=17" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+		<script src="js/vendor/bootstrap.min.js?versionCssJs=17"></script>
+		<script>
+			$('#cargando').modal('show');
+		</script> 
+		<script src="js/barra.js?versionCssJs=17"></script> 
+		<script src="js/vendor/dropzone.js?versionCssJs=17"></script>
+		<script src="js/facturas.js?versionCssJs=18"></script> 
+		<script src="js/main.js?versionCssJs=17"></script> 
+		<script src="js/links.js?versionCssJs=17"></script> 
+	    <script src="js/bootstrap-dialog.min.js?versionCssJs=17"></script>
+ 
+		<script>
+			$('#myCarousel').on('slid.bs.carousel', function () {
+				var sel = window.getSelection ? window.getSelection() : document.selection;
+				if (sel) {
+				    if (sel.removeAllRanges) {
+				        sel.removeAllRanges();
+				    } else if (sel.empty) {
+				        sel.empty();
+				    }
+				}
+			})
+		</script>
+	 	
+		<script>
+		var namefor1='';
+		var namefor2='';
+		var namefor3='';
+		var b=0;
+		var subido=false;
+		var addingAutoFiles=false;
+		Dropzone.autoDiscover = false;
+		Dropzone.options.mydropzonePropuesta1 = {
+				// access Dropzone here
+				headers: {'Cache-Control': null,'X-Requested-With': null}, addRemoveLinks : false,
+				autoProcessQueue : true, // this is important as you dont want form to be submitted unless you have clicked the submit button
+				autoDiscover : false,
+				paramName : 'pic', // this is similar to giving name to the input type file like <input type="file" name="pic" />
+				// previewsContainer: '#dropzonePreview', // we specify on which div id we must show the files
+				clickable : true, // this tells that the dropzone will not be clickable . we have to do it because v dont want the whole form to be clickable 
+				maxFilesize : 100,
+				parallelUploads : 1,
+				addingAutoFiles : true,
+				maxFiles:1,
+				dictDefaultMessage: "ARRASTRA AQUÍ TU PDF O HAZ CLICK PARA SELECCIONARLO",
+				acceptedFiles: ".pdf",
+				renameFilename: function (filename) {
+					//alert("renameFilename"+filename);
+					if(filename.indexOf('jpeg') != -1)
+						filename=filename.replace("jpeg", "jpg");
+					if(filename.indexOf('JPEG') != -1)
+						filename=filename.replace("JPEG", "jpg");
+					if(filename.indexOf('PDF') != -1)
+						filename=filename.replace("PDF", "pdf");
+					if(addingAutoFiles==false){
+						if(filename.indexOf('.pdf') != -1)
+							namefor1= 'factura' + '.pdf';
+						else namefor1= 'factura.pdf';
+						return namefor1;
+					}else return filename;
+					
+		        }, 
+				accept : function(file, done) {
+					//alert("acceppt");
+					console.log("uploaded");
+					done();
+				},
+				error : function(file, msg) {
+	
+					BootstrapDialog.alert(msg);
+					this.removeFile(file);
+				},
+				init : function() {
+	
+					this
+							.on(
+									"success",
+									function(file,response) {
+										//alert("success " + file.name);
+										var _this = this;
+										//alert("el remove del added"+response);
+										/* Maybe display some more file information on your page */
+										var removeButton = Dropzone
+												.createElement("<button data-dz-remove " +
+					              "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;top: -12px;left: -14px;    z-index: 2000;'><span class='glyphicon glyphicon-remove glyph-background'></span></button>");
+	
+										removeButton
+												.addEventListener(
+														"click",
+														function(e) {
+															e.preventDefault();
+															e.stopPropagation();
+															var server_file = $(
+																	file.previewTemplate)
+																	.children(
+																			'.server_file')
+																	.text();
+															// Do a post request and pass this path and use server-side language to delete the file
+															//          $.post(server_file,{'X-CSRFToken': $cookies.csrftoken}, 'json');
+															// alert(server_file);
+															deleteFile("decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+																	+ response);
+																	
+															_this.removeFile(file);
+														});
+										file.previewElement
+												.appendChild(removeButton);
+	
+										var downloadbutton = Dropzone
+										.createElement("<button data-dz-download " +
+					      "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;left: -14px;    z-index: 2000; '><span class='glyphicon glyphicon-chevron-down glyph-background'></span></button>");
+	
+										downloadbutton.addEventListener("click",
+										function(e) {
+											//alert("download: "+file.name);
+											e.preventDefault();
+											e.stopPropagation();
+											var useron = decorador.mail;
+											var urlforimage = urlbuckets3 + "decoradores/" + useron + "/facturas/"+proyect_id+"/"
+													+ namefor1;
+											window.open(urlforimage);
+										});
+								file.previewElement
+										.appendChild(downloadbutton);
+									});
+	
+					this.on('addedfile' , function(file){
+						//alert("addedfile " +file.name);
+						if(subido){
+							if(trabajo.factura==""){
+								trabajo.factura="factura.pdf"; 
+							} else {
+								trabajo.factura="";  
+							}
+							subido=false;
+						}
+					});
+					this.on("complete", function (file) {
+						
+						if(b==5){
+							cerramosONo=false;
+							}
+			        })
+					this.on('processing', function(file) {
+						//alert("processing " + file.name);
+						var usernameforajax = "temp";
+						var nombreproyectoforajax = decorador.mail;
+						var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+								+ namefor1;
+						var seccion = "propuestas";
+						this.options.url = urlbaseForAjax+"/"+"FileUploadHandler?user="
+								+ usernameforajax + "&proyecto="
+								+ nombreproyectoforajax + "&seccion=" + seccion + "&ruta=" + "decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+								+ namefor1;
+	
+						b=5;
+						cerramosONo=true;
+
+					});
+				}
+			};
+
+		mydropzonePropuesta1 = new Dropzone("#mydropzonePropuesta1"); 
+	 
+
+		 
+	 
+	</script>
+</body>
+</html>

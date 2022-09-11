@@ -1,0 +1,853 @@
+<!DOCTYPE html >
+<!--[if lt IE 7 ]> <html lang="es"  class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="es"  class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="es"  class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="es"  class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="es"  class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+    <title>Lista de proyectos - DecoTheCo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Aquí tendrás tu listado de proyectos. Recuerda visitarla a menudo, revisar los estados y fechas de entrega." />
+		<link rel="canonical" href="http://decoradores.decotheco.com/home.html" />
+    <meta name="keywords" content="decoracion, interiorismo, diy, diseño" />
+    <meta name="author" content="DecoTheco" />
+    <link rel="shortcut icon" href="favicon.ico"> 
+	<meta name="pinterest" content="nohover" /> 
+	<link rel="stylesheet" href="css/bootstrap.min.css?versionCssJs=17"/> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css?versionCssJs=17" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css?versionCssJs=17"/>  
+	<link rel="stylesheet" type="text/css" href="css/main.css?versionCssJs=17" media="all" />  
+	<link rel="stylesheet" type="text/css" href="css/secciones.css?versionCssJs=17" media="all" />
+	<link rel="stylesheet" href="css/fonts.css?versionCssJs=17"/> 
+	<link rel="stylesheet" href="css/buttonsreglao.css?versionCssJs=17"/> 
+	<link rel="stylesheet" href="css/dropzone.min.css?versionCssJs=17" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/css/tokenfield-typeahead.css?versionCssJs=17">
+ 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/css/bootstrap-tokenfield.css?versionCssJs=17">
+	<link rel="stylesheet" href="css/home.css?versionCssJs=17" media="all" /> 
+	<style>
+	.h1, .h2 {
+		line-height: 1.8!important;
+	}
+	.modal-dialog{
+		z-index:5000; 
+	}
+	.modal-backdrop {
+		z-index: 1;
+	}
+	.tt-menu {
+		background-color:white;
+		border:1px solid black
+	}
+	.tt-dataset {
+		cursor:pointer
+	}
+	.etiquetasLdlc {
+		display:none
+	}
+	.etiq ul {
+		list-style:none
+	}
+	.etiq ul li {
+    	float: left;
+		width:100%
+	}
+	.habitacion {
+		display:none
+	}
+	.notificacionChat {
+		display:none;
+		position: relative;
+	    float: left;
+	    color: black;
+	    border: 1px solid #ef9487;
+	    border-radius: 50%;
+	    background-color: white;
+	    width: 23px!important;
+	    height: 23px;
+	    text-align: center;
+	    line-height: 20px;
+	    margin-left: -25px!important;
+	    padding-left: 4px; 
+		margin-top: 2px;
+	} 
+	@media (max-width: 1450px) {
+		.notificacionChat {
+			margin-top: 0;
+		}
+	}
+	@media (max-width: 1250px) {
+		.notificacionChat {
+			margin-top: 0;
+			width: 21px!important;
+    		height: 21px;
+		}
+	}
+	@media (max-width: 992px) {
+		.notificacionChat {
+			margin-top: -5px;
+		}
+	}
+	@media (max-width: 768px) {
+		.notificacionChat {
+			margin-top: 20px;
+		}
+		.modal-dialog {
+		    width: 700px;
+		}
+		.navbar-collapse {
+		    width: 100%!important;
+		}
+		#ulforsustitution {
+			width:100%!important;
+			text-align:center
+		}
+		.dropdown-menu li, .navbar-nav .open .dropdown-menu>li>a {
+			text-align:center;
+			color: black!important;
+		}
+	}
+	@media (max-width: 700px) {
+		.notificacionChat {
+			margin-top: 15px;
+		}
+	}
+	@media (max-width: 650px) {
+		.notificacionChat {
+			margin-top: 6px;
+		}
+	}
+	@media (max-width: 966px) {
+		.modal-dialog {
+		    width: 900px;
+		} 
+	}
+	@media (max-width: 520px) { 
+		.notificacionChat {
+			margin-top: 10px;
+		}
+	}
+	@media (max-width: 400px) {
+		.notificacionChat {
+			margin-top: 6px;
+			width: 18px!important;
+    		height: 18px;
+    		line-height:17px
+		}
+	}
+	</style> 
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108225209-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108225209-1');
+</script>
+<script language="JavaScript" type="text/javascript">
+		var cerramosONo=false;
+		// var myEvent = window.attachEvent || window.addEventListener;
+		// var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make IE7, IE8 compitable
+		window.addEventListener("beforeunload", function (e) {
+			if(cerramosONo){
+				
+				var confirmationMessage = "\o/";
+				
+		
+				  e.returnValue = confirmationMessage;     // Gecko, Trident, Chrome 34+
+				  return confirmationMessage;              // Gecko, WebKit, Chrome <34
+			}else return;
+			
+		  
+		})
+</script>
+</head>
+<body onload="login('proyectos')" >
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0"
+		width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg>
+<div class="supreme-container">
+		<nav class="navbar navbar-default navbar-fixed-top bordeInferior"
+		role="navigation" style="z-index: 5001;">
+		<div class="container-fluid">
+			<!-- Title -->
+			<div class="navbar-header pull-left">
+				<a style="padding-top: 0px;" class="navbar-brand letramodificada"
+					href="javascript:alahomeCom()"><img style="width: 140px;"
+					src="img/other/decotheco-logo.svg" alt="Decotheco"></a>
+			</div>
+
+			<div class="navbar-header  pull-right">
+
+				<button type="button" data-toggle="collapse"
+					data-target=".navbar-collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<!--                      pull-right keeps the drop-down in line -->
+				<ul id="ulforsustitution" class="nav navbar-nav pull-right ">
+				
+						<li><a
+							class=" colornegro letraArial  interspaciado_2  separacionnavbar"
+							href="javascript:alresto('/home.html')">HOME</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/como-funciona.html')">COMO FUNCIONA</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/facturacion.html')">FACTURACIÓN</a></li> 
+						<li id="liforsustitution" ><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar" data-toggle="modal"
+							href="#" data-target="#login-modal">INICIAR	SESIÓN</a></li>
+
+				</ul>
+			</div>
+
+
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+			 
+    
+    
+    	<div id="divforlink" class=" col-xs-12  col-xs-offset-0 col-sm-10 col-sm-offset-1" style="padding-top:5%;padding-bottom:1%">
+    	     <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-0">
+    	     	<img src="img/home/fondo.jpg" title="Lista de la compra" class="ldlcompra" style="width:100%" alt="Ejemplo de 2D"> 
+    	     </div>
+    	     <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-1 ListaMargin">
+    	     	<h1 class="titulo_pantalla h1" >PRUEBA NUESTRA LISTA DE LA COMPRA ONLINE</h1>
+				<h2 class="subtitulo_pantalla letra-ml">
+					<p class="letra-s h2">Crea composiciones en 2D para tus proyectos de la forma más rápida y fácil</p>
+				</h2>
+				<a  style="cursor: pointer;" onclick="lista()">
+				<div id="contratarbutton"   class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-8 col-md-offset-2  col-lg-6 col-lg-offset-3 margenLista letra-mayusculas letra-negrita">
+					<div class="buttonstandard_invertido letra-xs" style="padding-top:1px;padding-bottom:0;width:auto;padding-left:15px;padding-right:15px">LISTA DE LA COMPRA</div>
+				</div>
+				</a>
+    	     </div>
+    	</div>
+		<hr class="linea"/>
+		<div class="col-xs-12 sobre" >
+		<p style="cursor: pointer;padding-right:1%;margin-top:2%"   class="col-md-1 col-sm-2 col-xs-9 col-xs-offset-1 col-sm-offset-5 col-md-offset-10 contacto"
+			id="" onclick="dudasfunction();"> <i class="fa fa-envelope-o letra-xl" aria-hidden="true"> </i> </p> 
+		</div>
+		
+		
+        <div id="divforproyectos" class="container col-xs-12  col-xs-offset-0 col-sm-10 col-sm-offset-1">
+             
+        </div>
+    </div>    
+    
+    
+   <!-- MODALES -->
+    <div class="modal fade" id="modalforDudasCon" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	
+	<div style="max-width: 95%; width: 600px;" class="modal-dialog">
+		<div class="modal-content" style="padding-left: 3vw; padding-right: 3vw; ">
+			<div class="modal-header" align="center">
+				<a style="position: absolute;right: 3px; top: 0px; color: black; cursor: pointer;" data-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i></a>
+				
+					<h4 style="padding-top: 30px; " id="titulo_for_advice" class="letra-xxl">¿TIENES ALGUNA DUDA?</h4>
+
+				
+					
+
+				<h4 style="margin-top: 0px;" class="letra-m">
+					<p class="letra-s" style="line-height:1.8!important;padding-top:10px">Envíanos tus consulta y te ayudaremos a resolverla</p>
+				</h4>
+				<div style="width: 100%; text-align: center;  padding-bottom: 0;"> 
+				</div>
+			</div>
+
+			<!-- Begin # DIV Form -->
+			<div id="div-forms">
+
+				<!-- Begin # Login Form -->
+				<form id="dudas-form">
+					<div class="modal-body">
+						<div id="div-login-msg">
+							
+							
+						</div>
+						
+							<input style="min-height: 150px; height: 20vh;  text-align:center; " maxlength="4000"
+							id="dudas_consultaCon" class="form-control  letra-m" type="text"
+							placeholder="INTRODUCE TU CONSULTA" required>
+						
+					</div>
+					<div class="modal-footer">
+						<div>
+							<div class="buttonstandard_invertido letra-xs"  onclick="sendDudas()" style="display: block; margin: 0 auto;padding-top:1px;padding-bottom:0;">ENVIAR</div>
+						<div style="width: 100%; text-align: center; padding-top: 1.5vw; padding-bottom: 2vw;">
+						 
+						</div>
+						</div>
+					</div>
+				</form>
+
+			</div> 
+
+		</div>
+	</div>
+</div> 
+	<div class=" conefectossuaves modal fade" id="modalforperfiles" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div style="max-width: 95%; width: auto;" class="modal-dialog">
+		<div class="modal-content" style="padding:5% ">
+			<div class="modal-header" align="center">
+			<div class=" conefectossuaves ">
+				<div class=" conefectossuaves modal-header" align="center">
+					<a style="position: absolute;right: 3px; top: 0px; color: black; cursor: pointer;" data-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i></a>
+				
+				</div>
+				<div id="myCarousel2" class=" conefectossuaves container-fluid carousel slide carrusel"
+					data-interval="false">
+
+					
+
+						 
+					
+					
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class=" conefectossuaves modal fade" id="modalforInfo" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div style="max-width: 95%; width: 600px;" class="modal-dialog">
+		<div class="modal-content" style="padding:5%;height:auto;float:left; ">
+			<div class="modal-header" align="center">
+			<div class=" conefectossuaves ">
+				<div class=" conefectossuaves modal-header" align="center">
+					<a style="position: absolute;right: 3px; top: 0px; color: black; cursor: pointer;" data-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i></a>
+				
+				</div>
+				<div id="myCarousel3" class=" conefectossuaves container-fluid carousel slide informacionPopup"
+					data-interval="false">
+
+					
+
+						 
+					
+					
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+<div class="modal fade" id="facturacion" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;"> 
+			<div style="max-width: 100%;" class="modal-dialog">
+		<div class="modal-content" >
+							<div class="modal-header" align="center" style="padding-left: 3vw; padding-right: 3vw; ">
+								  <br/> 
+								  <h3>Finalizar proyecto</h3> 
+								  <hr width="100%"/> 
+								  <div style="display: block; margin: 0 auto;" class="col-xs-12">
+								  Para comenzar con el proceso de facturación, rellena los datos y sube tu factura<br/>¡No te olvides de darle a enviar!
+								  </div>
+								 	<div style="display: block; margin: 0 auto;" class="col-xs-12">
+										
+										<h3 style="margin-top: 4%; margin-bottom: 2%">
+											<span  class="texto_letra_Arial_paso1 letra-ml">
+												NOMBRE DEL PROYECTO *
+											</span>
+										</h3> 
+											
+											
+											<input id="input_titulo" type="text"
+											class=" inputLinea letra-s  text-center" style="width:90%"
+											placeholder="POR EJEMPLO_ salón nórdico"></input>
+									</div>
+									<div style="display: block; margin: 0 auto;" class="col-xs-12">
+										
+										<h3 style="margin-top: 4%; margin-bottom: 2%">
+											<span  class="texto_letra_Arial_paso1 letra-ml">
+												ETIQUETAS (Separar con comas)*
+											</span>
+										</h3> 
+										<input type="text" class="form-control token-input ui-autocomplete-input inputLinea letra-s" id="tokenfield-typeahead"  style="width:90%"/>
+											
+											
+											
+									</div>
+									
+									
+									<div style="display: block; margin: 0 auto;" class="col-xs-12">
+										
+										<h3 style="margin-top: 4%; margin-bottom: 2%">
+											<span  class="texto_letra_Arial_paso1 letra-ml">
+												DESCRIBE BREVEMENTE EL PROYECTO *
+											</span>
+										</h3> 	
+											 
+											<textarea id="input_texto"
+												class="letrainputformularios letra-s   text-center"
+												style="border:1px solid black;padding: 10px;width:90%;padding-bottom: 10px; height: 100px; background-color: rgba(1, 1, 1, 0);"
+												placeholder="POR EJEMPLO_ Salón de pocos metros donde se buscaba potenciar la luz y crear un espacio acogedor y funcional"></textarea>
+									 
+										
+									</div>
+									<div style="display: block; margin: 0 auto;" class="etiquetasLdlc col-xs-12">
+										
+										<h3 style="margin-top: 4%; margin-bottom: 2%">
+											<span  class="texto_letra_Arial_paso1 letra-m">
+												SI QUIERES QUE TU PROYECTO APAREZCA EN LA GALERIA DE LISTAS DE LA COMPRA Y AUMENTAR TU VISIBILIDAD EN LA PLATAFORMA, SELECCIONA LOS ESTILOS QUE MÁS SE AJUSTEN A TU COMPOSICIÓN
+											</span>
+										</h3> 	 
+										<div class="col-xs-12 col-md-6 imagenLdlc">
+											
+										</div>
+										<div class="col-xs-12 col-md-6 estilosLdlc">
+										
+										</div>
+										
+									</div>
+									<div style="display: block; margin: 0 auto;" class="col-xs-12">
+										
+										<h3 style="margin-top: 4%; margin-bottom: 2%">
+											<span  class="texto_letra_Arial_paso1 letra-ml">
+												SUBE TU FACTURA (PDF) *
+											</span>
+										</h3> 	
+										  PetiteCandela S.L.
+										  <br/>
+										  C/ Estrada da Granxa, nº17, Esc-A, 7ºB
+										  <br/>
+										  27002 (Lugo)
+										  <br/>
+										  CIF: B27487875
+										  <br/><br/><br/>
+											
+											<form action="FileUploadHandler" id="mydropzonePropuesta1"
+											class="dropzone estilo_bordes_completos letra-s"
+											method="post" enctype="multipart/form-data" style="width:90%;margin-left:0;border:1px solid black;">
+				
+											<div class="letrainputformularios" id="dropzonePreview"></div> 
+											</form> 
+										
+									</div>  
+								 	<div style="display: block; margin: 0 auto;" class="col-xs-12">
+								 		<h3 style="margin-top: 4%; margin-bottom: 2%">
+											<span  class="texto_letra_Arial_paso1 letra-xs" id="promocion">
+												
+											</span>
+										</h3> 
+									</div>
+								 	<div style="display: block; margin: 0 auto;" class="col-xs-12">
+								 		<h3 style="margin-top: 4%; margin-bottom: 2%">
+											<span  class="texto_letra_Arial_paso1 letra-ml" style="color:red" id="error">
+												
+											</span>
+										</h3> 
+									</div>
+				
+									
+			 
+									   
+								</div> 
+								<div class="modal-footer" align="center" style="padding:0;padding-top:4%; margin:0">
+								<div class="col-xs-12" style="display: block; margin: 0 0;padding:0" >
+									<button id="enviarFactura" style="display: block; margin: 0 0; margin-top:0%;width: 100%"
+										onclick="saveFactura()"
+										class="botonesloginreglost btn btn-primary btn-lg btn-block">Enviar!</button>
+				
+									 
+								</div>
+							</div>
+		</div>
+	</div>  
+</div>
+<div class="modal fade" id="cargando" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	<div style="max-width: 95%; width: 100%;" class="modal-dialog">
+			<div id="loading" class="col-xs-12" style=" height:200px; background: url(img/other/default.svg) center center no-repeat;">
+			</div>
+	</div>
+</div>	
+<!-- COMIENZO FOOTER --> 
+	<div id="footer" style="text-align: center;margin-top:75px;background-color:#bfc3c3" class="col-xs-12" >  
+		<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1" style="color:white;margin-top:2%">
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 pie1">
+				<a class="letra-s"  onclick="alresto2('nosotros.html');" style="cursor: pointer;line-height:30px;color:white">SOBRE NOSOTROS</a><br/>
+				<a class="letra-s" onclick="dudasfunction();" style="cursor: pointer;line-height:30px;color:white">CONTACTO</a><br/>
+			</div>
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 pie2">
+				<a  class="letra-s" onclick="alresto('/como-funciona.html');" style="cursor: pointer;line-height:30px;color:white">COMO FUNCIONA</a><br/>  
+				<!-- <a class="letra-s" onclick="alBlog();" style="cursor: pointer;line-height:30px;;color:white">BLOG</a><br/>
+				<a class="letra-s"   onclick="alresto2('decoradores-online.html');" style="cursor: pointer;line-height:30px;color:white">DECORADORES</a><br/>  
+			</div>
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0"> 
+						<a  onclick="irainstagram();" style="cursor: pointer; margin-left: 10px;margin-right: 10px"	target="_blank"> 
+							<i class="fa fa-instagram" aria-hidden="true" style="color:white"> </i>
+						</a> 
+						<a  onclick="irafacebook();" style="cursor: pointer; margin-left: 10px;margin-right: 10px"	target="_blank"> 
+							<i class="fa  fa-facebook" style="color:white"> </i>
+						</a> 
+						<a onclick="iratwitter();" style="cursor: pointer; margin-left: 10px;margin-right: 10px" target="_blank"> 
+							<i	class="fa fa-twitter" style="color:white"> </i>
+						</a>
+						<a 
+						onclick="irapinterest();" style="cursor: pointer; margin-left: 10px;margin-right: 10px" target="_blank"> 
+							<i	class="fa fa-pinterest" style="color:white"> </i>
+						</a> 
+ 
+				<!-- Begin MailChimp Signup Form -->
+					
+					<div class="section letra-s" style="width: 100%; margin-top: 5px;">
+					SUSCRÍBETE A LA NEWSLETTER!
+								<form action="//decotheco.us16.list-manage.com/subscribe/post?u=43ef3e467d254af7ac325538d&amp;id=a2f41b6e01" method="post" id="mc-embedded-subscribe-form">
+									<input  type="email"  name="EMAIL" class="letra-s news"   placeholder="EMAIL*" style="margin-top:2px;text-transform:none;color:white;background-color:#bfc3c3;line-height: 22px;;padding-left:10px;border:1px solid #f2f2f2;letter-spacing:2px!" required>
+									<input type="submit" name="subscribe"   class="letra-xs letra-mayusculas newsEnviar" style="color:#bfc3c3;line-height: 22px;border:1px solid #f2f2f2;border-top:2px solid #f2f2f2;background-color:#f2f2f2" value="SUSCRIBIR">
+								</form> 
+					</div>
+					
+						<div id="mce-responses" class="clear" style="margin-top:2%">
+							<div class="response" id="mce-error-response" style="color:#bfc3c3;display:none;background-color:white;border:1px solid grey ;padding-top:2%;padding-bottom:2%"></div>
+							<div class="response letra-xs" id="mce-success-response" style="color:#bfc3c3;display:none;background-color:white;border:1px solid grey;padding-top:2%;padding-bottom:2%"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					   
+					
+					<script type='text/javascript' src='js/comprimido/mc-validate.js'></script>  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text'; /*
+					 * Translated default messages for the $ validation plugin.
+					 * Locale: ES
+					 */
+					$.extend($.validator.messages, {
+					  required: "Este campo es obligatorio.",
+					  remote: "Por favor, rellena este campo.",
+					  email: "Por favor, escribe una dirección de correo válida",
+					  url: "Por favor, escribe una URL válida.",
+					  date: "Por favor, escribe una fecha válida.",
+					  dateISO: "Por favor, escribe una fecha (ISO) válida.",
+					  number: "Por favor, escribe un número entero válido.",
+					  digits: "Por favor, escribe sólo dígitos.",
+					  creditcard: "Por favor, escribe un número de tarjeta válido.",
+					  equalTo: "Por favor, escribe el mismo valor de nuevo.",
+					  accept: "Por favor, escribe un valor con una extensión aceptada.",
+					  maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+					  minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+					  rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+					  range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+					  max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+					  min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+					});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+			</div>
+		</div> 
+		<div class="col-xs-12">
+			<br/>
+			<br/>
+			 <a class="letra-s"  onclick="aCondicionesFunction();" style="cursor: pointer;margin-top:10px;color:white">@decotheco.com 2017 &nbsp;&nbsp;&nbsp;AVISO LEGAL | POLÍTICA DE PRIVACIDAD | POLÍTICA DE COOKIES</a>
+			<br/>
+			<br/>
+		</div>
+		
+		
+		<link href="css/comprimido/mailchimp.css?versionCssJs=17" rel="stylesheet" type="text/css">
+	
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script> 
+	$('#cargando').modal('show');
+	</script>
+	<script src="js/footer.js?versionCssJs=17"></script>
+	<script src="js/links.js?versionCssJs=17"></script> 
+	<script src="js/bootstrap-dialog.min.js?versionCssJs=17"></script>
+	<script src="js/home.js?versionCssJs=17"></script>
+	<script src="js/vendor/dropzone.js?versionCssJs=17"></script>
+	<script src="js/main.js?versionCssJs=17"></script>
+	 
+	
+	<script src="js/barra.js?versionCssJs=17"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.1/typeahead.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/bootstrap-tokenfield.js"></script>
+	<script src="js/typeahead.js?versionCssJs=17"></script>
+	<script src="js/vendor/dropzone.js?versionCssJs=17"></script>
+	
+	
+ 
+	<script>function deleteFile(seccionvar, fichero) {
+	var user = decorador.mail;
+	var proyecto = proyect_id;
+	var seccion = seccionvar;
+	var fichero = fichero;
+
+	//alert("user:"+user+" proyecto"+proyecto+" seccion:"+ seccion +"fichero: "+fichero);
+	//var id_moodboard = proyectoObject.preferencia.id_moodboard;
+
+	try {
+		$.ajaxSetup({
+			scriptCharset : "utf-8",
+			contentType : "application/json; charset=utf-8"
+		});
+
+		$.ajax({
+				// /type:"POST",
+				dataType : "json",
+				// url: 'http://94.23.34.49:8442/Solvida_JSON_REST/getNews',
+				url : urlbaseForAjax + '/RemoveFile',
+				// url: 'http://192.168.0.164:8080/OnlineAssistance/CreateUser',
+				data : {
+					user : user,
+					proyecto : proyecto,
+					seccion : seccion,
+					fichero : fichero
+				},
+				// url: 'http://81.47.163.149:8080/Solvida_JSON_R/getNews',
+				contentType : "application/json; charset=utf-8",
+				success : function(data) {
+					//alert("eliminado");
+				}
+			});
+	
+		} catch (e) {
+			BootstrapDialog
+					.alert('Se ha producido un error en la conexión con el servidor');
+			// put any code you want to execute if there's an exception here
+	
+		}
+	
+	}
+	var namefor1='';
+	var namefor2='';
+	var namefor3='';
+	var b=0;
+	var addingAutoFiles=false;
+	Dropzone.autoDiscover = false;
+	Dropzone.options.mydropzonePropuesta1 = {
+			// access Dropzone here
+			headers: {'Cache-Control': null,'X-Requested-With': null}, addRemoveLinks : false,
+			autoProcessQueue : true, // this is important as you dont want form to be submitted unless you have clicked the submit button
+			autoDiscover : false,
+			paramName : 'pic', // this is similar to giving name to the input type file like <input type="file" name="pic" />
+			// previewsContainer: '#dropzonePreview', // we specify on which div id we must show the files
+			clickable : true, // this tells that the dropzone will not be clickable . we have to do it because v dont want the whole form to be clickable 
+			maxFilesize : 100,
+			parallelUploads : 1,
+			maxFiles:1,
+			dictDefaultMessage: "ARRASTRA AQUÍ TU PDF O HAZ CLICK PARA SELECCIONARLO",
+			acceptedFiles: ".pdf",
+			renameFilename: function (filename) {
+				//alert("renameFilename"+filename);
+				if(filename.indexOf('jpeg') != -1)
+					filename=filename.replace("jpeg", "jpg");
+				if(filename.indexOf('JPEG') != -1)
+					filename=filename.replace("JPEG", "jpg");
+				if(filename.indexOf('PDF') != -1)
+					filename=filename.replace("PDF", "pdf");
+				if(addingAutoFiles==false){
+					if(filename.indexOf('.pdf') != -1)
+						namefor1= 'factura' + '.pdf';
+					else namefor1= 'factura.pdf';
+					return namefor1;
+				}else return filename;
+				
+	        }, 
+			accept : function(file, done) {
+				//alert("acceppt"); 
+				done();
+			},
+			error : function(file, msg) {
+
+				BootstrapDialog.alert(msg);
+				this.removeFile(file);
+			},
+			init : function() {
+
+				this
+						.on(
+								"success",
+								function(file,response) {
+									//alert("success " + file.name); 
+									var _this = this;
+									//alert("el remove del added"+response);
+									/* Maybe display some more file information on your page */
+									var removeButton = Dropzone
+											.createElement("<button data-dz-remove " +
+				              "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;top: -12px;left: -14px;    z-index: 2000;'><span class='glyphicon glyphicon-remove glyph-background'></span></button>");
+
+									removeButton
+											.addEventListener(
+													"click",
+													function(e) {
+														e.preventDefault();
+														e.stopPropagation();
+														var server_file = $(
+																file.previewTemplate)
+																.children(
+																		'.server_file')
+																.text();
+														// Do a post request and pass this path and use server-side language to delete the file
+														//          $.post(server_file,{'X-CSRFToken': $cookies.csrftoken}, 'json');
+														// alert(server_file);
+														deleteFile("decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+																+ response);
+																
+														_this.removeFile(file);
+													});
+									file.previewElement
+											.appendChild(removeButton);
+
+									var downloadbutton = Dropzone
+									.createElement("<button data-dz-download " +
+				      "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;left: -14px;    z-index: 2000; '><span class='glyphicon glyphicon-chevron-down glyph-background'></span></button>");
+
+									downloadbutton.addEventListener("click",
+									function(e) {
+										//alert("download: "+file.name);
+										e.preventDefault();
+										e.stopPropagation();
+										var useron = decorador.mail;
+										var urlforimage = urlbuckets3 + "decoradores/" + useron + "/facturas/"+proyect_id+"/"
+												+ namefor1; 
+										window.open(urlforimage);
+									});
+							file.previewElement
+									.appendChild(downloadbutton);
+								});
+
+				this.on('addedfile' , function(file){
+					//alert("addedfile " +file.name);  
+				});
+				this.on("complete", function (file) {
+					if(b==5){
+						cerramosONo=false;
+						}
+		        })
+				this.on('processing', function(file) {
+					//alert("processing " + file.name);
+					var usernameforajax = "temp";
+					var nombreproyectoforajax = decorador.mail;
+					var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+							+ namefor1;
+					var seccion = "propuestas";
+					this.options.url = urlbaseForAjax+"/"+"FileUploadHandler?user="
+							+ usernameforajax + "&proyecto="
+							+ nombreproyectoforajax + "&seccion=" + seccion + "&ruta=" + "decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+							+ namefor1;
+
+					b=5;
+					cerramosONo=true;
+				});
+			}
+		};
+
+ 
+	
+		
+		var mydropzonePropuesta1 ; 
+		 mydropzonePropuesta1 = new Dropzone("#mydropzonePropuesta1"); 
+		
+		function cargarDropzonePlanos(nuevo) {
+			
+			if(nuevo==true){ 
+				 
+				 mydropzonePropuesta3 = new Dropzone("#mydropzonePropuesta3");
+			}else{
+				 
+
+				 
+				if(trabajo.imagenesTrabajos!=null && trabajo.imagenesTrabajos.length>=1  ){
+			 for (var i = 0; i < trabajo.imagenesTrabajos.length; i++) {
+				 if(trabajo.imagenesTrabajos[i].indexOf('main_izq') == -1)
+						continue;
+					
+					//alert("planos"+projectObject.informations[0].filesPlanos[i]);
+					 var fileforremove;
+					var file = {
+						name : trabajo.imagenesTrabajos[i],
+						size : 1000000,
+						status : Dropzone.ADDED,
+						accepted : true
+					};
+					mydropzonePropuesta1.emit("addedfile", file);
+					
+					var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+							+ trabajo.imagenesTrabajos[i];
+					//alert("la imagen que cargo de planos es: "+urlforimage);
+					mydropzonePropuesta1.createThumbnailFromUrl(file, urlforimage, function() {
+						mydropzonePropuesta1.emit("complete", file);
+	  }, "anonymous");
+					mydropzonePropuesta1.emit("complete", file);
+					/* mydropzonePropuesta1.createThumbnailFromUrl(file, urlforimage);
+					//this.emit("thumbnail", file, "http://192.168.1.100:8444/OnlineAssistance/img/1464802792570.png");
+					mydropzonePropuesta1.emit("complete", file);*/
+					mydropzonePropuesta1.files.push(file); 
+					 var _this = mydropzonePropuesta1;
+					var removeButton = Dropzone.createElement("<button data-dz-remove " +
+					              "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;top: -12px;left: -14px; z-index: 2000;'><span class='glyphicon glyphicon-remove glyph-background'></span></button>");
+
+					removeButton.addEventListener("click", function (e) {
+					 e.preventDefault();
+					 e.stopPropagation();
+					 var imageId = $(this).parent().find(".dz-filename > span").text();
+					 // Do a post request and pass this path and use server-side language to delete the file
+					 //          $.post(server_file,{'X-CSRFToken': $cookies.csrftoken}, 'json');
+					 deleteFile("decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+								+ imageId);
+					  
+					 
+					  for (var j = 0; j < mydropzonePropuesta1.files.length; j++) {
+							if(mydropzonePropuesta1.files[j].name == imageId) fileforremove=mydropzonePropuesta1.files[j];
+					  } 
+					  mydropzonePropuesta1.removeFile(fileforremove);
+					});
+					//alert("inserto: "+i );
+					file.previewElement.appendChild(removeButton); 
+					var downloadbutton = Dropzone
+					.createElement("<button data-dz-download " +
+      "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;left: -14px;    z-index: 2000; '><span class='glyphicon glyphicon-chevron-down glyph-background'></span></button>");
+
+					downloadbutton.addEventListener("click",
+					function(e) {
+						alert("download: "+file.name);
+						e.preventDefault();
+						e.stopPropagation();
+						var useron = "temp";
+						var imageId = $(this).parent().find(".dz-filename > span").text(); 
+						  for (var j = 0; j < mydropzonePropuesta1.files.length; j++) {
+								if(mydropzonePropuesta1.files[j].name == imageId) fileforremove=mydropzonePropuesta1.files[j];
+						  }
+						  
+						  var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/facturas/"+proyect_id+"/"
+						  + fileforremove.name 
+						window.open(urlforimage);
+						
+					});
+			file.previewElement
+					.appendChild(downloadbutton);
+				}
+			
+					
+				}
+ 
+						
+			
+			addingAutoFiles=false;
+			}
+		}
+	</script>
+
+</body>
+</html>

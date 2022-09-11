@@ -1,0 +1,321 @@
+
+.ListaMargin {
+	margin-top:5%;
+	text-align:center
+}
+.nombre {
+	margin-top:7%;
+	letter-spacing: 1pt!important;
+}
+.tipoProyecto {
+	letter-spacing: 1pt!important;
+}
+.margenLista {
+	margin-top:2%
+}
+.estado3 {
+	text-align:center;
+	margin-bottom:2%
+}
+.inputLinea {
+	border:none;
+	border-bottom:1px solid black;
+}
+.infoP {
+	width:84%;
+}
+.mb {
+	margin-top:2%
+}
+.input-p2 {
+	margin-bottom:13%
+}
+.lineaProyecto {
+	padding-left:0
+}
+.input-p4 {
+	margin-bottom:6%;
+	border: none;
+    border-bottom: 1px solid black; 
+    text-overflow: ellipsis;
+}
+.input-p5 {
+	margin-bottom:4%;
+	border: none;
+	text-align:center;
+    border-bottom: 1px solid black; 
+    text-overflow: ellipsis;
+}
+.estado2 {
+	text-align:center;
+	margin-bottom:1%;
+	margin-top:1%
+}
+.buttonstandard_invertido {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 1px;
+    transition: all 0.3s ease 0s;
+    line-height: 1.75;
+    color: white;
+    background-color: black;
+}
+.buttonstandard_invertido:hover {
+	text-decoration: none;
+    background-color: white;
+    color: black;
+}
+.ancho{
+	width:21%
+}
+.ancho2{
+	width:30%
+}
+.espacio, .espacio2 {
+	margin-top:10px;
+	margin-bottom:0
+}
+.imagen {
+	width:70%;
+}
+.botones {
+	margin-top:0%
+}
+.botonEnFin {
+	width:48%;
+	float:left
+}
+.botonEnFin2 {
+	margin-left:4%;
+	width:48%;
+	float:left
+}
+.parte1 { 
+	display: inline;
+}
+.partes {
+	display:none
+}
+.partes1 {
+	display:none
+}
+@media (max-width: 1700px) { 
+	.espacio, .espacio2 {
+		margin-top:0;
+		margin-bottom:0
+	}
+	.imagen {
+		vertical-align:top
+	}
+	.estado2 {
+	    margin-bottom: 0
+	} 
+	.input-p4 {
+		margin-bottom:5%;
+	}
+}
+@media (max-width: 1500px) { 
+		
+	.mb {
+		margin-top:3%
+	}
+		 
+	.input-p4 {
+		margin-bottom:4%;
+	}
+	.estado3 {
+	    margin-bottom: 1%
+	}
+	.imagen {
+	    width: 125%;
+	} 
+}
+@media (max-width: 1150px) { 
+		
+	.mb {
+		margin-top:4%
+	}
+	.imagen {
+	    width: 250%;
+	} 
+	.estado3 {
+	    margin-bottom: 0
+	}
+	
+	.input-p4 {
+		margin-bottom:3%;
+	}
+}
+@media (max-width: 1050px) { 
+	.input-p4 {
+		margin-bottom:4%;
+	}
+}
+@media (max-width: 1000px) { 
+	.lineaProyecto {
+		padding-left:15px
+	}
+	.mb {
+		margin-top:1%
+	}
+	.ldlcompra {
+		margin-top:9%
+	}
+	.nombre {
+		margin-top:1%
+	}
+	.ancho{
+		width:15%
+	}
+	.ancho2{
+		width:15%
+	}
+	.ListaMargin {
+		margin-top:5%;
+		text-align:center
+	}
+	.margenLista {
+		margin-bottom:5%
+	}
+	.estado3 {
+		margin-top:2%
+	}
+	.estado2 {
+		margin-bottom:0%
+	}
+	.imagen {
+	    width: 100%;
+	    display:none
+	} 
+	.input-p2 {
+	    margin-bottom: 4%;
+	}
+	.input-p3 {
+	    margin-bottom: 4%;
+	}
+	.espacio {
+   		margin-bottom: 1%;
+	}
+	.espacioBlanco {
+		display:none
+	}
+	.botones {
+		margin-top:2%
+	}
+	.infoP {
+		width:100%;
+  	    margin-top: 2%;
+  	    margin-bottom:3%
+	}
+}
+@media (max-width: 900px) {  
+	.input-p4 {
+	    margin-bottom: 3%;
+	}
+	.estado3 {
+	    margin-top: 1%;
+	}
+}
+@media (max-width: 850px) {  
+	.input-p4 {
+	    margin-bottom: 2%;
+	}
+	.estado3 {
+	    margin-top: 0%;
+	}
+}
+@media (max-width: 800px) {  
+	
+	.botones {
+	    margin-top: 1%;
+	}
+	.input-p4 {
+	    margin-bottom: 1%;
+	}
+}
+
+@media (max-width: 765px) {  
+	 
+	.input-p3 {
+	    margin-bottom: 11%;
+	    margin-top: 7%;
+	}
+	.input-p4 {
+	    margin-bottom: 4%;
+	    margin-top: 7%;
+	}
+	.espacio {
+	    margin-bottom: 3%;
+	    margin-top: 5%;
+	}
+}
+@media (max-width: 650px) {  
+	.input-p4 {
+	    margin-bottom: 3%;
+	    margin-top: 5%;
+	}
+	
+}
+@media (max-width: 510px) { 
+	.parte1 {
+		display: none; 
+	}
+	.partes {
+		display: inline
+	}
+	.partes1 {
+		margin-top:10%;
+		display: inline
+	}
+	.caja{
+		padding:10%
+	}
+	.nombre {
+		margin-top:10%
+	} 
+	.espacio, .espacio2 {
+    	margin-top: 5%;
+	} 
+	.input-p2 {
+	    margin-bottom: 2%;
+	    margin-top: 8%;
+	}
+	.espacioBlanco {
+		display:inline
+	}
+	.ldlcompra {
+		margin-top:13%
+	}
+	.input-p4 { 
+	    margin-top: 6%;
+	    margin-bottom: 0%;
+	}
+	.input-p3 { 
+	    margin-top: 6%;
+	}
+	.botones {
+	    margin-top: -2%;
+	} 
+	.ldlcompra {
+		margin-top:17%
+	}
+	.mb {
+	    margin-top: 1%;
+	    margin-bottom: 6%;
+	}
+}

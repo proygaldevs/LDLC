@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>uppie example</title>
+    <style>
+      body { font-family: sans-serif }
+      fieldset { display: inline-block }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Files</legend>
+      <input class="input" type="file" multiple/>
+    </fieldset>
+    <fieldset>
+      <legend>Directories</legend>
+      <input class="input" type="file" multiple directory webkitdirectory allowdirs/>
+    </fieldset>
+    <p>Drop files on this page or select them above. Detected file paths will be shown below.</p>
+    <pre class="output"></pre>
+    <script src="js/uppie.js"></script>
+    <script>
+      var uppie = new Uppie();
+
+      /* used on an input element */
+      uppie(document.querySelectorAll(".input"), function(event, formData, files) {
+        document.querySelector(".output").textContent = files.join("\n");
+        console.log(files);
+		
+		Array.prototype.forEach.call(files,function(f){
+          formData.append("paths[]",f);
+        });
+		
+		
+        console.log(formData);
+		
+      });
+
+      /* used on a dropzone element */
+      uppie(document.documentElement, function(event, formData, files) {
+        document.querySelector(".output").textContent = files.join("\n");
+        console.log(files);
+		
+		Array.prototype.forEach.call(files,function(f){
+          formData.append("paths[]",f);
+        });
+		
+		
+        console.log(formData);
+		
+		
+      });
+		
+	 
+    </script>
+  </body>
+</html>

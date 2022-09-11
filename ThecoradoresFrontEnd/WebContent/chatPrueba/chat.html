@@ -1,0 +1,699 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Chat - Decotheco</title>
+<meta name="description" content="Comunícate con los decoradores"> 
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css?versionCssJs=17">  
+<link rel="stylesheet" type="text/css" href="css/main.css?versionCssJs=17" media="all" />
+<style type="text/css">
+html,body {
+    margin:0;
+    padding:0;
+} 
+html,body{
+    -webkit-overflow-scrolling : touch !important;
+    overflow: auto !important;
+    height: 100% !important;
+}
+.unfixed {
+    position: relative;
+    left: auto;
+    bottom: auto;
+}
+#mc_embed_signup {
+	background: #fff;
+	clear: left;
+	font: 14px Helvetica, 'Lato', sans-serif, Arial, sans-serif;
+} 
+#barra {
+	width:75%;
+	position:fixed;
+	top:0;
+}
+.chatLista {
+	background-color:white;
+	display:block 
+}
+.chatListaMovil{
+    max-height: calc(100vh);
+    overflow-y:auto 
+}
+.notificacion {
+	float:right;
+	display:none;
+	border-radius:50%;
+	background-color:red;
+	width:25px;
+	height:25px;
+	text-align:center;
+	line-height:25px;
+	margin-left:0;    
+	padding-left: 2px;
+}
+body { 
+	padding-bottom: 20px;
+	background-color:#efefef
+}  
+.menu2 {
+	top:50px;
+	position:fixed;
+	padding:0;
+	background-color:#BEC4C1; 
+	height:55px;
+	z-index: 900;
+}
+.cajetinIzq {
+	text-aling:left
+}
+.cajetinIzq img{
+	height:30px;
+	width:auto;
+	margin:13px;
+	float:left;
+	cursor:pointer
+}
+.cajetinDer {
+	text-align: right
+}
+.cajetinDer img{
+	height:30px;
+	width:auto;
+	margin:13px;
+	float:right;
+	cursor:pointer
+}
+#nombreProyecto {
+	width:auto;
+	float:left;
+	color:white;
+	font-size:10px;
+	margin:20px;
+	margin-left:0;
+	margin-right:0
+}
+#estadoProyecto {
+	width:auto;
+	float:left;
+	color:white;
+	font-size:10px;
+	margin:20px; 
+	margin-left:0;
+	margin-right:0
+}
+.write {
+	float:right;
+	color:white;
+	font-size:10px;
+	margin:20px; 
+	margin-left:0;
+	margin-right:0;
+	text-align: right;
+	cursor:pointer
+} 
+#message-list {
+	margin-top:80px;
+	-webkit-box-shadow: inset 0px 0px 107px -30px rgba(196,193,193,1);
+	-moz-box-shadow: inset 0px 0px 107px -30px rgba(196,193,193,1);
+	box-shadow: inset 0px 0px 107px -30px rgba(196,193,193,1)
+}
+.nombre {
+	float:left;
+	width:auto;
+}
+.estado {
+	float:left;
+	width:auto;
+}
+#caraDecorador {
+	border-radius:50%;
+	border:1px solid white;
+	height:35px;
+	width:35px;
+	overflow:hidden;
+	margin:10px;
+	float:right
+}
+#caraDecorador img {
+	height: 35px;
+	width:auto;
+	float:left;
+	margin:0;
+}
+#botones_grandes_ {
+	margin-top:5%
+}
+.chatLista ul, .chatListaMovil ul{
+	list-style:none;    
+	margin: 0;
+    padding: 0;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    padding-left:0!important;
+    -webkit-margin-before: 0!important;
+    -webkit-margin-after: 0!important;
+    -webkit-margin-start: 0!important;
+    -webkit-margin-end: 0!important;
+    -webkit-padding-start:0!important;
+}
+.chatLista ul li, .chatListaMovil ul li{ 
+	margin-bottom:0px; 
+	padding:11px;
+	padding-left:16px;
+	text-transform:capitalize;
+	border-bottom:1px solid #efefef
+}
+.textarea-p4 {
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    height: 50px;
+    max-height: 100px;
+    padding:10px;
+	padding-left: 22px;
+    border: none;
+    float:left;
+    width:90%;
+	background-color:#c4c1c1;
+}
+#message-list {
+	height:auto;
+	padding-left: 20px; 
+	background-color:#efefef;
+	padding-top: 16px;
+	border-top:1px solid white;
+	border-bottom:1px solid white
+}
+#cerrarSesion img {
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #8c8686;
+}
+#listaProyectos {
+	display:none;
+	cursor:pointer
+} 
+.activo {
+	background-color:#eaeaea;
+}
+.linea {
+	display:none
+}
+#ulforsustitution {
+	background-color:#d9d9d9;
+	display:none;
+    float:left;    
+    padding-left: 0;
+    padding-bottom: 10px; 
+}
+#ulforsustitution ul li{
+	margin-bottom:15px; 
+}
+#ulforsustitution2 {
+	background-color:#d9d9d9;
+	display:block;
+    float:left;    
+    padding-left: 0;
+    padding-bottom: 10px; 
+}
+#ulforsustitution2 ul li{
+	margin-bottom:15px; 
+}
+.titulo {
+    line-height: 25px;
+    margin-left:7px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+    width:auto;
+    font-size:100%
+}
+.tituloProyecto {
+    line-height: 25px;
+    margin-left:7px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+    width:auto;
+    font-size:89%
+}
+.tituloIzq {
+	float:left;
+    line-height: 52px;
+    margin-left: 3px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 100%;
+}
+.navbar-toggle { 
+    background-color: white!important; 
+    margin-top: 6px!important;
+}
+.navbar-toggle .icon-bar {
+    background-color: grey!important;
+}
+#login-modal .modal-dialog {
+	width:350px
+}
+.modalLogin {
+    width: 100%;
+}
+#proyectosLista {
+	padding:0!important
+}
+.anchoModalProyectos {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%!important;
+	max-width:100%!important;
+	border:0!important;
+	height:100%!important;
+	margin:0!important; 
+	padding:0!important
+}
+.own-message { 
+	text-align:right;
+	width:auto;
+    max-width: 60%;
+    float: right;
+}
+.other-message {
+	text-align:right;
+	width:auto;
+    max-width: 60%;
+    float: left;
+}
+.anchoMsg {
+	width:100%;
+	float:left
+}
+.message-body {
+	margin-bottom:0
+}
+.other-message .bocadillo {
+	padding:6px 10px 0px 10px;
+	margin-bottom:20px;
+	background-color:#BEC4C1;
+	border-radius:5px;
+	float:left;
+}
+.letra-xxs {
+  font-size: 9px!important;
+}
+.own-message .bocadillo {
+	padding:6px 10px 0px 10px;
+	margin-bottom:20px;
+	background-color:#b3d2e8;
+	border-radius:5px;
+	float:right;
+	margin-right:20px;
+}
+.other-message .bocadillo .message-body{
+	float:left;
+}
+.other-message .bocadillo .message-date{
+	float:left;
+    margin-left: 20px!important;
+    margin-top: 4px;
+    padding-bottom:10px;
+}
+.other-message .bocadillo .message-date span, .own-message .bocadillo .message-date span{ 
+    letter-spacing: 1pt!important;
+}
+.own-message .bocadillo .message-body{
+	float:right;
+}
+.own-message .bocadillo .message-date{
+	float:right;
+    margin-right: 20px!important;
+    margin-top: 4px;;
+    padding-bottom:10px 
+}
+@media (max-width: 1200px) { 
+	 .menu2 {
+		height:auto 
+	}
+	.nombre {
+		width:100%;
+	}
+	.estado {
+		width:100%;
+	}
+	.cajetinDer {
+		text-align: left
+	}
+	.write, #estadoProyecto, #nombreProyecto  {
+		float:left;
+		text-align: left;
+		margin-left:10px;
+	}
+	#estadoProyecto {
+		width:85%;
+	}
+	.cajetinDer img{ 
+		float:left;
+	} 
+	#caraDecorador { 
+		float:left
+	}
+	#botones_grandes_ {
+		margin-top:16%
+	}
+}
+@media (max-width: 992px) {
+	
+	#barra {
+		width:100%;
+	}
+	.chatLista {
+		display:none
+	}
+	#listaProyectos {
+		display:block;
+	    margin-top: 20px!important;
+	}
+	#ulforsustitution {    
+		padding-top: 30px;
+	}
+	#login-modal .modal-dialog {
+		width:100%!important;
+		max-width:100%!important;
+		border:0!important;
+		height:100%!important;
+		margin:0!important;
+		padding:0!important
+	}
+}
+@media (max-width: 800px) {
+	#botones_grandes_ {
+		margin-top:175px
+	}
+	.titulo, .tituloIzq {
+    	font-size:85%
+    }
+	.tituloProyecto {
+    	font-size:75%
+    }
+	.own-message { 
+	    max-width: 80%;
+	}
+	.other-message {
+	    max-width: 80%;
+	}
+}
+@media (max-width: 600px) {}
+	.message-date {
+	    display: block!important;
+	}
+}
+@media (max-width: 1150px) { 
+	.navbar-collapse {
+		width:100%!important; 
+	}
+	#ulforsustitution {     
+		width:100%!important;
+		text-align: center
+	}
+	.dropdown-menu li {
+		width:100%!important;
+		text-align: center
+	}
+	.navbar-nav>li {
+	    float: left!important;    
+	    width: 100%;
+	} 
+}
+@media (max-width: 470px) {
+	#estadoProyecto {
+		width: 72%;
+   		margin: 3%;
+	} 
+	.titulo, .tituloProyecto {
+    	font-size:72%; 
+    }
+    .own-message .bocadillo .message-date { 
+	    margin-top: 3px; 
+	}
+	select,
+	  textarea,
+	  input {
+	    font-size: 16px!important;
+	  }
+	  
+	.textarea-p4 {
+		width:85%
+	}
+}
+</style>
+</head>
+<body id="fixedBody" style="overflow: hidden;">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0"
+		width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg>
+	<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+     
+	
+	
+	
+	<div class="chatLista col-xs-0 col-ms-0 col-md-3" style="padding:0;border-right:1px solid #c1bbbb;height:100%;position:fixed;top:0;left:0"> 
+		
+	</div>
+	
+	<div class="chat col-xs-12 col-sm-12 col-md-9" style="padding:0;position:fixed;right:0;top:0;height:100%"> 
+    </div> 
+	  
+	
+  	<!-- BEGIN # MODAL LOGIN -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;border:1px solid black">
+		<div class="modal-dialog anchoModal" style="height:auto;overflow:hidden;border:1px solid black;box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.11);background-color:white">
+			<div class="modal-content modalLogin">
+				<div class="fondoLogin" style="display:none;width:100%;"> 
+					<div class="modal-header" align="center"   style="margin-top:15px"> 
+					 
+					<h4 class="letra-l letra-mayusculas" style="position:relative"><a style="cursor:pointer;color:black" id="loguin">ACCEDE</a></h4>
+					 <br /> 
+					 </div> 
+				</div>
+				<div class="formLogin" style="display:inline">
+				<div class="modal-header" align="center"   style="margin-top:15px"> 
+					<h4 class="letra-l letra-mayusculas">ACCEDE</h4>
+					 <br />
+					
+				</div>
+
+				 
+				<div id="div-forms">
+					
+					 
+					<form id="login-form">
+					 
+						<div class="modal-body  form-inline" style="padding:0;"> 
+							<div id="div-login-msg">  
+								<span id="text-login-msg" style="border-bottom:0px"></span>
+							</div>
+							
+							<input id="login_username" class="form-control" style="width: 100%;" type="text"
+								placeholder="EMAIL*" required> <br/>
+							<input id="login_password" class="form-control" style="width: 100%;" type="password"
+								placeholder="CONTRASEÑA*" required>
+							<br/>
+							<div class="checkbox"  style="width:100%;;margin-top:10px">
+								<label class="mantenersesioniniciada" style="display: block;"> 
+								<input type="checkbox" id="check_login_recuerdame" style="width: 13px; height: 13px; padding: 0; vertical-align: bottom; position: relative; top: -4px;overflow: hidden;" checked> Mantener sesión iniciada
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer" style="padding:0;margin-top:20px">
+							<div>
+								<button type="submit"
+									class="botonesloginreglost btn btn-primary btn-m btn-block" style="width:100%;margin-left:0">ACCEDE</button>
+							</div>
+							<div class="btn btn-link letra-mayusculas" style="width:100%;text-align:left;color:black;letter-spacing:2pt!important;white-space: inherit;margin-top:5px;cursor:default">
+									¿NO TIENES CUENTA? REGÍSTRATE EN DECOTHECO.COM
+								</div>  
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+						</div>
+					</form>
+					 
+
+					 
+					<form id="lost-form" style="display: none;">
+					
+						<div class="modal-body">
+							<div id="div-lost-msg"> 
+								<span id="text-lost-msg"></span>
+							</div>
+							<input style="background-color: white;" id="lost_email" class="form-control" type="text"
+								placeholder="EMAIL*" required>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit"
+									class=" botonesloginreglost btn btn-primary btn-lg btn-block">Enviar
+									</button>
+							</div>
+							<div>
+								<button id="lost_login_btn" type="button" class="btn btn-link letra-mayusculas" style="color:black">LOGIN</button>
+								 
+							</div>
+						</div>
+					</form>
+				 	
+				 	<form id="register-form2" style="display: none;">
+					
+						<div class="modal-body form-inline" style="padding:0;">
+							<div id="div-register-msg2" class="">
+								 <span id="text-register-msg2" style="display: inline;"></span>
+							</div>
+							<input id="register_username2" class="form-control"   style="width: 89%;background-color: white;margin-top:0" type="text"
+								placeholder="NOMBRE*" required> 
+							<input
+								id="register_email2" class="form-control" style="width: 89%" type="text"
+								placeholder="EMAIL*" required/> 
+							<input
+								id="register_password2" class="form-control" style="width: 89%"  type="password"
+								placeholder="CONTRASEÑA*" required/>
+								
+							 <input
+								id="passwordsignup_confirm2" class="form-control" style="width: 89%"  type="password"
+								placeholder="REPETIR CONTRASEÑA*" required/>
+						    <div class="checkbox"  style="width:90%;margin-left:10%;margin-top:10px">
+								<label class="mantenersesioniniciada" style="display: block;"> 
+								<input type="checkbox" id="check_condiciones_recuerdame2" style="width: 13px; height: 13px; padding: 0;vertical-align: bottom; position: relative; top: -4px;overflow: hidden;" > Acepto <a style="cursor:pointer" onclick="aCondicionesFunction();" >términos y condiciones</a>
+								</label>
+							</div>
+							
+						</div>
+						<div class="modal-footer" style="margin-bottom:25px">
+							<div>
+								<button type="submit"
+									class=" botonesloginreglost btn btn-primary btn-lg btn-block letra-s" style="width:100%;margin-left:4%;padding: 6px 12px;">registrar
+								</button>
+								<div>
+									<button id="register_login_btn" type="button" class="btn btn-link letra-mayusculas" style="color:black;margin-left:4%">LOGIN</button>
+									 
+								</div>
+							</div>
+							 
+						</div>
+					</form>
+					 
+					 
+
+				</div>
+				 
+
+			</div> 
+			</div>
+		
+		 
+			 
+			</div> 
+		</div>
+		
+	</div> 
+	<div class="modal fade" id="cargando" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div style="max-width: 95%; width: 100%;" class="modal-dialog">
+				<div id="loading" class="col-xs-12" style=" height:200px; background: url(img/forHomeApp/default.svg) center center no-repeat;">
+				</div>
+		</div>
+	</div>  
+    
+	<div  style="padding-left:0;display: none" class="modal fade" id="proyectosLista" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog anchoModalProyectos" style="overflow:hidden;border:1px solid black;box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.11);background-color:white">
+				<div class="modal-content modalLogin"> 
+				<div style="width: 100%;margin:0!important;max-width:100%!important;padding:0!important" class="modal-dialog">
+						<div class="chatListaMovil">
+						</div>
+				</div>
+				</div>
+			</div>
+	</div>  
+    
+	
+	  
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> 
+	<script>
+		$('#cargando').modal('show'); 
+	</script>  
+	<script src="js/links.js?versionCssJs=17"></script>
+	<script src="js/login.js?versionCssJs=17"></script>  
+	<script src="js/chat.js?versionCssJs=17"></script> 
+	
+    <!-- Específicos del chat -->
+    <script src="chat/js/vendor/jquery-throttle.min.js"></script>
+    <script src="chat/js/vendor/jquery.loadTemplate-1.4.4.min.js"></script> 
+    <script src="chat/js/moment.min.js"></script>
+    <script src="chat/js/twilio-common.min.js"></script>
+    <script src="chat/js/twilio-chat.min.js"></script>
+	<script src="chat/js/twiliochat.js?versionCssJs=17"></script>
+    <script src="chat/js/dateformatter.js?versionCssJs=17"></script>
+	<script src="chat/js/actions.js?versionCssJs=17"></script>
+    
+	<script>
+	checkCookiepaso1();
+	</script>
+    
+	 
+	<script type="text/html" id="message-template">
+      
+    </script> 
+
+		  
+	<script>
+	$(window).resize(function() {
+		var altoChat=$(".chatLista").height();
+		$("#message-list").css("height",altoChat-140);
+		//$(".anchoModalProyectos").css("height",altoChat-80);
+		scrollDown(); 
+		$("#ulforsustitution").css("display", "none");
+		bandera=true;
+		var ventana_ancho = $(window).width();
+		if(ventana_ancho>991) { 
+			$("#proyectosLista").modal('hide');
+		}
+	})
+	$( document ).ready(function() {
+		$('input, textarea').on('focus', function(e) {
+		    e.preventDefault(); e.stopPropagation();
+		    window.scrollTo(0,0); 
+		});
+		window.addEventListener('native.keyboardshow', keyboardShowHandler); 
+		function keyboardShowHandler(e){
+		    setTimeout(function() {
+		        $('html, body').animate({ scrollTop: 0 }, 1000);
+		    }, 0);
+		}
+	});
+	</script> 
+</body>
+</html>

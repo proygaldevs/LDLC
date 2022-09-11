@@ -1,0 +1,226 @@
+.fondoPagar { 
+	width:100%;
+	height:350px;
+	background-image: url("../img/forPagar/fondo.jpg"); 
+	background-repeat:no-repeat; 
+	background-position: top; 
+	background-size:cover; 
+}
+.carrousel-izq {
+	float:left;
+	width:30%;
+	padding-left:3%;
+	padding-top:5%;
+	height:auto
+}
+.concepto {
+	    margin-top: 18%!important
+	}
+.carrousel-izq font{ 
+	text-align:left;
+	display:table-cell;vertical-align: top;
+	padding-left:2%;
+	float:left; 
+}
+.izq {
+	width:100%;
+	float:left
+}
+.letra {
+	font-size: calc(14px + .5vw)!important;
+	-webkit-transform:none;
+	transform:none
+} 
+.carrousel-der {
+	float:left;
+	width:70%;
+	border-left:1px solid #000;
+}
+.carrousel-der img {
+	margin-top:4%;
+	max-width: 20%;
+} 
+.enjoy img{
+	margin-top:8%;
+	width:100%;  
+} 
+.ventajas {
+	width:95%;
+	margin-left:5%;
+	padding-right:5%;
+	padding-bottom:10%;
+	float:left
+}
+.ventajas .a-ventaja, .au-ventaja{
+	float:left;
+	width:20%; 
+}
+.ventajas img{  
+	width:100%; 
+	float:left
+}  
+.contratarbutton { 
+	bottom:2%;
+	z-index: 1;  
+	padding-top: 40px; 
+	text-align: center; 
+	
+}
+.separacionSuperior2 {
+	margin-top:7%
+}
+.separacionSuperior {
+	margin-top:3%
+}
+.adaptarFondo {
+	background-color:white;
+	width:60%;
+	margin-left:20%;
+	margin-bottom:0
+} 
+.precio2 {
+	padding-top:11%; 
+	text-align:center;
+	background-color:white;
+	width:60%;
+	margin-left:20%;
+	font-weight:bold;
+	margin-bottom:0;
+}
+.precio3 { 
+	background-color:white;
+	text-align:center;
+	width:60%;
+	margin-left:20%;
+	font-weight:bold;
+	margin-bottom:0;
+}
+@media (max-width: 1650px) {  
+	.letra {
+	font-size: calc(16px + .5vw)!important;
+    }
+}
+ 
+@media (max-width: 1300px) {  
+	.separacionSuperior2 {
+		margin-top:8%
+	}
+}
+@media (max-width: 1200px) { 
+	.concepto-der{ 
+		line-height: 2.1; 
+	}
+	.separacionSuperior2 {
+		margin-top:9%
+	}
+}
+@media (max-width: 1000px) { 
+ 	.concepto {
+	    margin-top: 18%!important
+	}
+	.separacionSuperior3 {
+		margin-top:15%
+	} 
+	.separacionSuperior2 {
+		margin-top:8%
+	}
+	.fondo {
+		height:300px;
+	}
+    .carrousel-izq {   
+		float:left;
+		width:100%;
+		text-aling:center
+	}
+	.izq { 
+		padding-left:30%;
+	}
+	.letra {
+		font-size: calc(18px + .5vw)!important;
+	}
+	.carrousel-izq font{ 
+		padding-bottom:5%; 
+	    padding-left:2%; 
+	} 
+	.carrousel-der {
+		float:left;
+	    width:100%;
+	    padding-top:5%;
+	    padding-bottom:5%;
+		border-left:0px;
+		border-top:1px solid #000
+	}
+	.carrousel-der img {
+		margin-top:4%;
+		max-width: 50%;
+	} 
+	.ventajas { 
+		margin-left:5%; 
+		padding-bottom:10%
+	}
+	.ventajas .a-ventaja{ 
+		float:left;
+		width:33%; 
+	}
+	.ventajas .au-ventaja{ 
+		float:left;
+		width:50%;
+		padding-left:0%;
+	}
+	.ventajas img{  
+		width:100%; 
+		float:left; 
+		text-align:center;
+		margin-bottom:25%
+	} 
+	.ventajas .au-ventaja img{  
+		width:75%;  
+	}  
+	.precio1 {
+		padding-top:0;
+		width:80%;
+		margin-left:10%;
+	}
+	.precio2 {
+		padding-top:0; 
+		width:80%;
+		margin-left:10%;
+	} 
+	.precio3 {  
+		width:80%;
+		margin-left:10%; 
+	}
+}
+
+@media (max-width: 800px) { 	
+	.izq { 
+		padding-left:25%;
+	}
+}
+@media (max-width: 600px) { 
+	.izq { 
+		padding-left:20%;
+	}  
+	.separacionSuperior2 {
+		margin-top:5%
+	} 
+}
+@media (max-width: 400px) { 
+	.izq { 
+		padding-left:0%;
+		margin-left:0%
+	}
+	
+	.separacionSuperior2 {
+		margin-top:14%
+	} 
+}
+@media (max-width: 300px) { 
+	.separacionSuperior2 {
+		margin-top:20%
+	} 
+	.izq { 
+		padding-left:0%;
+		margin-left:-5%
+	}
+} 

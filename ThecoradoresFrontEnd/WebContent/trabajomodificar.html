@@ -1,0 +1,726 @@
+<!DOCTYPE html >
+<!--[if lt IE 7 ]> <html lang="es"  class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="es"  class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="es"  class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="es"  class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="es"  class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Modificar proyecto - DecoTheCoradores</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Completa el proyecto, cuantas más etiquetas e imágenes subas, más posibilidades."/>
+		<link rel="canonical" href="http://decoradores.decotheco.com/trabajomodificar.html" />
+        <meta name="keywords" content="decoracion, interiorismo, diy, diseño" />
+        <meta name="author" content="DecoTheco" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+		<meta name="pinterest" content="nohover" /> 
+		<link rel="stylesheet" href="css/bootstrap.min.css?versionCssJs=17"/> 
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css?versionCssJs=17"/> 
+		<link rel="stylesheet" type="text/css" href="css/main.css?versionCssJs=17" />
+		<link rel="stylesheet" type="text/css" href="css/fonts.css?versionCssJs=17" />
+		<link rel="stylesheet" href="css/dropzone.min.css?versionCssJs=17" type="text/css">
+		<link rel="stylesheet" href="css/buttons.css?versionCssJs=17"/>
+		<link rel="stylesheet" href="css/perfil.css?versionCssJs=17"/>
+		<link rel="stylesheet" href="css/trabajomodificar.css?versionCssJs=17"/>
+		<style>
+		.modal-dialog{
+			z-index:5000
+		}
+		textarea {
+			overflow-x:hidden
+		}
+		.tt-menu {
+			background-color:white;
+			border:1px solid black
+		}
+		.tt-dataset {
+			cursor:pointer
+		}
+		@media (max-width: 768px){  
+				.navbar-collapse {
+				    width: 100%!important;
+				}
+				#ulforsustitution {
+					width:100%!important;
+					text-align:center
+				}
+				.dropdown-menu li, .navbar-nav .open .dropdown-menu>li>a {
+					text-align:center;
+					color: black!important;
+				}
+		}
+		</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108225209-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108225209-1');
+</script>
+<script language="JavaScript" type="text/javascript">
+		var cerramosONo=false;
+		// var myEvent = window.attachEvent || window.addEventListener;
+		// var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make IE7, IE8 compitable
+		window.addEventListener("beforeunload", function (e) {
+			if(cerramosONo){
+				
+				var confirmationMessage = "\o/";
+				
+		
+				  e.returnValue = confirmationMessage;     // Gecko, Trident, Chrome 34+
+				  return confirmationMessage;              // Gecko, WebKit, Chrome <34
+			}else return;
+			
+		  
+		})
+</script>
+</head>
+<body onload="login('modificarProyecto')" >
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0"
+		width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg>
+<div class="supreme-container">
+		<nav class="navbar navbar-default navbar-fixed-top bordeInferior"
+		role="navigation" style="z-index: 5001;">
+		<div class="container-fluid">
+			<!-- Title -->
+			<div class="navbar-header pull-left">
+				<a style="padding-top: 0px;" class="navbar-brand letramodificada"
+					href="javascript:alahomeCom()"><img style="width: 140px;"
+					src="img/other/decotheco-logo.svg" alt="Decotheco"></a>
+			</div>
+
+			<div class="navbar-header  pull-right">
+
+				<button type="button" data-toggle="collapse"
+					data-target=".navbar-collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<!--                      pull-right keeps the drop-down in line -->
+				<ul id="ulforsustitution" class="nav navbar-nav pull-right ">
+				
+						<li><a
+							class=" colornegro letraArial  interspaciado_2  separacionnavbar"
+							href="javascript:alresto('/home.html')">HOME</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/como-funciona.html')">COMO FUNCIONA</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/facturacion.html')">FACTURACIÓN</a></li> 
+						<li id="liforsustitution" ><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar" data-toggle="modal"
+							href="#" data-target="#login-modal">INICIAR	SESIÓN</a></li>
+
+				</ul>
+			</div>
+
+
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+<!-- FIN NAV -->
+    
+    <div class="col-xs-12"  style="margin-top:90px;padding:0">
+		 
+    
+    	<div class="form_formularios text-center fondo col-xs-12" style=" padding:3% 7% 3% 7%;background-color:transparent;margin-top:1%;">
+				 	  
+				<div style="padding:2%;background-color:#fdfdfd;opacity: 0.8;filter:  alpha(opacity=80);" class="col-xs-12">	
+					<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								ETIQUETAS
+							</span>
+						</h3> 
+						<input type="text" class="form-control token-input ui-autocomplete-input inputLinea letra-s text-center" id="tokenfield-typeahead" placeholder="Escribe una etiqueta y pulsa enter"/>
+							
+							
+							
+					</div>
+					
+					<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								NOMBRE DEL PROYECTO
+							</span>
+						</h3> 
+							
+							
+							<input id="input_titulo" type="text"
+							class=" inputLinea letra-s col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center"
+							placeholder="Decoración de salón"></input>
+					</div>
+					<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								¿CÓMO DESCRIBIRÍAS ESTE PROYECTO?
+							</span>
+						</h3> 	
+							 
+							<textarea id="input_texto"
+								class="letrainputformularios letra-s col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 text-center"
+								style="border:1px solid black;padding-top: 10px; padding-bottom: 10px; height: 100px; background-color: rgba(1, 1, 1, 0);"
+								placeholder="Se trata de un espacio abierto y luminoso. La distribución del espacio se orientó a las vistas..."></textarea>
+					 
+						
+					</div>
+					 
+					
+					<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								¿QUIERES QUE ESTE PROYECTO SEA VISIBLE PARA LOS USUARIOS?
+							</span>
+						</h3> 	
+							<input type="checkbox" class="letra-s" id="cb1" value="1"/> <span class="letra-s">ACTIVADO</span></input>
+							 
+						
+					</div>  
+					<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								ESCOGE UNA IMAGEN PRINCIPAL PARA TU TRABAJO
+							</span>
+						</h3> 	
+							<form action="FileUploadHandler" id="mydropzonePropuesta1"
+							class="dropzone estilo_bordes_completos letrainputformularios letra-s"
+							method="post" enctype="multipart/form-data" style="border:1px solid black;">
+
+								<div class="letrainputformularios" id="dropzonePreview"></div>
+							</form> 
+						
+					</div>  
+					 
+					<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								MÁS IMÁGENES SOBRE TU PROYECTO
+							</span>
+						</h3> 	
+							<form action="FileUploadHandler" id="mydropzonePropuesta3"
+							class="dropzone estilo_bordes_completos letrainputformularios letra-s"
+							method="post" enctype="multipart/form-data" style="border:1px solid black">
+
+								<div class="letrainputformularios" id="dropzonePreview"></div>
+	
+							</form> 
+						
+					</div>   
+					<br/><br/>
+
+					<div style="display: block; margin: 0 auto;" class="col-xs-12">
+					<button style="display: block; margin: 0 auto; margin-top:3%;max-width: 150px"
+						onclick="saveTrabajo()"
+						class="botonesloginreglost btn btn-primary btn-lg btn-block">Guardar</button>
+
+					 
+					</div>
+				</div>
+		</div>
+	</div>
+						
+ 
+</div>	
+     
+    	
+ 
+<div class="modal fade" id="cargando" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	<div style="max-width: 95%; width: 100%;" class="modal-dialog">
+			<div id="loading" class="col-xs-12" style=" height:200px; background: url(img/other/default.svg) center center no-repeat;">
+			</div>
+	</div>
+</div>	
+<!-- COMIENZO FOOTER -->
+ 
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/css/tokenfield-typeahead.css?versionCssJs=17">
+  		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/css/bootstrap-tokenfield.css?versionCssJs=17">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- <script src="js/footer.js"></script> -->
+	<script src="js/links.js?versionCssJs=17"></script> 
+	<script src="js/bootstrap-dialog.min.js?versionCssJs=17"></script>
+	<script src="js/trabajomodificar.js?versionCssJs=11"></script>
+	<script src="js/vendor/dropzone.js?versionCssJs=17"></script>
+	<script src="js/main.js?versionCssJs=17"></script>
+	<script src="js/barra.js?versionCssJs=17"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.1/typeahead.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/bootstrap-tokenfield.js"></script>
+	<script src="js/typeahead.js"></script>
+	<script>
+	var namefor1='';
+	var namefor2='';
+	var namefor3='';
+	var j=0;
+	var k=0;
+	var addingAutoFiles=true;
+	Dropzone.autoDiscover = false;
+	Dropzone.options.mydropzonePropuesta1 = {
+			// access Dropzone here
+			headers: {'Cache-Control': null,'X-Requested-With': null}, addRemoveLinks : false,
+			autoProcessQueue : true, // this is important as you dont want form to be submitted unless you have clicked the submit button
+			autoDiscover : false,
+			paramName : 'pic', // this is similar to giving name to the input type file like <input type="file" name="pic" />
+			// previewsContainer: '#dropzonePreview', // we specify on which div id we must show the files
+			clickable : true, // this tells that the dropzone will not be clickable . we have to do it because v dont want the whole form to be clickable 
+			maxFilesize : 2,
+			acceptedFiles: ".jpeg,.jpg,.png,.gif,.svg",
+			parallelUploads : 1,
+			maxFiles:1,
+			renameFilename: function (filename) {
+				//alert("renameFilename"+filename);
+				if(filename.indexOf('jpeg') != -1)
+					filename=filename.replace("jpeg", "jpg");
+				if(filename.indexOf('JPEG') != -1)
+					filename=filename.replace("JPEG", "jpg");
+				if(addingAutoFiles==false){
+					if(filename.indexOf('.pdf') != -1)
+						namefor1= 'main_izq' + new Date().getTime() +'.pdf';
+					else namefor1= 'main_izq' + new Date().getTime() + filename.substr(filename.length - 4);
+					return namefor1;
+				}else return filename;
+				
+	        }, 
+			accept : function(file, done) {
+				//alert("acceppt");
+				console.log("uploaded");
+				done();
+			},
+			error : function(file, msg) {
+
+				BootstrapDialog.alert(msg);
+				this.removeFile(file);
+			},
+			init : function() {
+
+				this
+						.on(
+								"success",
+								function(file,response) {
+									//alert("success " + file.name);
+									console.log(file);
+									var _this = this;
+									//alert("el remove del added"+response);
+									/* Maybe display some more file information on your page */
+									var removeButton = Dropzone
+											.createElement("<button data-dz-remove " +
+				              "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;top: -12px;left: -14px;    z-index: 2000;'><span class='glyphicon glyphicon-remove glyph-background'></span></button>");
+
+									removeButton
+											.addEventListener(
+													"click",
+													function(e) {
+														e.preventDefault();
+														e.stopPropagation();
+														var server_file = $(
+																file.previewTemplate)
+																.children(
+																		'.server_file')
+																.text();
+														// Do a post request and pass this path and use server-side language to delete the file
+														//          $.post(server_file,{'X-CSRFToken': $cookies.csrftoken}, 'json');
+														// alert(server_file);
+														var imageId2 = $(this).parent().find(".dz-filename > span").text();
+														deleteFile("decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+																+ imageId2);
+																
+														_this.removeFile(file);
+													});
+									file.previewElement
+											.appendChild(removeButton);
+
+									var downloadbutton = Dropzone
+									.createElement("<button data-dz-download " +
+				      "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;left: -14px;    z-index: 2000; '><span class='glyphicon glyphicon-chevron-down glyph-background'></span></button>");
+
+									downloadbutton.addEventListener("click",
+									function(e) {
+										//alert("download: "+file.name);
+										e.preventDefault();
+										e.stopPropagation();
+										var useron = decorador.mail;
+										var imageId2 = $(this).parent().find(".dz-filename > span").text();
+										var urlforimage = urlbuckets3 + "decoradores/" + useron + "/trabajos/"+trabajo.id+"/"
+												+ imageId2;
+										console.log(urlforimage);
+										window.open(urlforimage);
+									});
+							file.previewElement
+									.appendChild(downloadbutton);
+								});
+
+				this.on('addedfile' , function(file){
+					//alert("addedfile " +file.name);
+					console.log(file);
+					
+
+				});
+				this.on("complete", function (file) {
+					if(k==5){
+						cerramosONo=false;
+						}
+		        })
+				this.on('processing', function(file) {
+					//alert("processing " + file.name);
+					var usernameforajax = "temp";
+					var nombreproyectoforajax = decorador.mail;
+					var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+							+ namefor1;
+					var seccion = "propuestas";
+					this.options.url = urlbaseForAjax+"/"+"FileUploadHandler?user="
+							+ usernameforajax + "&proyecto="
+							+ nombreproyectoforajax + "&seccion=" + seccion + "&ruta=" + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+							+ namefor1;
+
+					k=5;
+					cerramosONo=true;
+				});
+			}
+		};
+
+
+	 
+
+	Dropzone.options.mydropzonePropuesta3 = {
+			// access Dropzone here
+			headers: {'Cache-Control': null,'X-Requested-With': null}, addRemoveLinks : false,
+			autoProcessQueue : true, // this is important as you dont want form to be submitted unless you have clicked the submit button
+			autoDiscover : false,
+			paramName : 'pic', // this is similar to giving name to the input type file like <input type="file" name="pic" />
+			// previewsContainer: '#dropzonePreview', // we specify on which div id we must show the files
+			clickable : true, // this tells that the dropzone will not be clickable . we have to do it because v dont want the whole form to be clickable 
+			maxFilesize : 2,
+			acceptedFiles: ".jpeg,.jpg,.png,.gif,.svg",
+			parallelUploads : 1,
+			maxFiles:10,
+			renameFilename: function (filename) {
+				//alert("renameFilename"+filename);
+				if(filename.indexOf('jpeg') != -1)
+					filename=filename.replace("jpeg", "jpg");
+				if(filename.indexOf('JPEG') != -1)
+					filename=filename.replace("JPEG", "jpg");
+				if(addingAutoFiles==false){
+					if(filename.indexOf('.pdf') != -1)
+						namefor1= new Date().getTime() + '.pdf';
+					else namefor1= new Date().getTime() + filename.substr(filename.length - 4);
+					return namefor1;
+				}else return filename;
+				
+	        }, 
+			accept : function(file, done) {
+				//alert("acceppt");
+				console.log("uploaded");
+				done();
+			},
+			error : function(file, msg) {
+
+				BootstrapDialog.alert(msg);
+				this.removeFile(file);
+			},
+			init : function() {
+
+				this
+						.on(
+								"success",
+								function(file,response) {
+									//alert("success " + file.name);
+									console.log(file);
+									var _this = this;
+									//alert("el remove del added"+response);
+									/* Maybe display some more file information on your page */
+									var removeButton = Dropzone
+											.createElement("<button data-dz-remove " +
+				              "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;top: -12px;left: -14px;    z-index: 2000;'><span class='glyphicon glyphicon-remove glyph-background'></span></button>");
+
+									removeButton
+											.addEventListener(
+													"click",
+													function(e) {
+														e.preventDefault();
+														e.stopPropagation();
+														var server_file = $(
+																file.previewTemplate)
+																.children(
+																		'.server_file')
+																.text();
+														// Do a post request and pass this path and use server-side language to delete the file
+														//          $.post(server_file,{'X-CSRFToken': $cookies.csrftoken}, 'json');
+														// alert(server_file);
+														var imageId3 = $(this).parent().find(".dz-filename > span").text(); 
+														 
+														if(file.fecha==undefined){
+															deleteFile("decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+																	+ imageId3);
+														} else {
+															deleteFile("decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+																	+ file.fecha);
+														}  
+																
+														_this.removeFile(file);
+													});
+									file.previewElement
+											.appendChild(removeButton);
+
+									var downloadbutton = Dropzone
+									.createElement("<button data-dz-download " +
+				      "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;left: -14px;    z-index: 2000; '><span class='glyphicon glyphicon-chevron-down glyph-background'></span></button>");
+
+									downloadbutton.addEventListener("click",
+									function(e) {
+										//alert("download: "+file.name);
+										e.preventDefault();
+										e.stopPropagation();
+										var useron = decorador.mail;
+										var imageId3 = $(this).parent().find(".dz-filename > span").text();
+										if(file.fecha==undefined) { file.fecha=imageId3; }
+										var urlforimage = urlbuckets3 + "decoradores/" + useron + "/trabajos/"+trabajo.id+"/"
+												+ file.fecha; 
+										window.open(urlforimage);
+									});
+							file.previewElement
+									.appendChild(downloadbutton);
+								});
+
+				this.on('addedfile' , function(file){
+					//alert("addedfile " +file.name);
+					console.log(file);
+					
+
+				});
+				this.on("complete", function (file) {
+					if(j==5){
+						cerramosONo=false;
+						}
+		        })
+				this.on('processing', function(file) {
+					file.fecha=namefor1; 
+					//alert("processing " + file.name);
+					var usernameforajax = "temp";
+					var nombreproyectoforajax = decorador.mail;
+					var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+							+ file.fecha;
+					var seccion = "propuestas";
+					this.options.url = urlbaseForAjax+"/"+"FileUploadHandler?user="
+							+ usernameforajax + "&proyecto="
+							+ nombreproyectoforajax + "&seccion=" + seccion + "&ruta=" + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+							+ file.fecha;
+					j=5;
+					cerramosONo=true;
+
+				});
+			}
+		};
+	
+		
+		var mydropzonePropuesta1 ; 
+		var mydropzonePropuesta3 ;
+		
+		function cargarDropzonePlanos(nuevo) {
+			
+			if(nuevo==true){
+				console.log("cargarDropzonePlanos  -  nuevo==true");
+				
+				 mydropzonePropuesta1 = new Dropzone("#mydropzonePropuesta1"); 
+				 mydropzonePropuesta3 = new Dropzone("#mydropzonePropuesta3");
+			}else{
+				
+				console.log("cargarDropzonePlanos  -  nuevo no es true");
+
+				
+			 mydropzonePropuesta1 = new Dropzone("#mydropzonePropuesta1");
+			 console.log(trabajo);
+				if(trabajo.imagenesTrabajos!=null && trabajo.imagenesTrabajos.length>=1  ){
+			 for (var i = 0; i < trabajo.imagenesTrabajos.length; i++) {
+				 if(trabajo.imagenesTrabajos[i].indexOf('main_izq') == -1)
+						continue;
+					
+					//alert("planos"+projectObject.informations[0].filesPlanos[i]);
+					 var fileforremove;
+					var file = {
+						name : trabajo.imagenesTrabajos[i],
+						size : 1000000,
+						status : Dropzone.ADDED,
+						accepted : true
+					};
+					mydropzonePropuesta1.emit("addedfile", file);
+					console.log(decorador.mail);
+					console.log(trabajo.id);
+					console.log(trabajo.imagenesTrabajos[i]);
+					var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+							+ trabajo.imagenesTrabajos[i];
+					//alert("la imagen que cargo de planos es: "+urlforimage);
+					mydropzonePropuesta1.createThumbnailFromUrl(file, urlforimage, function() {
+						mydropzonePropuesta1.emit("complete", file);
+	  }, "anonymous");
+					mydropzonePropuesta1.emit("complete", file);
+					/* mydropzonePropuesta1.createThumbnailFromUrl(file, urlforimage);
+					//this.emit("thumbnail", file, "http://192.168.1.100:8444/OnlineAssistance/img/1464802792570.png");
+					mydropzonePropuesta1.emit("complete", file);*/
+					mydropzonePropuesta1.files.push(file); 
+					 var _this = mydropzonePropuesta1;
+					var removeButton = Dropzone.createElement("<button data-dz-remove " +
+					              "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;top: -12px;left: -14px; z-index: 2000;'><span class='glyphicon glyphicon-remove glyph-background'></span></button>");
+
+					removeButton.addEventListener("click", function (e) {
+					 e.preventDefault();
+					 e.stopPropagation();
+					 var imageId = $(this).parent().find(".dz-filename > span").text();
+					 // Do a post request and pass this path and use server-side language to delete the file
+					 //          $.post(server_file,{'X-CSRFToken': $cookies.csrftoken}, 'json');
+					 deleteFile("decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+								+ imageId);
+					 
+					  console.log("nombrede la imagen");
+					  console.log(imageId);
+					  console.log("mydropzonePropuesta1 : " + mydropzonePropuesta1.files.length);
+					 
+					  for (var j = 0; j < mydropzonePropuesta1.files.length; j++) {
+							if(mydropzonePropuesta1.files[j].name == imageId) fileforremove=mydropzonePropuesta1.files[j];
+					  }
+					  console.log(fileforremove.name);
+					  mydropzonePropuesta1.removeFile(fileforremove);
+					});
+					//alert("inserto: "+i );
+					file.previewElement.appendChild(removeButton); 
+					var downloadbutton = Dropzone
+					.createElement("<button data-dz-download " +
+      "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;left: -14px;    z-index: 2000; '><span class='glyphicon glyphicon-chevron-down glyph-background'></span></button>");
+
+					downloadbutton.addEventListener("click",
+					function(e) { 
+						e.preventDefault();
+						e.stopPropagation();
+						var useron = "temp";
+						var imageId = $(this).parent().find(".dz-filename > span").text(); 
+						  for (var j = 0; j < mydropzonePropuesta1.files.length; j++) {
+								if(mydropzonePropuesta1.files[j].name == imageId) fileforremove=mydropzonePropuesta1.files[j];
+						  }
+						  
+						  var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+						  + fileforremove.name
+						console.log(urlforimage);
+						window.open(urlforimage);
+						
+					});
+			file.previewElement
+					.appendChild(downloadbutton);
+				}
+			
+					
+				}
+
+
+				 
+
+
+
+					 mydropzonePropuesta3 = new Dropzone("#mydropzonePropuesta3");
+					 if(trabajo.imagenesTrabajos!=null && trabajo.imagenesTrabajos.length>=1  ){
+						 for (var i = 0; i < trabajo.imagenesTrabajos.length; i++) {
+							 if(trabajo.imagenesTrabajos[i].indexOf('main_izq') != -1)
+									continue;
+							 if(trabajo.imagenesTrabajos[i].indexOf('main_der') != -1)
+									continue;
+							//alert("planos"+projectObject.informations[0].filesPlanos[i]);
+							 var fileforremove;
+							var file = {
+								name : trabajo.imagenesTrabajos[i],
+								size : 1000000,
+								status : Dropzone.ADDED,
+								accepted : true
+							};
+							mydropzonePropuesta3.emit("addedfile", file);
+							
+							var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+									+ trabajo.imagenesTrabajos[i];
+							//alert("la imagen que cargo de planos es: "+urlforimage);
+							mydropzonePropuesta3.createThumbnailFromUrl(file, urlforimage, function() {
+								mydropzonePropuesta3.emit("complete", file);
+			  }, "anonymous");
+							mydropzonePropuesta3.emit("complete", file);
+							/* mydropzonePropuesta3.createThumbnailFromUrl(file, urlforimage);
+							//this.emit("thumbnail", file, "http://192.168.1.100:8444/OnlineAssistance/img/1464802792570.png");
+							mydropzonePropuesta3.emit("complete", file);*/
+							mydropzonePropuesta3.files.push(file); 
+							 var _this = mydropzonePropuesta3;
+							var removeButton = Dropzone.createElement("<button data-dz-remove " +
+							              "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;top: -12px;left: -14px; z-index: 2000;'><span class='glyphicon glyphicon-remove glyph-background'></span></button>");
+
+							removeButton.addEventListener("click", function (e) {
+							 e.preventDefault();
+							 e.stopPropagation();
+							 var imageId = $(this).parent().find(".dz-filename > span").text();
+							 // Do a post request and pass this path and use server-side language to delete the file
+							 //          $.post(server_file,{'X-CSRFToken': $cookies.csrftoken}, 'json');
+							 deleteFile("decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+										+ imageId);
+							 
+							  console.log("nombrede la imagen");
+							  console.log(imageId);
+							  console.log("mydropzonePropuesta3 : " + mydropzonePropuesta3.files.length);
+							 
+							  for (var j = 0; j < mydropzonePropuesta3.files.length; j++) {
+									if(mydropzonePropuesta3.files[j].name == imageId) fileforremove=mydropzonePropuesta3.files[j];
+							  }
+							  console.log(fileforremove.name);
+							  mydropzonePropuesta3.removeFile(fileforremove);
+							});
+							//alert("inserto: "+i );
+							file.previewElement.appendChild(removeButton); 
+							var downloadbutton = Dropzone
+							.createElement("<button data-dz-download " +
+		      "class='del_thumbnail btn btn-default' style='-webkit-appearance: none;outline: none;border: 0;background: transparent; position: absolute;left: -14px;    z-index: 2000; '><span class='glyphicon glyphicon-chevron-down glyph-background'></span></button>");
+
+							downloadbutton.addEventListener("click",
+							function(e) {
+								e.preventDefault();
+								e.stopPropagation();
+								var useron = "temp";
+								var imageId = $(this).parent().find(".dz-filename > span").text(); 
+								  for (var j = 0; j < mydropzonePropuesta3.files.length; j++) {
+										if(mydropzonePropuesta3.files[j].name == imageId) fileforremove=mydropzonePropuesta3.files[j];
+								  }
+								  var urlforimage = urlbuckets3 + "decoradores/" + decorador.mail + "/trabajos/"+trabajo.id+"/"
+								  + fileforremove.name
+								console.log(urlforimage);
+								window.open(urlforimage);
+							});
+					file.previewElement
+							.appendChild(downloadbutton);
+						}
+					
+							
+						}
+						
+			
+			addingAutoFiles=false;
+			}
+		}
+	</script>
+
+</body>
+</html>
