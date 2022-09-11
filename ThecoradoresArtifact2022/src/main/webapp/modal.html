@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MODAL</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+		<script type="text/javascript" src="js/jquery.min.js?versionCssJs=17"></script>
+		<script type="text/javascript" src="js/bootstrap.js?versionCssJs=17"></script>
+        
+		<link rel="stylesheet" href="css/bootstrap.css?versionCssJs=17">
+        <link rel="stylesheet" href="css/estilo.css?versionCssJs=17" type="text/css">
+        <script type="text/javascript" src="js/login.js?versionCssJs=17" ></script>
+        <style>
+        input:-webkit-autofill {
+   			-webkit-box-shadow: 0 0 0 30px white inset;
+  		}
+        .modal-header {
+        	border-bottom:0
+        }
+        .modal-body {
+        	width:90%;
+        	margin-left:5%
+        }
+        input[type="text"], input[type="password"] {
+        	width:93%
+        }
+        .modal-footer {
+        	width:93%;
+        	border:0;
+        	background-color:white
+        } 
+        .buttonstandard_invertido  {
+        	overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: inline-block;
+		    padding-top: 5px;
+		    padding-bottom: 2px;
+		    padding-left: 5px;
+		    padding-right: 5px;
+		    text-transform: uppercase;
+		    letter-spacing: 5px;
+		    width: 93%;
+		    max-width: 100%;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    cursor: pointer;
+		    text-decoration: none;
+		    -moz-user-select: none;
+		    background-image: none;
+		    border: 1px solid rgba(0, 0, 0, 1);
+		    border-radius: 1px;
+		    transition: all 0.3s ease 0s;
+		    line-height: 1.75;
+		    color: white;
+		    background-color: black;
+        }
+        .buttonstandard_invertido:hover { 
+        	text-decoration: none;
+		    background-color: white;
+		    color: black;
+        }
+        </style>
+</head>
+<body onload="login()">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg>
+<div id="elcontainerfluid" class=" conefectos supreme-container container-fluid" style="padding-right: 0px; padding-left: 0px;">
+	<div onclick="modalLogin()" style="width: 200px; height:200px; cursor:pointer" >
+		LEVANTAR MODAL
+	</div>
+</div>
+
+<!-- MODAL LOGIN -->
+ <div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header" align="center">
+				<a style="position: absolute;right: 3px; top: 0px; color: black; cursor: pointer;" data-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i></a>
+				
+				<h4 class="letra-xxl letra-mayusculas">Accede!</h4>
+				<div style="width: 100%; text-align: center; padding-top: 3px; padding-bottom: 15px;padding-left: 1.5vw; padding-right: 1.5vw;  ">
+					<div style="width: 90%; text-align: center; border-bottom-style: solid;  border-bottom-width: thin; "></div>
+				</div> 
+			</div>
+
+			<!-- Begin # DIV Form -->
+			<div id="div-forms">
+
+				<!-- Begin # Login Form -->
+				<form id="login-form">
+					<div class="modal-body">
+						<div id="div-login-msg">
+							<div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div> 
+							<span id="text-login-msg"></span>
+						</div>
+						<input style="background-color: white;" id="login_username" class="form-control" type="text"
+							placeholder="EMAIL*" required> <input
+							id="login_password" class="form-control" type="password"
+							placeholder="CONTRASEÑA*" required>
+							<br/>
+						<div class="checkbox">
+							<label class="mantenersesioniniciada"> <input
+								type="checkbox" id="check_login_recuerdame" checked>Mantener sesion iniciada
+							</label>
+						</div>
+					</div><br/>
+					<div class="modal-footer" style="padding:0;padding-bottom:15px">
+						<div>
+							<button type="button" onclick="loguear()"
+								class="buttonstandard_invertido ">ENTRAR</button>
+						</div>
+						<div style="margin-top:3%">
+							<button id="login_lost_btn" type="button" class="btn btn-link letra-mayusculas" style="color:black">¿Olvidaste
+								tu contraseña?</button>
+							<button id="login_register_btn" type="button"
+								class="btn btn-link letra-mayusculas" style="color:black">Registrar</button>
+						</div>
+					</div>
+				</form>
+				<!-- End # Login Form -->
+
+				<!-- Begin | Lost Password Form -->
+				<form id="lost-form" style="display: none;">
+					<div class="modal-body">
+						<div id="div-lost-msg">
+							<div id="icon-lost-msg"
+								class="glyphicon glyphicon-chevron-right"></div>
+							<span id="text-lost-msg">Escribe tu mail.</span>
+						</div>
+						<input style="background-color: white;" id="lost_email" class="form-control" type="text"
+							placeholder="[E-MAIL]" required>
+					</div>
+					<div class="modal-footer">
+						<div>
+							<button type="submit"
+								class=" botonesloginreglost btn btn-primary btn-lg btn-block">Enviar
+								>></button>
+						</div>
+						<div>
+							<button id="lost_login_btn" type="button" class="btn btn-link letra-mayusculas">Acceder></button>
+							<button id="lost_register_btn" type="button"
+								class="btn btn-link letra-mayusculas">Registrar></button>
+						</div>
+					</div>
+				</form>
+				<!-- End | Lost Password Form -->
+
+				
+
+			</div>
+			<!-- End # DIV Form -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

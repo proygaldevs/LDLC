@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DecoTheCo Clipper</title>  
+		<link rel="stylesheet" href="estilos.css?versionCssJs=1" type="text/css">   
+		<meta name="pinterest" content="nohover" />
+		<link rel="stylesheet" href="css/bootstrap.css?versionCssJs=1">
+        <link rel="stylesheet" href="css/estilo.css?versionCssJs=1" type="text/css">
+		<script>
+		</script>
+		<!-- PARA QUE FUNCIONE MODAL LOGIN	 -->
+		<script type="text/javascript" src="js/jquery.min.js?versionCssJs=1"></script>
+		<script type="text/javascript" src="js/bootstrap.js?versionCssJs=1"></script>
+     	<script type="text/javascript" src="js/links.js?versionCssJs=1" ></script>
+		<script type="text/javascript" src="js/login.js?versionCssJs=1" ></script>
+		<script type="text/javascript" src="js/functions.js?versionCssJs=1" ></script>
+		<script type="text/javascript" src="js/bootstrap-dialog.min.js?versionCssJs=1"></script>
+		<script type="text/javascript"> 
+		 if (window.addEventListener) {
+     	    window.addEventListener("message", onMessage, false);        
+     	} 
+     	else if (window.attachEvent) {
+     	    window.attachEvent("onmessage", onMessage, false);
+     	}
+     	function onMessage(event) {
+     	    // Check sender origin to be trusted
+     	   // if (event.origin !== "http://example.com") return;
+			
+     	    var data = event.data;
+
+     	    if (typeof(window[data.func]) == "function") {
+     	        window[data.func].call(null, data.message);
+     	    }
+     	}
+     	function parse_query_string(query) {
+    	    var vars = query.split("&");
+    	    var query_string = {};
+    	    for (var i = 0; i < vars.length; i++) {
+    	      var pair = vars[i].split("=");
+    	      // If first entry with this name
+    	      if (typeof query_string[pair[0]] === "undefined") {
+    	        query_string[pair[0]] = decodeURIComponent(pair[1]);
+    	        // If second entry with this name
+    	      } else if (typeof query_string[pair[0]] === "string") {
+    	        var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+    	        query_string[pair[0]] = arr;
+    	        // If third or later entry with this name
+    	      } else {
+    	        query_string[pair[0]].push(decodeURIComponent(pair[1]));
+    	      }
+    	    }
+    	    return query_string;
+    	  }
+		function parentFunc(message) {  
+			$('#cargando').modal('hide');
+			var pq=parse_query_string(message);
+    		//console.log(pq.id);
+			if(pq.id==1){
+    			BootstrapDialog.alert('El producto se envió correctamente a tu lista de la compra', function(){
+    				$('#itemetiquetas').val("");
+    				$('#custom_price').val(""); 
+    				$('#itemprecio').removeAttr("selected");
+    				idActivo=$('.clipper_image _83 .selected');
+    				var frame = document.getElementById('iframe'); 
+    				window.parent.postMessage({
+    		            'metodo': 'cancel',
+    		            'viz': 'Dis',
+    		            'location': window.location.href
+    		        }, "*");
+    	        });
+			} else {
+				BootstrapDialog.alert('La imágen no tiene un formato adecuado, inténtalo con otra imagen.', function(){
+    				$('#itemetiquetas').val("");
+    				$('#custom_price').val(""); 
+    				$('#itemprecio').removeAttr("selected");
+    				idActivo=$('.clipper_image _83 .selected');
+    				$('.clipper_image').removeClass("selected");
+    	        });
+			}	
+	    
+	    	   /* //	var valuesiframe=JSON.parse(message);
+	    	   if(pq.fondos=='si'){
+	    		   insertItemFondos(pq.id, pq.nombre);
+	    	   }else{
+	    			insertItem(pq.id, pq.nombre);
+	    	   }  */
+	    	} 
+		var messagesQueue=[];
+		var images=[];
+		var prices=[];
+		var dimensions;
+		var isready=true;//variable para controlar el login, si no está a true (que se pondrá al hacer login ok) no se muestra nada y se guardan en cola de mensajes.
+		
+		function nowIsReady(){//cuando se haga login ok, se llamará esta función que cambiará el estado de la variable isready y procesará los mensajes que hayan llegado mientras no estaba listo.
+			isready=true;
+			if (messagesQueue.length) {
+		        for (var i = 0; i < messagesQueue.length; i++) {
+		          var evtforqueue = messagesQueue[i];
+		          displayMessage(evtforqueue); 
+		        }
+		        messageQueue = [];
+		      }
+		}
+		
+		function displayMessage (evt) {
+			
+			//console.log("I got " + evt.data + " from " + evt.origin);
+			var objeto=JSON.parse(evt.data);
+			//console.log(objeto);
+			if(!isready) {
+				messagesQueue.push(evt);
+				return;
+			}
+			switch (objeto.event) {
+				case "images":
+					images=objeto.message;  
+					var contenido="";
+					var url="";
+					var lol= document.getElementById("itemtitulo");
+					lol.value=images[0].pagetitle;
+					//console.log(document.getElementById("itemtitulo").value);
+					j=-1; 
+					for (var i=0; i<images.length; i++){  
+						if(images[i].url=="") {
+							url=getParameterByName('ref');
+						} else {
+							url=images[i].url;
+						}
+						contenido+='<div id="picker_image'+i+'" class="clipper_image _83">';
+						contenido+='	<div class="image_wrapper">';
+						contenido+='	<div class="image_background">';
+						var peso=images[i].pixelCount;
+						//console.log(peso);
+						if(peso>=1000000){
+							contenido+='<img src="img/icons/ICONO-XL.svg" style="position:absolute; left:5px;top:5px;width:20px;height:20px;z-index:100">';
+						}else if(peso>=640000){
+							contenido+='<img src="img/icons/ICONO-L.svg" style="position:absolute; left:5px;top:5px;width:20px;height:20px;z-index:100">';
+						}else if(peso>=250000){
+							contenido+='<img src="img/icons/ICONO-M.svg" style="position:absolute; left:5px;top:5px;width:20px;height:20px;z-index:100">';
+						}else if(peso>=90000){
+							contenido+='<img src="img/icons/ICONO-S.svg" style="position:absolute; left:5px;top:5px;width:20px;height:20px;z-index:100">';
+						} else {
+							contenido+='<img src="img/icons/ICONO-XS.svg" style="position:absolute; left:5px;top:5px;width:20px;height:20px;z-index:100">';
+						}
+ 
+						contenido+='	<img style="position:relative" src="'+images[i].imgurl+'" class="clipper_image" onclick="';
+										if(event.ctrlKey){
+											contenido+="	unSelectImage('picker_image"+i+"');";
+										}else{
+											var precio="0";
+											if(images[i]==null || images[i].priceRecord==null) { 
+											} else {
+												var precio=images[i].priceRecord.price;
+											}
+											precio=precio.replace(',','.'); 
+											precio=parseFloat(precio).toFixed(2); 
+											contenido+="	selectImage('picker_image"+i+"');";
+											contenido+="	setURL('"+url+"');";
+											if(images[i].priceRecord==null){} else{
+											contenido+="	setPrecio('"+precio+"');";
+											}
+											contenido+="	setURLimage('"+images[i].imgurl+"');";
+										} 
+						contenido+='"/>	</div>';
+						contenido+='	</div>';
+						contenido+='	</div>';
+						contenido+='</div>';
+						j++;
+					}
+					$("#available_images").append(contenido); 
+					break;
+				case "prices":
+					prices=objeto.message; 
+					contenido2="";
+					
+					contenido2+='<option value="" selected>Lista de precios</option>';
+					if(prices==null || prices.length==null) { 
+					} else {
+						for (var i=0; i<prices.length; i++){ 
+								var precio=prices[i].price; 
+								precio=precio.replace(',','.'); 
+								precio=parseFloat(precio).toFixed(2); 
+								//console.log(precio)
+								contenido2+='<option value="'+precio+'">'+precio+''+prices[i].currency+'</option>';
+							
+						}
+					}
+					$("#itemprecio").append(contenido2); 
+					//
+					break; 
+				case "resize":
+					dimensions=objeto.message;
+					break;
+
+				default:
+					break;
+			}
+		} 
+		
+
+		if (window.addEventListener) {
+			// For standards-compliant web browsers
+			window.addEventListener("message", displayMessage, false); 
+		} 
+		else {
+			window.attachEvent("onmessage", displayMessage);
+		}  
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="js/tag-manager.js"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-108225209-1');
+		</script>
+		<script type="text/javascript"> 
+		var id_decorador=0;
+		function setPrecio(precio){ 
+			if(precio!=""){
+				$("#itemprecio option").each(function(){
+					if($(this).attr('value')==precio){
+						$(this).attr('selected','selected');
+					} else{
+						$(this).removeAttr("selected");
+					}
+				});
+			}
+		}
+		function getParameterByName(name, url) {
+		    if (!url) url = window.location.href;
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		        results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		} 
+		$("#decorador_id").val(""); 
+		</script>
+		 <style>
+        input:-webkit-autofill {
+   			-webkit-box-shadow: 0 0 0 30px white inset;
+  		}
+  		.bootstrap-dialog-title {
+		  display: none;
+		}
+        .modal-header {
+        	border-bottom:0
+        }
+        .modal-body {
+        	width:90%;
+        	margin-left:5%
+        }
+        input[type="text"], input[type="password"] {
+        	width:93%
+        }
+        .modal-footer {
+        	width:93%;
+        	border:0;
+        	background-color:white
+        } 
+        .buttonstandard_invertido  {
+        	overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: inline-block;
+		    padding-top: 5px;
+		    padding-bottom: 2px;
+		    padding-left: 5px;
+		    padding-right: 5px;
+		    text-transform: uppercase;
+		    letter-spacing: 5px;
+		    width: 93%;
+		    max-width: 100%;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    cursor: pointer;
+		    text-decoration: none;
+		    -moz-user-select: none;
+		    background-image: none;
+		    border: 1px solid rgba(0, 0, 0, 1);
+		    border-radius: 1px;
+		    transition: all 0.3s ease 0s;
+		    line-height: 1.75;
+		    color: white;
+		    background-color: black;
+        }
+        .buttonstandard_invertido:hover { 
+        	text-decoration: none;
+		    background-color: white;
+		    color: black;
+        }
+        #errors_container {
+        	margin-top:13%
+        }
+        #headercontainer {
+        		z-index:1
+        }
+        #header {
+        	height:45px;
+       	    padding-left: 10px;
+		    width: 70%;
+		    float: left;
+		    margin-bottom: 33px;
+        }
+        </style>
+    </head>
+    
+    <body class="wk win" onload="inicializar();login('form')">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+	  <defs>
+	     <filter id="blur" x="0" y="0">
+	       <feGaussianBlur stdDeviation="6" />
+	     </filter>
+	  </defs>
+	</svg>
+	<div id="elcontainerfluid" class=" conefectos supreme-container container-fluid" style="padding-right: 0px; padding-left: 0px;height: 100%;overflow-y: scroll;">
+
+		<div class="new_header fullsize logo_only" id="headercontainer" >
+			<div id="header_container">
+				<div id="header" >
+					<div class="logo" id="nav_logo">
+						<img width="200"  alt="Deco The co" src="img/logo128.png" title="Deco The co" >
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="close" style="position: absolute; top: 10px; right: 10px;" onclick="cancel();">X</div> -->
+		
+		 <div id="container">
+			<div id="login" class="msg hidden invisible" style="display: none; visibility: hidden;">
+				<h1>Sign up to get styling ideas for this item!</h1>
+				
+				<div id="user_actions">
+					<div><a target="_blank" href="https://decotheco.com/" class="btn btn_action facebook_connect">Connect with Facebook</a></div>
+					<div class="register">
+						<a target="_blank" href="https://decotheco.com/" class="btn">Sign up with email</a>
+					</div>
+					<div class="signin"><a target="_blank" href="https://decotheco.com/">Already have an account?</a></div>
+				</div>
+			</div>
+			<div id="err" class="msg err"></div>
+			<div id="msg" class="msg"></div>
+			<div id="main" class="" style="display: block; visibility: inherit;">
+				<p>[LISTA DE LA COMPRA]</p>
+				<div id="left" style="width: 630px;">
+					<div id="available_images" style="max-height: 328px;">
+						<div class="resultset" trackcontext="resultset" trackelement="resultset">
+							<div class="emptymsg unselectable" unselectable="on">
+						</div>
+						<div id="divForImages" class="unselectable bd" unselectable="on">
+						
+						
+
+							
+						</div>
+						<div class="result_footer"></div>
+					</div>
+				  </div>
+				
+				</div>
+				<div id="right">
+				<form enctype="multipart/form-data" id="import_form" action="CreateFromExtension" method="POST" class="newform " target="upload_target">
+					<div class="hidden_inputs">
+						<input type="hidden" id="default_title" value="" >
+						<input type="hidden" id="itemurl" name="itemurl" value="" >
+						<input type="hidden" id="itemurlimage" name="itemurlimage" value="" >
+						<input type="hidden" id="itemurltipo" name="itemurltipo" value="-1" >
+						<input type="hidden" id="decorador_id" name="decorador_id" value="" >
+					</div>
+					<div class="input type_text " id="js_import_form_row1">
+						<label for="title">T&iacute;tulo</label>
+						<div class="value">
+							<input type="text" class="input-box"  id="itemtitulo" name="itemtitulo"/>
+						</div>
+						<ul id="js_import_form_error2" class="error"></ul>
+					</div>
+					<div class="input type_text " id="js_import_form_row7">
+						<label for="tags">Etiquetas</label>
+						<div class="value"> 
+							<input type="text" class="input-box" id="itemetiquetas" name="itemetiquetas" style="text-transform:lowercase">
+						</div>
+						<div class="meta input_hint">ej. silla, mesa, cortina,...</div>
+						<ul id="js_import_form_error8" class="error"></ul>
+					</div>
+					<div class="input type_select " id="js_import_form_row9">
+						<label for="price">Precio Encontrado</label>
+						<div class="value">
+							<select name="itemprecio" class="input-box" id="itemprecio"  data-value="">
+							 
+							</select>
+						</div>
+
+						<ul id="jsimporterror" class="error">
+						</ul>
+					</div>
+					<div class="input type_text " id="custom_price_container">
+						<label for="custom_price">... o introduce tu mismo el precio</label>
+						<div class="value">
+							<input  id="custom_price" class="input-box" type="number" step=".01" name="custom_price">
+						</div>
+					</div>
+					<div class="input type_buttons " id="js_import_form_row17">     
+						<div class="value" >
+							<ul class="actions horizontal">
+								<li><input type="button" id="import_btn" class="btn_pill btn_action " onclick="submitform();" value="Guardar"></li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div id="errors_container">
+						<div id="no_image_selected"> No se ha seleccionado ninguna imagen.</div>
+						<div id="no_price"> Debe introducir el precio.</div>
+						<div id="bad-price-format"> Formato de precio incorrecto.</div>
+						<div id="no_title"> Debe introducir el título.</div>
+						<div id="no_tags"> Debe introducir al menos una etiqueta.</div>
+					</div>
+				</form>
+				
+				</div>
+			</div>
+
+		</div>
+</div>
+<iframe id="upload_target" name="upload_target" src="loadItems.html" style="width:0;height:0;border:0px solid #fff;" onload="">   
+</iframe>
+<!-- MODAL LOGIN -->
+ <div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"
+	style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header" align="center">
+				<a style="position: absolute;right: 3px; top: 0px; color: black; cursor: pointer;" data-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i></a>
+				
+				<h4 class="letra-xxl letra-mayusculas">Accede!</h4>
+				<div style="width: 100%; text-align: center; padding-top: 3px; padding-bottom: 15px;padding-left: 1.5vw; padding-right: 1.5vw;  ">
+					<div style="width: 90%; text-align: center; border-bottom-style: solid;  border-bottom-width: thin; "></div>
+				</div> 
+			</div>
+
+			<!-- Begin # DIV Form -->
+			<div id="div-forms">
+
+				<!-- Begin # Login Form -->
+				<form id="login-form">
+					<div class="modal-body">
+						<div id="div-login-msg">
+							<div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div> 
+							<span id="text-login-msg"></span>
+						</div>
+						<input style="background-color: white;" id="login_username" class="form-control" type="text"
+							placeholder="EMAIL*" required> <input
+							id="login_password" class="form-control" type="password"
+							placeholder="CONTRASEÑA" required>
+							<br/>
+						<div class="checkbox">
+							<label class="mantenersesioniniciada"> <input
+								type="checkbox" id="check_login_recuerdame" checked>Mantener sesion iniciada
+							</label>
+						</div>
+					</div><br/>
+					<div class="modal-footer" style="padding:0;padding-bottom:15px">
+						<div>
+							<button type="button" onclick="loguear('form')"
+								class="buttonstandard_invertido ">ENTRAR</button>
+						</div>
+						<div style="margin-top:3%">
+							<a id="login_lost_btn" type="button" onclick="Registrar()" class="btn btn-link letra-mayusculas" target="_blank" style="color:black">¿Olvidaste
+								tu contraseña?</a>
+							<a id="login_register_btn" type="button"
+								class="btn btn-link letra-mayusculas" onclick="Registrar()" style="color:black" target="_blank">Registrar</a>
+						</div>
+						<div class="errorAt" style="text-align:left;margin:7%;margin-right:0;color:red"></div>
+					</div>
+				</form>
+				<!-- End # Login Form -->
+
+				<!-- Begin | Lost Password Form -->
+				<form id="lost-form" style="display: none;">
+					<div class="modal-body">
+						<div id="div-lost-msg">
+							<div id="icon-lost-msg"
+								class="glyphicon glyphicon-chevron-right"></div>
+							<span id="text-lost-msg">Escribe tu mail.</span>
+						</div>
+						<input style="background-color: white;" id="lost_email" class="form-control" type="text"
+							placeholder="[E-MAIL]" required>
+					</div>
+					<div class="modal-footer">
+						<div>
+							<button type="submit"
+								class=" botonesloginreglost btn btn-primary btn-lg btn-block">Enviar
+								>></button>
+						</div>
+						<div>
+							<button id="lost_login_btn"   type="button" class="btn btn-link letra-mayusculas">Acceder></button>
+							<button id="lost_register_btn" type="button"
+								class="btn btn-link letra-mayusculas">Registrar></button>
+						</div>
+					</div>
+				</form>
+				<!-- End | Lost Password Form -->
+
+				
+
+			</div>
+			<!-- End # DIV Form -->
+
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="cargando" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;     background-color: transparent;border: 0px solid #999; -webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);box-shadow: 0 0 0 rgba(0, 0, 0, 0);-webkit-background-clip: padding-box;">
+	<div style="max-width: 95%; width: 100%;" class="modal-dialog">
+			<div id="loading" class="col-xs-12" style=" height:200px; background: url(img/default.svg) center center no-repeat;">
+			</div>
+	</div>
+</div>
+</body>
+</html>

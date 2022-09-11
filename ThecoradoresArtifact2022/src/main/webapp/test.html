@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script language="JavaScript" type="text/javascript">
+
+var urlbase="http://lowcost-env.3mg3jyhj9b.eu-west-1.elasticbeanstalk.com";
+
+	function getFrasesFilter() {
+
+		var p_1 = getCookie("paso1");
+
+		var p_4 = getCookie("paso4");
+
+		try {
+			$.ajaxSetup({
+				scriptCharset : "utf-8",
+				contentType : "application/json; charset=utf-8"
+			});
+
+			$
+					.ajax({
+						// /type:"POST",
+						dataType : "json",
+						// url: 'http://94.23.34.49:8442/Solvida_JSON_REST/getNews',
+						url : urlbase + '/GetFrases',
+						// url:
+						// 'http://192.168.0.164:8080/OnlineAssistance/CreateUser',
+						data : {
+							paso1 : p_1,
+							paso4 : p_4
+						},
+						// url: 'http://81.47.163.149:8080/Solvida_JSON_R/getNews',
+						contentType : "application/json; charset=utf-8",
+						success : function(data) {
+							// BootstrapDialog.alert("register:");
+							// $usuarioGlobal=data;
+							alert(data[0].nombre);
+							var html = '';
+							html += '<div style="width: 100%; text-align: center;">';
+							html += '<img style="max-width: 100%; width: 410px;" alt="Selecciona frase" src="img/other/frasesapp.png"/></div><br/>';
+
+							html += '<div  class="masonry container-fluid  text-center">'
+							for (var i = 0; i < data.length; i++) {
+
+								html += '<div style="position: relative;"  class="cc-selector" onclick="checkRadioButtonsPaso8b()">';
+								html += '<input type="checkbox" name="radioSensacionesModb" id="sensations_'
+										+ data[i].nombre
+										+ '" style="display: none;" value="'
+										+ data[i].nombre + '" />';
+								html += '<label  class="drinkcard-cc separacionBottom_20" for="sensations_'
+										+ data[i].nombre + '">';
+								html += '<img style="box-shadow: 0 0 0px 0px #e9d12f; width: 100%;"  src="img/imagenes/'
+										+ data[i].nombre
+										+ '" alt="'
+										+ data[i].nombre
+										+ '"/><img src="img/other/whitepixel.png"   class="seleccionadaimagenover"/><img  src="img/other/okimage.svg"  class="seleccionadaimagen"/>';
+								html += '</label>';
+								html += '</div>';
+
+							}
+							html += '</div>';
+							html += '<div class="row   text-center separacionSuperior_botonera"> <button type="button" href="#myCarousel" data-slide="prev" onclick="clickAnterior()" class="boton-anterior  separacionDerecha_5 "></button>';
+							html += '<button type="button" id="botonSiguientePaso8b" href="#myCarousel" data-slide="next" class="boton-siguiente  separacionIzq_5 disabled" onclick="clickSiguientePaso8b()"></button></div>';
+							html += '<br/>'
+							html += '<br/>'
+							// BootstrapDialog.alert(html);
+							$('#divforfrases').html(html);
+						}
+					});
+
+		} catch (e) {
+			BootstrapDialog
+					.alert('Se ha producido un error en la conexión con el servidor');
+			// put any code you want to execute if there's an exception here
+
+		}
+	}
+
+		
+</script>
+</head>
+<body onload="cargarEnOnLoadBody()">
+WELLCOME SERVICES FILE
+<div style="width: 800px; height: 800px;" id="divforfrases" >
+</div>
+</body>
+</html>

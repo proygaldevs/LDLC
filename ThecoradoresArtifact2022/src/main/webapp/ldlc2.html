@@ -1,0 +1,283 @@
+<!DOCTYPE html >
+<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DecoTheco - Lista de la Compra</title>
+		<script type="text/javascript"  src="js/fabric.js?versionCssJs=17"></script>
+		<script type="text/javascript" src="js/jquery.min.js?versionCssJs=17"></script>
+		<script type="text/javascript" src="js/bootstrap.js?versionCssJs=17"></script>
+		<script type="text/javascript" src="js/dat.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/slic-segmentation.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/underscore-min.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/jsfeat-min.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/functions.js?versionCssJs=17" ></script>
+        
+		<link rel="stylesheet" href="css/bootstrap.css?versionCssJs=17">
+        <link rel="stylesheet" href="css/estilo.css?versionCssJs=17" type="text/css">
+        <style>
+        input:-webkit-autofill {
+   			-webkit-box-shadow: 0 0 0 30px white inset;
+  		}
+        .modal-header {
+        	border-bottom:0
+        }
+        .modal-body {
+        	width:90%;
+        	margin-left:5%
+        }
+        input[type="text"], input[type="password"] {
+        	width:93%
+        }
+        .modal-footer {
+        	width:93%;
+        	border:0;
+        	background-color:white
+        } 
+        .buttonstandard_invertido  {
+        	overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: inline-block;
+		    padding-top: 5px;
+		    padding-bottom: 2px;
+		    padding-left: 5px;
+		    padding-right: 5px;
+		    text-transform: uppercase;
+		    letter-spacing: 5px;
+		    width: 93%;
+		    max-width: 100%;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    cursor: pointer;
+		    text-decoration: none;
+		    -moz-user-select: none;
+		    background-image: none;
+		    border: 1px solid rgba(0, 0, 0, 1);
+		    border-radius: 1px;
+		    transition: all 0.3s ease 0s;
+		    line-height: 1.75;
+		    color: white;
+		    background-color: black;
+        }
+        .buttonstandard_invertido:hover { 
+        	text-decoration: none;
+		    background-color: white;
+		    color: black;
+        }
+        </style>
+		<script>
+			var window_height = $(window).height(); 
+			var window_width = $(window).width();
+ 			var altoCanvas=window_height-50;
+ 			
+			var canvas_width = Math.round((62*window_width)/100); 
+			var canvas_height = Math.round((95*window_height)/100)
+	
+			var canvas='<canvas id="canvas111" class="lower-canvas borde " width="'+altoCanvas+'" height="'+altoCanvas+'" style="max-width:'+altoCanvas+'; max-height: '+altoCanvas+'; margin:15px;"></canvas>';
+			
+			var obj = [];
+			</script>
+	</head>
+
+	<body onload="">
+        <script type="text/javascript" src="js/controllerCanvas.js"></script>
+								<!-- Modal content-->
+
+										<div id="items-container-borradores" class="items-container-borradores">
+											<div id="available_images-borradores" class="" >
+												<div class="resultset" > 
+														
+															<div id="ldlc-image111" class="">
+																<div class="image_wrapper">
+																	<div class="image_background ">
+																			<script >document.write(canvas);</script>
+          																	
+          																	<script>
+          																	
+	          																	
+          																	</script>
+																		
+																	</div>
+																</div>
+															</div>
+															
+		
+														 
+
+			
+												</div>
+											</div>
+	
+										</div>
+										<div id="pager-container-borradores" class="pager-container-borradores">
+										</div>
+								
+	
+
+							
+		
+	</body>
+	       		    <script type="text/javascript" src="js/links.js?versionCssJs=17" ></script>
+				<script type="text/javascript" src="js/login.js?versionCssJs=17" ></script>
+	<script>
+		var id_ldlc = getParameterByName("id_ldlc");
+		var b;
+		try {
+			console.log(id_ldlc);
+			console.log(urlbaseForAjax + '/DecoradoresController');
+			
+	  		
+	
+	  		$.ajax({
+	  			// /type:"POST",
+	  			dataType : "json",
+	  			// url: 'http://94.23.34.49:8442/Solvida_JSON_REST/getNews',
+	  			url : urlbaseForAjax + '/DecoradoresController',
+	  			// url: 'http://192.168.0.164:8080/OnlineAssistance/CreateUser',
+	
+	  			data : {
+	  				token : "token",
+	  				action : "getLdlc",
+	  				id_ldlc : id_ldlc
+	  			},
+	  			// url: 'http://81.47.163.149:8080/Solvida_JSON_R/getNews',
+	  			contentType : "application/json; charset=utf-8",
+	  			success : function(data) {
+	  				// BootstrapDialog.alert("DATA: "+data);
+	  				// $usuarioGlobal=data;
+	  				console.log(data);
+	  				if (isError(data)) {
+	  					$(document.body).css({'cursor' : 'default'}); 
+	  					var href = urlbase;
+	  					window.location = href;
+	  				} else {
+	  					$(document.body).css({'cursor' : 'default'});
+	  					 var lc=data;
+	  					 
+	  					    canvas111 = new fabric.StaticCanvas('canvas111');
+	  						var arrayDeObjcts=JSON.parse(lc.Canvas);
+	  						console.log(arrayDeObjcts.objects);
+							json = JSON.stringify(arrayDeObjcts); 
+							
+							anchoCanvasFinal=0;
+							altoCanvasFinal=0;
+							var left=0;
+							var width=0;
+							
+							for(i=0;i<arrayDeObjcts.objects.length;i++){ 
+								tope=arrayDeObjcts.objects[i].top;
+								altura=arrayDeObjcts.objects[i].height;
+								left=arrayDeObjcts.objects[i].left;
+								width=arrayDeObjcts.objects[i].width;
+								scala=arrayDeObjcts.objects[i].scaleX;
+								scalaY=arrayDeObjcts.objects[i].scaleY;
+								altoCanvasImg=tope+(altura*scalaY);
+								anchoCanvas= left+(width*scala);
+								
+								if(anchoCanvas>anchoCanvasFinal){
+									anchoCanvasFinal=anchoCanvas; 
+								} 
+								if(altoCanvasImg>altoCanvasFinal){
+									altoCanvasFinal=altoCanvasImg; 
+								} 
+							}
+
+						    altoCanvas=altoCanvas;
+							anchoCanvasFinal=anchoCanvasFinal+100;
+							altoCanvasFinal=altoCanvasFinal;
+							
+							
+						    
+						    
+						    if(anchoCanvasFinal>altoCanvas){
+						    	var valor=altoCanvas/anchoCanvasFinal;
+						    } else {
+						  	  var valor=anchoCanvasFinal/altoCanvas;
+						    }  
+						    altoCanvasFinalImg=(altoCanvasFinal*valor)+50;
+							
+							
+
+						    $('#canvas111').attr("height", altoCanvasFinalImg);
+						    $('#canvas111').css("height", altoCanvasFinalImg);
+
+							$('.upper-canvas').attr("height",altoCanvasFinalImg);
+						    $('.canvas-container').attr("height", altoCanvasFinalImg);
+							$('.upper-canvas').css("height",altoCanvasFinalImg);
+						    $('.canvas-container').css("height", altoCanvasFinalImg);
+							//borradores
+							if (json!=null){
+							    canvas111.loadFromJSON(json, function(){
+							    
+							    	zoomIt(canvas111,valor);
+							    	canvas111.renderAll();
+							    });
+							}
+						    
+						  	var ctx111=canvas111.getContext("2d");
+						  	
+						  	//canvas111.scale(0.01, 0.01);
+						  	ctx111.restore();
+						    
+						  	canvas111.calcOffset();
+							canvas111.renderAll();
+							
+							
+							canvas111.forEachObject(function(o){ o.hasBorders = o.hasControls = false; });
+							
+						
+	  				}
+	
+	  			}
+	  		});
+	
+	  	} catch (e) {
+	  		console.log("Se ha producido un error en la conexión con el servidor");
+			$(document.body).css({'cursor' : 'default'}); 
+	  	}
+	  	 
+
+
+	  	$(window).resize(function() {
+	  		 
+
+			var window_width = $(window).width();  
+	  	    	
+	  	    altoCanvas = $(window).height();  
+	  	    altoCanvas=altoCanvas-50;
+	  		
+	  		console.log("Está redimensionando:"+altoCanvas); 
+		    if(anchoCanvasFinal>altoCanvas){
+		    	var valor=altoCanvas/anchoCanvasFinal;
+		    } else {
+		  	  var valor=anchoCanvasFinal/altoCanvas;
+		    } 
+		    if(altoCanvas>300) {
+		    	altoCanvasFinalImg=(altoCanvasFinal*valor)+50;
+		    } else {
+		    	altoCanvasFinalImg=(altoCanvasFinal*valor)+10;
+		    }
+		    canvas111.loadFromJSON(json, function(){ 
+		    	zoomIt(canvas111,valor);
+		    	canvas111.renderAll();
+		    }); 
+		    $('#canvas111').attr("width", altoCanvas); 
+		    $('#canvas111').css("width", altoCanvas);  
+			$('.upper-canvas').attr("width",altoCanvas); 
+		    $('.canvas-container').attr("width", altoCanvas); 
+			$('.upper-canvas').css("width",altoCanvas); 
+		    $('.canvas-container').css("width", altoCanvas); 
+		    
+		    $('#canvas111').attr("height", altoCanvasFinalImg);
+		    $('#canvas111').css("height", altoCanvasFinalImg); 
+			$('.upper-canvas').attr("height",altoCanvasFinalImg);
+		    $('.canvas-container').attr("height", altoCanvasFinalImg);
+			$('.upper-canvas').css("height",altoCanvasFinalImg);
+		    $('.canvas-container').css("height", altoCanvasFinalImg);
+			
+			  
+	  		  
+	  	});
+		</script>
+</html>
