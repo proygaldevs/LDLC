@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css?versionCssJs=17">
+        <link rel="stylesheet" href="css/main.css?versionCssJs=17">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js?versionCssJs=17"></script>
+    </head>
+    <body  onload="cargarEnOnLoadBody()">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">h1.title</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div  class="main wrapper clearfix"  id="divforfrases" >
+
+			<canvas width="500px" height="500px" id="myCanvas"
+					class="canvasformodboard"
+					style="border: 1px 1px 1px 1px black; border: 1px; border-style: solid; padding: 10px;">
+					
+				</canvas>
+				<input type="file" id="file-chooser" /> 
+<button id="upload-button">Upload to S3</button>
+<div id="results"></div>
+                <article>
+                    <header>
+                        <h1>article header h1</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                    </header>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <footer>
+                        <h3>article footer h3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+                    </footer>
+                </article>
+
+                <aside>
+                    <h3>aside</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+                </aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.18.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js?versionCssJs=17"><\/script>')</script>
+
+        <script src="js/main.js?versionCssJs=17"></script>
+        
+        <script>
+
+       // var urlbase="http://lowcost-env.3mg3jyhj9b.eu-west-1.elasticbeanstalk.com";
+       
+        var urlbase="http://192.168.1.100:8080/ThecoradoresArtifact";
+
+	function cargarEnOnLoadBody() {
+
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		ctx.font = "30px 'Lato', sans-serif, Arial";
+		ctx.fillText("Hello World",10,50);
+
+
+
+
+		AWS.config.update({accessKeyId: 'AKIAJF2HKFTO6BYD54KA', secretAccessKey: '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'});
+		AWS.config.region = 'eu-west-1';
+			
+	}
+
+		
+</script>
+<script type="text/javascript">
+  var bucket = new AWS.S3({params: {Bucket: 'decotheco-thecoradores'}});
+
+  var fileChooser = document.getElementById('file-chooser');
+  var button = document.getElementById('upload-button');
+  var results = document.getElementById('results');
+  button.addEventListener('click', function() {
+    var file = fileChooser.files[0];
+    if (file) {
+      results.innerHTML = '';
+
+      var params = {Key: file.name, ContentType: file.type, Body: file};
+      bucket.upload(params, function (err, data) {
+        results.innerHTML = err ? 'ERROR!' : 'UPLOADED.';
+      });
+    } else {
+      results.innerHTML = 'Nothing to upload.';
+    }
+  }, false);
+</script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

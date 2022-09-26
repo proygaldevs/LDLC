@@ -1,0 +1,182 @@
+<!DOCTYPE html >
+<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DecoTheco - Lista de la Compra</title>
+		<script type="text/javascript"  src="js/fabric.js?versionCssJs=17"></script>
+		<script type="text/javascript" src="js/jquery.min.js?versionCssJs=17"></script>
+		<script type="text/javascript" src="js/bootstrap.js?versionCssJs=17"></script>
+		<script type="text/javascript" src="js/dat.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/slic-segmentation.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/underscore-min.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/jsfeat-min.js?versionCssJs=17" ></script>
+        <script type="text/javascript" src="js/functions.js?versionCssJs=17" ></script>
+        
+		<link rel="stylesheet" href="css/bootstrap.css?versionCssJs=17">
+        <link rel="stylesheet" href="css/estilo.css?versionCssJs=17" type="text/css">
+        		<!-- PARA QUE FUNCIONE MODAL LOGIN	 -->
+       		    <script type="text/javascript" src="js/links.js?versionCssJs=17" ></script>
+				<script type="text/javascript" src="js/login.js?versionCssJs=17" ></script>
+        <style>
+        input:-webkit-autofill {
+   			-webkit-box-shadow: 0 0 0 30px white inset;
+  		}
+        .modal-header {
+        	border-bottom:0
+        }
+        .modal-body {
+        	width:90%;
+        	margin-left:5%
+        }
+        input[type="text"], input[type="password"] {
+        	width:93%
+        }
+        .modal-footer {
+        	width:93%;
+        	border:0;
+        	background-color:white
+        } 
+        .buttonstandard_invertido  {
+        	overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: inline-block;
+		    padding-top: 5px;
+		    padding-bottom: 2px;
+		    padding-left: 5px;
+		    padding-right: 5px;
+		    text-transform: uppercase;
+		    letter-spacing: 5px;
+		    width: 93%;
+		    max-width: 100%;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    cursor: pointer;
+		    text-decoration: none;
+		    -moz-user-select: none;
+		    background-image: none;
+		    border: 1px solid rgba(0, 0, 0, 1);
+		    border-radius: 1px;
+		    transition: all 0.3s ease 0s;
+		    line-height: 1.75;
+		    color: white;
+		    background-color: black;
+        }
+        .buttonstandard_invertido:hover { 
+        	text-decoration: none;
+		    background-color: white;
+		    color: black;
+        }
+        </style>
+       
+	</head>
+
+	<body onload="">
+	
+	<div id="elcontainerfluid" class=" conefectos supreme-container container-fluid" style="padding-right: 0px; padding-left: 0px;">
+
+		<script type="text/javascript" src="js/controller.js?versionCssJs=17"></script>
+	
+
+					 <div id="ldlc-image>" class="">
+																<div class="image_wrapper">
+																	<div class="image_background ">
+																		
+																			<canvas id="canvasforlista" class="lower-canvas borde " width=800px height=800px  style="width:800px; height: 800px; margin:15px;">
+          																	</canvas>
+          																	
+          																		
+																		
+																	</div>
+																</div>
+															</div> 
+															
+		</div>
+		
+	</body>
+	 
+		<script>
+		var id_ldlc = getParameterByName("id_ldlc");
+		var b;
+		try {
+			console.log(id_ldlc);
+			console.log(urlbaseForAjax + '/DecoradoresController');
+			
+	  		$.ajaxSetup({
+	  			scriptCharset : "utf-8",
+	  			contentType : "application/json; charset=utf-8"
+	  		});
+	
+	  		$.ajax({
+	  			// /type:"POST",
+	  			dataType : "json",
+	  			// url: 'http://94.23.34.49:8442/Solvida_JSON_REST/getNews',
+	  			url : urlbaseForAjax + '/DecoradoresController',
+	  			// url: 'http://192.168.0.164:8080/OnlineAssistance/CreateUser',
+	
+	  			data : {
+	  				token : "token",
+	  				action : "getLdlc",
+	  				id_ldlc : id_ldlc
+	  			},
+	  			// url: 'http://81.47.163.149:8080/Solvida_JSON_R/getNews',
+	  			contentType : "application/json; charset=utf-8",
+	  			success : function(data) {
+	  				// BootstrapDialog.alert("DATA: "+data);
+	  				// $usuarioGlobal=data;
+	  				console.log(data);
+	  				if (isError(data)) {
+	  					$(document.body).css({'cursor' : 'default'}); 
+	  					var href = urlbase;
+	  					window.location = href;
+	  				} else {
+	  					$(document.body).css({'cursor' : 'default'});
+	  					 b=data;
+	  					 
+	  					var canvasforlista = new fabric.Canvas('canvasforlista');
+							
+							json = JSON.stringify(b.Canvas);
+							
+							//JSONData = JSON.stringify(canvas.toDatalessJSON(['id', 'alt']));
+							//borradores
+							if (json!=null){
+								canvasforlista.loadFromJSON(json, function(){
+							        
+							    	zoomIt(canvasforlista,0.15);
+							    	canvasforlista.renderAll();
+							    });
+							}
+						    
+						  	var ctxforlista=canvasforlista.getContext("2d");
+						  	
+						  	
+						  	ctxforlista.restore();
+						    
+						  	canvasforlista.calcOffset();
+						  	canvasforlista.renderAll();
+							
+						  	canvasforlista.forEachObject(function(o){ o.hasBorders = o.hasControls = false; });
+							
+						
+	  				}
+	
+	  			}
+	  		});
+	
+	  	} catch (e) {
+	  		console.log("Se ha producido un error en la conexión con el servidor");
+			$(document.body).css({'cursor' : 'default'}); 
+	  	}
+		
+			/* var window_height = $(window).height(); 
+			var window_width = $(window).width();
+			
+			var canvas_width = Math.round((62*window_width)/100); 
+			var canvas_height = Math.round((95*window_height)/100)
+	
+			
+			
+			var obj = []; */
+			</script>
+</html>

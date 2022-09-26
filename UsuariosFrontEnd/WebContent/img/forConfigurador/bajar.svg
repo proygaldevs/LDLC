@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 322.4" style="enable-background:new 0 0 612 322.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_4_);}
+	.st2{fill:#FFFFFF;}
+	.st3{clip-path:url(#SVGID_6_);}
+	.st4{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="-15" y="-8" width="633" height="332"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g id="Capa_1_1_" class="st0">
+				<g>
+					<g id="_x32__38_">
+						<g>
+							<path d="M306,1.6c-169,0-306,137-306,306s137,306,306,306s306-137,306-306S475,1.6,306,1.6z M469.3,394.4
+								c-7.5,7.5-19.6,7.5-27,0L306,258.1L169.8,394.3c-7.5,7.5-19.6,7.5-27,0c-7.5-7.5-7.5-19.6,0-27l146.4-146.5
+								c4.6-4.6,10.9-6,16.8-5c5.9-1.1,12.2,0.4,16.8,5l146.5,146.5C476.7,374.8,476.7,386.9,469.3,394.4z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="-4.5" y="70" width="633" height="332"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st1">
+		<rect x="135.5" y="106" class="st2" width="357" height="201"/>
+		<g>
+			<g>
+				<g id="Capa_2">
+					<g>
+						<g>
+							<defs>
+								<rect id="SVGID_5_" x="129.5" y="101.5" width="371.4" height="222"/>
+							</defs>
+							<clipPath id="SVGID_6_">
+								<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+							</clipPath>
+							<g class="st3">
+								<g id="_x32__1_">
+									<g>
+										<path d="M301.6,507.9c158.9,0,287.7-137,287.7-306s-128.8-306-287.7-306s-287.7,137-287.7,306S142.7,507.9,301.6,507.9z
+											 M148,115.1c7.1-7.5,18.4-7.5,25.4,0l128.2,136.3l128.1-136.2c7.1-7.5,18.4-7.5,25.4,0c7.1,7.5,7.1,19.6,0,27L317.4,288.7
+											c-4.3,4.6-10.2,6-15.8,5c-5.5,1.1-11.5-0.4-15.8-5L148,142.2C141.1,134.7,141.1,122.6,148,115.1z"/>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<rect x="117.5" y="-28" width="383.4" height="129.5"/>
+					<rect x="208.5" y="86.4" width="192" height="30.6"/>
+					<polygon class="st4" points="1.5,-219.6 613.5,-219.6 627.5,-171 15.5,-171 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

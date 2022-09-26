@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 322.4" style="enable-background:new 0 0 612 322.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FFFFFF;}
+	.st2{clip-path:url(#SVGID_4_);}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-6" width="633" height="332"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="Capa_1_1_" class="st0">
+		<g>
+			<g id="_x32__38_">
+				<g>
+					<path d="M306,322.4c169,0,306-137,306-306s-137-306-306-306S0-152.6,0,16.4S137,322.4,306,322.4z M142.7-70.4
+						c7.5-7.5,19.6-7.5,27,0L306,65.9L442.2-70.3c7.5-7.5,19.6-7.5,27,0c7.5,7.5,7.5,19.6,0,27L322.8,103.2c-4.6,4.6-10.9,6-16.8,5
+						c-5.9,1.1-12.2-0.4-16.8-5L142.7-43.3C135.3-50.8,135.3-62.9,142.7-70.4z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="Capa_2" class="st0">
+		<rect x="134" y="36" class="st1" width="357" height="201"/>
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_3_" x="128" y="31.5" width="371.4" height="222"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+				</clipPath>
+				<g class="st2">
+					<g id="_x32__1_">
+						<g>
+							<path d="M300.1,437.9c158.9,0,287.7-137,287.7-306s-128.8-306-287.7-306s-287.7,137-287.7,306S141.2,437.9,300.1,437.9z
+								 M146.5,45.1c7.1-7.5,18.4-7.5,25.4,0l128.2,136.3L428.2,45.2c7.1-7.5,18.4-7.5,25.4,0c7.1,7.5,7.1,19.6,0,27L315.9,218.7
+								c-4.3,4.6-10.2,6-15.8,5c-5.5,1.1-11.5-0.4-15.8-5L146.5,72.2C139.6,64.7,139.6,52.6,146.5,45.1z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+		<rect x="116" y="-98" width="383.4" height="129.5"/>
+		<rect x="207" y="16.4" width="192" height="30.6"/>
+		<rect y="-289.6" class="st3" width="612" height="289.6"/>
+	</g>
+</g>
+</svg>

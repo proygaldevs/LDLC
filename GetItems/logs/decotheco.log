@@ -1,0 +1,687 @@
+21:04:55,632 INFO  2018-11-26 21:04:55,632 [main][MainTiendas.java:107] : class Prueba main
+21:04:55,635 INFO  2018-11-26 21:04:55,635 [main][MainTiendas.java:111] : Importación de artículos de tiendas MAIN()
+21:04:55,635 INFO  2018-11-26 21:04:55,635 [main][MainTiendas.java:205] : ---------------------------                            -------------------------------                     ----------------------------)
+21:04:55,635 INFO  2018-11-26 21:04:55,635 [main][MainTiendas.java:206] : public static ClientAffiliates getTiendas() throws Exception
+21:04:56,460 INFO  2018-11-26 21:04:56,460 [main][MainTiendas.java:221] : CoreImpl: SELECT  url_add, id, dominio_tienda, image_path, products_path, categories_path, contra, nombre, tipo_afiliacion, des_afiliacion   FROM client_affiliates WHERE activo=1
+10:13:09,147 INFO  2019-02-15 10:13:09,147 [main][MainTiendas.java:107] : class Prueba main
+10:13:09,183 INFO  2019-02-15 10:13:09,183 [main][MainTiendas.java:111] : Importación de artículos de tiendas MAIN()
+10:13:09,184 INFO  2019-02-15 10:13:09,184 [main][MainTiendas.java:205] : ---------------------------                            -------------------------------                     ----------------------------)
+10:13:09,185 INFO  2019-02-15 10:13:09,185 [main][MainTiendas.java:206] : public static ClientAffiliates getTiendas() throws Exception
+10:13:22,858 INFO  2019-02-15 10:13:22,858 [main][MainTiendas.java:221] : CoreImpl: SELECT  url_add, id, dominio_tienda, image_path, products_path, categories_path, contra, nombre, tipo_afiliacion, des_afiliacion   FROM client_affiliates WHERE activo=1
+10:16:30,970 INFO  2019-02-15 10:16:30,970 [main][MainTiendas.java:107] : class Prueba main
+10:16:30,979 INFO  2019-02-15 10:16:30,979 [main][MainTiendas.java:111] : Importación de artículos de tiendas MAIN()
+10:16:30,979 INFO  2019-02-15 10:16:30,979 [main][MainTiendas.java:205] : ---------------------------                            -------------------------------                     ----------------------------)
+10:16:30,980 INFO  2019-02-15 10:16:30,980 [main][MainTiendas.java:206] : public static ClientAffiliates getTiendas() throws Exception
+10:16:35,742 INFO  2019-02-15 10:16:35,742 [main][MainTiendas.java:221] : CoreImpl: SELECT  url_add, id, dominio_tienda, image_path, products_path, categories_path, contra, nombre, tipo_afiliacion, des_afiliacion   FROM client_affiliates WHERE activo=1
+10:29:06,630 INFO  2019-02-15 10:29:06,630 [main][TiendaAfiliadaClickDoubler.java:188] : Comienzo de la inserción de los items de la tienda: Kave Home
+10:29:09,253 INFO  2019-02-15 10:29:09,253 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802289
+10:33:12,920 INFO  2019-02-15 10:33:12,920 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802289
+10:39:07,081 INFO  2019-02-15 10:39:07,081 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802289
+10:40:04,000 INFO  2019-02-15 10:40:04,000 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:40:14,752 INFO  2019-02-15 10:40:14,752 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:40:27,431 INFO  2019-02-15 10:40:27,431 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:40:28,521 INFO  2019-02-15 10:40:28,521 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:40:30,738 INFO  2019-02-15 10:40:30,738 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:40:31,522 INFO  2019-02-15 10:40:31,522 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:40:34,266 INFO  2019-02-15 10:40:34,266 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:40:35,265 INFO  2019-02-15 10:40:35,265 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:44:14,598 INFO  2019-02-15 10:44:14,598 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:44:14,642 INFO  2019-02-15 10:44:14,642 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:44:14,736 INFO  2019-02-15 10:44:14,736 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:44:14,780 INFO  2019-02-15 10:44:14,780 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:44:14,872 INFO  2019-02-15 10:44:14,872 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:44:14,917 INFO  2019-02-15 10:44:14,917 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:44:15,009 INFO  2019-02-15 10:44:15,009 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:44:15,054 INFO  2019-02-15 10:44:15,054 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:44:15,147 INFO  2019-02-15 10:44:15,147 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:44:15,192 INFO  2019-02-15 10:44:15,192 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:44:20,862 INFO  2019-02-15 10:44:20,862 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802291
+10:45:24,544 INFO  2019-02-15 10:45:24,544 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:45:24,590 INFO  2019-02-15 10:45:24,590 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:45:24,686 INFO  2019-02-15 10:45:24,686 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:45:24,730 INFO  2019-02-15 10:45:24,730 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:45:24,822 INFO  2019-02-15 10:45:24,822 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:45:24,867 INFO  2019-02-15 10:45:24,867 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:45:24,960 INFO  2019-02-15 10:45:24,960 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:25,004 INFO  2019-02-15 10:45:25,004 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:25,187 INFO  2019-02-15 10:45:25,187 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:25,231 INFO  2019-02-15 10:45:25,231 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:28,833 INFO  2019-02-15 10:45:28,833 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802293
+10:45:33,766 INFO  2019-02-15 10:45:33,766 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:45:33,810 INFO  2019-02-15 10:45:33,810 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:45:33,902 INFO  2019-02-15 10:45:33,902 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:45:33,946 INFO  2019-02-15 10:45:33,946 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:45:34,038 INFO  2019-02-15 10:45:34,038 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:45:34,083 INFO  2019-02-15 10:45:34,083 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:45:34,173 INFO  2019-02-15 10:45:34,173 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:34,218 INFO  2019-02-15 10:45:34,218 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:34,309 INFO  2019-02-15 10:45:34,309 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:34,353 INFO  2019-02-15 10:45:34,353 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:38,277 INFO  2019-02-15 10:45:38,277 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802295
+10:45:38,509 INFO  2019-02-15 10:45:38,509 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:38,553 INFO  2019-02-15 10:45:38,553 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:38,645 INFO  2019-02-15 10:45:38,645 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:38,688 INFO  2019-02-15 10:45:38,688 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:38,780 INFO  2019-02-15 10:45:38,780 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:38,824 INFO  2019-02-15 10:45:38,824 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:39,331 INFO  2019-02-15 10:45:39,331 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:39,376 INFO  2019-02-15 10:45:39,376 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:39,467 INFO  2019-02-15 10:45:39,467 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:39,511 INFO  2019-02-15 10:45:39,511 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:41,171 INFO  2019-02-15 10:45:41,171 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802297
+10:45:41,405 INFO  2019-02-15 10:45:41,405 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:41,450 INFO  2019-02-15 10:45:41,450 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:41,543 INFO  2019-02-15 10:45:41,543 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:41,588 INFO  2019-02-15 10:45:41,588 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:41,681 INFO  2019-02-15 10:45:41,681 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:41,726 INFO  2019-02-15 10:45:41,726 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:41,818 INFO  2019-02-15 10:45:41,818 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:41,863 INFO  2019-02-15 10:45:41,863 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:41,954 INFO  2019-02-15 10:45:41,954 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:41,999 INFO  2019-02-15 10:45:41,999 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:43,773 INFO  2019-02-15 10:45:43,773 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802299
+10:45:44,005 INFO  2019-02-15 10:45:44,005 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:44,049 INFO  2019-02-15 10:45:44,049 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:44,142 INFO  2019-02-15 10:45:44,142 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:44,186 INFO  2019-02-15 10:45:44,186 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:44,284 INFO  2019-02-15 10:45:44,284 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:44,328 INFO  2019-02-15 10:45:44,328 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:44,419 INFO  2019-02-15 10:45:44,419 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:44,463 INFO  2019-02-15 10:45:44,463 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:44,556 INFO  2019-02-15 10:45:44,556 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:44,600 INFO  2019-02-15 10:45:44,600 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:48,716 INFO  2019-02-15 10:45:48,716 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802301
+10:45:48,947 INFO  2019-02-15 10:45:48,947 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:48,991 INFO  2019-02-15 10:45:48,991 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:49,082 INFO  2019-02-15 10:45:49,082 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:49,125 INFO  2019-02-15 10:45:49,125 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:49,217 INFO  2019-02-15 10:45:49,217 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:49,262 INFO  2019-02-15 10:45:49,262 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:49,354 INFO  2019-02-15 10:45:49,354 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:49,398 INFO  2019-02-15 10:45:49,398 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:49,490 INFO  2019-02-15 10:45:49,490 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:49,534 INFO  2019-02-15 10:45:49,534 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:50,026 INFO  2019-02-15 10:45:50,026 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802303
+10:45:50,256 INFO  2019-02-15 10:45:50,256 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:50,301 INFO  2019-02-15 10:45:50,301 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:50,410 INFO  2019-02-15 10:45:50,410 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:50,454 INFO  2019-02-15 10:45:50,454 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:50,545 INFO  2019-02-15 10:45:50,545 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:50,589 INFO  2019-02-15 10:45:50,589 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:50,680 INFO  2019-02-15 10:45:50,680 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:50,725 INFO  2019-02-15 10:45:50,725 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:50,818 INFO  2019-02-15 10:45:50,818 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:50,866 INFO  2019-02-15 10:45:50,866 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:51,362 INFO  2019-02-15 10:45:51,362 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802307
+10:45:51,596 INFO  2019-02-15 10:45:51,596 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:51,640 INFO  2019-02-15 10:45:51,640 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:51,731 INFO  2019-02-15 10:45:51,731 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:51,775 INFO  2019-02-15 10:45:51,775 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:51,867 INFO  2019-02-15 10:45:51,867 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:51,911 INFO  2019-02-15 10:45:51,911 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:52,003 INFO  2019-02-15 10:45:52,003 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:52,047 INFO  2019-02-15 10:45:52,047 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:52,138 INFO  2019-02-15 10:45:52,138 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:52,182 INFO  2019-02-15 10:45:52,182 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:52,673 INFO  2019-02-15 10:45:52,673 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802309
+10:45:52,924 INFO  2019-02-15 10:45:52,924 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:52,968 INFO  2019-02-15 10:45:52,968 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:53,059 INFO  2019-02-15 10:45:53,059 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:53,103 INFO  2019-02-15 10:45:53,103 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:53,193 INFO  2019-02-15 10:45:53,193 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:53,238 INFO  2019-02-15 10:45:53,238 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:53,334 INFO  2019-02-15 10:45:53,334 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:53,378 INFO  2019-02-15 10:45:53,378 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:53,469 INFO  2019-02-15 10:45:53,469 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:53,513 INFO  2019-02-15 10:45:53,513 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:54,443 INFO  2019-02-15 10:45:54,443 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802313
+10:45:54,673 INFO  2019-02-15 10:45:54,673 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:54,717 INFO  2019-02-15 10:45:54,717 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:54,808 INFO  2019-02-15 10:45:54,808 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:54,852 INFO  2019-02-15 10:45:54,852 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:55,535 INFO  2019-02-15 10:45:55,535 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:55,579 INFO  2019-02-15 10:45:55,579 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:55,672 INFO  2019-02-15 10:45:55,672 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:55,716 INFO  2019-02-15 10:45:55,716 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:55,807 INFO  2019-02-15 10:45:55,807 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:55,851 INFO  2019-02-15 10:45:55,851 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:56,342 INFO  2019-02-15 10:45:56,342 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802315
+10:45:56,573 INFO  2019-02-15 10:45:56,573 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:56,616 INFO  2019-02-15 10:45:56,616 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:56,710 INFO  2019-02-15 10:45:56,710 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:56,753 INFO  2019-02-15 10:45:56,753 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:56,845 INFO  2019-02-15 10:45:56,845 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:56,889 INFO  2019-02-15 10:45:56,889 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:56,987 INFO  2019-02-15 10:45:56,987 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:57,031 INFO  2019-02-15 10:45:57,031 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:57,122 INFO  2019-02-15 10:45:57,122 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:57,166 INFO  2019-02-15 10:45:57,166 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:57,655 INFO  2019-02-15 10:45:57,655 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802317
+10:45:57,885 INFO  2019-02-15 10:45:57,885 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:57,929 INFO  2019-02-15 10:45:57,929 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:58,020 INFO  2019-02-15 10:45:58,020 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:45:58,064 INFO  2019-02-15 10:45:58,064 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:45:58,155 INFO  2019-02-15 10:45:58,155 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:45:58,199 INFO  2019-02-15 10:45:58,199 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:45:58,291 INFO  2019-02-15 10:45:58,291 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:58,335 INFO  2019-02-15 10:45:58,335 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:58,426 INFO  2019-02-15 10:45:58,426 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:58,470 INFO  2019-02-15 10:45:58,470 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:45:58,981 INFO  2019-02-15 10:45:58,981 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802319
+10:45:59,219 INFO  2019-02-15 10:45:59,219 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:45:59,263 INFO  2019-02-15 10:45:59,263 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:45:59,355 INFO  2019-02-15 10:45:59,355 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:45:59,399 INFO  2019-02-15 10:45:59,399 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:45:59,492 INFO  2019-02-15 10:45:59,492 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:45:59,536 INFO  2019-02-15 10:45:59,536 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:45:59,629 INFO  2019-02-15 10:45:59,629 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:45:59,673 INFO  2019-02-15 10:45:59,673 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:45:59,765 INFO  2019-02-15 10:45:59,765 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:45:59,809 INFO  2019-02-15 10:45:59,809 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:00,387 INFO  2019-02-15 10:46:00,387 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802321
+10:46:00,618 INFO  2019-02-15 10:46:00,618 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:00,662 INFO  2019-02-15 10:46:00,662 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:00,754 INFO  2019-02-15 10:46:00,754 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:00,798 INFO  2019-02-15 10:46:00,798 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:01,405 INFO  2019-02-15 10:46:01,405 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:46:01,449 INFO  2019-02-15 10:46:01,449 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:46:01,547 INFO  2019-02-15 10:46:01,547 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:01,592 INFO  2019-02-15 10:46:01,592 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:01,684 INFO  2019-02-15 10:46:01,684 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:01,728 INFO  2019-02-15 10:46:01,728 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:02,219 INFO  2019-02-15 10:46:02,219 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802323
+10:46:02,950 INFO  2019-02-15 10:46:02,950 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:02,995 INFO  2019-02-15 10:46:02,995 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:03,087 INFO  2019-02-15 10:46:03,087 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:03,131 INFO  2019-02-15 10:46:03,131 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:03,228 INFO  2019-02-15 10:46:03,228 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:46:03,272 INFO  2019-02-15 10:46:03,272 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:46:03,365 INFO  2019-02-15 10:46:03,365 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:03,409 INFO  2019-02-15 10:46:03,409 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:03,501 INFO  2019-02-15 10:46:03,501 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:03,545 INFO  2019-02-15 10:46:03,545 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:04,038 INFO  2019-02-15 10:46:04,038 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802325
+10:46:04,271 INFO  2019-02-15 10:46:04,271 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:04,315 INFO  2019-02-15 10:46:04,315 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:04,408 INFO  2019-02-15 10:46:04,408 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:04,452 INFO  2019-02-15 10:46:04,452 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:04,543 INFO  2019-02-15 10:46:04,543 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:46:04,587 INFO  2019-02-15 10:46:04,587 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:46:04,679 INFO  2019-02-15 10:46:04,679 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:04,723 INFO  2019-02-15 10:46:04,723 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:04,814 INFO  2019-02-15 10:46:04,814 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:04,857 INFO  2019-02-15 10:46:04,857 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:05,353 INFO  2019-02-15 10:46:05,353 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802327
+10:46:06,123 INFO  2019-02-15 10:46:06,123 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:06,167 INFO  2019-02-15 10:46:06,167 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:06,319 INFO  2019-02-15 10:46:06,319 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:06,363 INFO  2019-02-15 10:46:06,363 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:06,455 INFO  2019-02-15 10:46:06,455 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:46:06,499 INFO  2019-02-15 10:46:06,499 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:46:06,592 INFO  2019-02-15 10:46:06,592 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:06,636 INFO  2019-02-15 10:46:06,636 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:06,728 INFO  2019-02-15 10:46:06,728 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:06,772 INFO  2019-02-15 10:46:06,772 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:07,266 INFO  2019-02-15 10:46:07,266 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802329
+10:46:07,497 INFO  2019-02-15 10:46:07,497 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:07,541 INFO  2019-02-15 10:46:07,541 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:07,634 INFO  2019-02-15 10:46:07,634 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:07,678 INFO  2019-02-15 10:46:07,678 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:07,770 INFO  2019-02-15 10:46:07,770 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:46:07,814 INFO  2019-02-15 10:46:07,814 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:46:07,907 INFO  2019-02-15 10:46:07,907 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:07,952 INFO  2019-02-15 10:46:07,952 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:08,043 INFO  2019-02-15 10:46:08,043 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:08,088 INFO  2019-02-15 10:46:08,088 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:08,618 INFO  2019-02-15 10:46:08,618 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802331
+10:46:09,028 INFO  2019-02-15 10:46:09,028 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:09,073 INFO  2019-02-15 10:46:09,073 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:09,164 INFO  2019-02-15 10:46:09,164 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:09,208 INFO  2019-02-15 10:46:09,208 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:09,299 INFO  2019-02-15 10:46:09,299 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:46:09,343 INFO  2019-02-15 10:46:09,343 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:46:09,434 INFO  2019-02-15 10:46:09,434 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:09,477 INFO  2019-02-15 10:46:09,477 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:09,568 INFO  2019-02-15 10:46:09,568 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:09,613 INFO  2019-02-15 10:46:09,613 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:10,105 INFO  2019-02-15 10:46:10,105 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802333
+10:46:10,335 INFO  2019-02-15 10:46:10,335 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:10,379 INFO  2019-02-15 10:46:10,379 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:10,471 INFO  2019-02-15 10:46:10,471 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:10,515 INFO  2019-02-15 10:46:10,515 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:10,607 INFO  2019-02-15 10:46:10,607 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de pie' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de pie')
+10:46:10,651 INFO  2019-02-15 10:46:10,651 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de pie'
+10:46:11,477 INFO  2019-02-15 10:46:11,477 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:11,521 INFO  2019-02-15 10:46:11,521 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:11,611 INFO  2019-02-15 10:46:11,611 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:11,655 INFO  2019-02-15 10:46:11,655 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:12,154 INFO  2019-02-15 10:46:12,154 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802335
+10:46:12,384 INFO  2019-02-15 10:46:12,384 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:12,428 INFO  2019-02-15 10:46:12,428 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:12,520 INFO  2019-02-15 10:46:12,520 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:12,563 INFO  2019-02-15 10:46:12,563 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:12,655 INFO  2019-02-15 10:46:12,655 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'paneles decorativos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'paneles decorativos')
+10:46:12,699 INFO  2019-02-15 10:46:12,699 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Paneles decorativos'
+10:46:12,790 INFO  2019-02-15 10:46:12,790 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:12,834 INFO  2019-02-15 10:46:12,834 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:12,927 INFO  2019-02-15 10:46:12,927 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:12,971 INFO  2019-02-15 10:46:12,971 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:13,460 INFO  2019-02-15 10:46:13,460 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802337
+10:46:13,688 INFO  2019-02-15 10:46:13,688 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:13,732 INFO  2019-02-15 10:46:13,732 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:13,823 INFO  2019-02-15 10:46:13,823 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:13,868 INFO  2019-02-15 10:46:13,868 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:13,959 INFO  2019-02-15 10:46:13,959 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:46:14,003 INFO  2019-02-15 10:46:14,003 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:46:14,095 INFO  2019-02-15 10:46:14,095 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:14,139 INFO  2019-02-15 10:46:14,139 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:14,229 INFO  2019-02-15 10:46:14,229 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:14,273 INFO  2019-02-15 10:46:14,273 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:14,768 INFO  2019-02-15 10:46:14,768 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802339
+10:46:14,997 INFO  2019-02-15 10:46:14,997 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:15,041 INFO  2019-02-15 10:46:15,041 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:15,133 INFO  2019-02-15 10:46:15,133 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:15,176 INFO  2019-02-15 10:46:15,176 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:15,268 INFO  2019-02-15 10:46:15,268 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas')
+10:46:15,312 INFO  2019-02-15 10:46:15,312 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas'
+10:46:15,403 INFO  2019-02-15 10:46:15,403 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:15,447 INFO  2019-02-15 10:46:15,447 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:15,539 INFO  2019-02-15 10:46:15,539 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:15,582 INFO  2019-02-15 10:46:15,582 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:16,079 INFO  2019-02-15 10:46:16,079 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802341
+10:46:16,309 INFO  2019-02-15 10:46:16,309 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:16,353 INFO  2019-02-15 10:46:16,353 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:16,445 INFO  2019-02-15 10:46:16,445 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:16,488 INFO  2019-02-15 10:46:16,488 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:16,579 INFO  2019-02-15 10:46:16,579 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas')
+10:46:16,624 INFO  2019-02-15 10:46:16,624 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas'
+10:46:16,714 INFO  2019-02-15 10:46:16,714 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:16,759 INFO  2019-02-15 10:46:16,759 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:16,851 INFO  2019-02-15 10:46:16,851 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:16,895 INFO  2019-02-15 10:46:16,895 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:17,389 INFO  2019-02-15 10:46:17,389 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802343
+10:46:17,620 INFO  2019-02-15 10:46:17,620 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:17,664 INFO  2019-02-15 10:46:17,664 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:17,756 INFO  2019-02-15 10:46:17,756 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:17,800 INFO  2019-02-15 10:46:17,800 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:17,891 INFO  2019-02-15 10:46:17,891 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas')
+10:46:17,935 INFO  2019-02-15 10:46:17,935 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas'
+10:46:18,031 INFO  2019-02-15 10:46:18,031 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:18,075 INFO  2019-02-15 10:46:18,075 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:18,167 INFO  2019-02-15 10:46:18,167 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:18,211 INFO  2019-02-15 10:46:18,211 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:18,700 INFO  2019-02-15 10:46:18,700 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802345
+10:46:18,938 INFO  2019-02-15 10:46:18,938 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:18,981 INFO  2019-02-15 10:46:18,981 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:19,077 INFO  2019-02-15 10:46:19,077 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:19,120 INFO  2019-02-15 10:46:19,120 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:19,211 INFO  2019-02-15 10:46:19,211 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:46:19,255 INFO  2019-02-15 10:46:19,255 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:46:19,347 INFO  2019-02-15 10:46:19,347 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:19,391 INFO  2019-02-15 10:46:19,391 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:19,483 INFO  2019-02-15 10:46:19,483 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:19,527 INFO  2019-02-15 10:46:19,527 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:20,015 INFO  2019-02-15 10:46:20,015 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802347
+10:46:20,244 INFO  2019-02-15 10:46:20,244 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:20,288 INFO  2019-02-15 10:46:20,288 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:20,380 INFO  2019-02-15 10:46:20,380 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:20,424 INFO  2019-02-15 10:46:20,424 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:20,515 INFO  2019-02-15 10:46:20,515 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:46:20,559 INFO  2019-02-15 10:46:20,559 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:46:20,650 INFO  2019-02-15 10:46:20,650 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:20,694 INFO  2019-02-15 10:46:20,694 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:20,786 INFO  2019-02-15 10:46:20,786 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:20,830 INFO  2019-02-15 10:46:20,830 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:21,335 INFO  2019-02-15 10:46:21,335 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802349
+10:46:21,566 INFO  2019-02-15 10:46:21,566 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:21,610 INFO  2019-02-15 10:46:21,610 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:21,701 INFO  2019-02-15 10:46:21,701 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:21,745 INFO  2019-02-15 10:46:21,745 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:21,836 INFO  2019-02-15 10:46:21,836 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:46:21,880 INFO  2019-02-15 10:46:21,880 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:46:21,972 INFO  2019-02-15 10:46:21,972 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:22,016 INFO  2019-02-15 10:46:22,016 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:22,107 INFO  2019-02-15 10:46:22,107 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:22,151 INFO  2019-02-15 10:46:22,151 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:23,081 INFO  2019-02-15 10:46:23,081 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802353
+10:46:23,312 INFO  2019-02-15 10:46:23,312 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:23,356 INFO  2019-02-15 10:46:23,356 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:23,447 INFO  2019-02-15 10:46:23,447 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:23,490 INFO  2019-02-15 10:46:23,490 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:23,581 INFO  2019-02-15 10:46:23,581 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:46:23,626 INFO  2019-02-15 10:46:23,626 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:46:23,717 INFO  2019-02-15 10:46:23,717 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:23,761 INFO  2019-02-15 10:46:23,761 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:23,851 INFO  2019-02-15 10:46:23,851 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:23,896 INFO  2019-02-15 10:46:23,896 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:24,385 INFO  2019-02-15 10:46:24,385 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802355
+10:46:24,614 INFO  2019-02-15 10:46:24,614 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:24,658 INFO  2019-02-15 10:46:24,658 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:24,748 INFO  2019-02-15 10:46:24,748 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:24,792 INFO  2019-02-15 10:46:24,792 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:24,884 INFO  2019-02-15 10:46:24,884 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:46:24,928 INFO  2019-02-15 10:46:24,928 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:46:25,022 INFO  2019-02-15 10:46:25,022 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:25,067 INFO  2019-02-15 10:46:25,067 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:25,158 INFO  2019-02-15 10:46:25,158 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:25,202 INFO  2019-02-15 10:46:25,202 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:25,695 INFO  2019-02-15 10:46:25,695 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802357
+10:46:25,925 INFO  2019-02-15 10:46:25,925 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:25,969 INFO  2019-02-15 10:46:25,969 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:26,061 INFO  2019-02-15 10:46:26,061 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:26,105 INFO  2019-02-15 10:46:26,105 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:26,617 INFO  2019-02-15 10:46:26,617 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:46:26,661 INFO  2019-02-15 10:46:26,661 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:46:26,753 INFO  2019-02-15 10:46:26,753 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:26,797 INFO  2019-02-15 10:46:26,797 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:26,888 INFO  2019-02-15 10:46:26,888 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:26,932 INFO  2019-02-15 10:46:26,932 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:27,865 INFO  2019-02-15 10:46:27,865 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802361
+10:46:28,096 INFO  2019-02-15 10:46:28,096 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:28,139 INFO  2019-02-15 10:46:28,139 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:28,230 INFO  2019-02-15 10:46:28,230 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:28,275 INFO  2019-02-15 10:46:28,275 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:28,372 INFO  2019-02-15 10:46:28,372 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:46:28,416 INFO  2019-02-15 10:46:28,416 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:46:28,506 INFO  2019-02-15 10:46:28,506 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:28,551 INFO  2019-02-15 10:46:28,551 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:28,642 INFO  2019-02-15 10:46:28,642 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:28,686 INFO  2019-02-15 10:46:28,686 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:29,198 INFO  2019-02-15 10:46:29,198 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802363
+10:46:29,431 INFO  2019-02-15 10:46:29,431 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:29,475 INFO  2019-02-15 10:46:29,475 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:29,567 INFO  2019-02-15 10:46:29,567 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:29,611 INFO  2019-02-15 10:46:29,611 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:29,704 INFO  2019-02-15 10:46:29,704 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:46:29,748 INFO  2019-02-15 10:46:29,748 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:46:29,841 INFO  2019-02-15 10:46:29,841 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:29,885 INFO  2019-02-15 10:46:29,885 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:29,978 INFO  2019-02-15 10:46:29,978 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:30,026 INFO  2019-02-15 10:46:30,026 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:30,516 INFO  2019-02-15 10:46:30,516 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802365
+10:46:30,746 INFO  2019-02-15 10:46:30,746 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:30,790 INFO  2019-02-15 10:46:30,790 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:30,882 INFO  2019-02-15 10:46:30,882 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mobiliario' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mobiliario')
+10:46:30,926 INFO  2019-02-15 10:46:30,926 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mobiliario'
+10:46:31,018 INFO  2019-02-15 10:46:31,018 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'consolas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'consolas')
+10:46:31,062 INFO  2019-02-15 10:46:31,062 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Consolas'
+10:46:31,153 INFO  2019-02-15 10:46:31,153 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:31,197 INFO  2019-02-15 10:46:31,197 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:31,289 INFO  2019-02-15 10:46:31,289 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:31,332 INFO  2019-02-15 10:46:31,332 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:31,826 INFO  2019-02-15 10:46:31,826 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802367
+10:46:32,062 INFO  2019-02-15 10:46:32,062 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:32,106 INFO  2019-02-15 10:46:32,106 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:32,201 INFO  2019-02-15 10:46:32,201 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:32,245 INFO  2019-02-15 10:46:32,245 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:32,338 INFO  2019-02-15 10:46:32,338 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:46:32,382 INFO  2019-02-15 10:46:32,382 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:46:32,475 INFO  2019-02-15 10:46:32,475 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:32,519 INFO  2019-02-15 10:46:32,519 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:32,611 INFO  2019-02-15 10:46:32,611 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:32,655 INFO  2019-02-15 10:46:32,655 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:33,144 INFO  2019-02-15 10:46:33,144 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802369
+10:46:33,373 INFO  2019-02-15 10:46:33,373 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:33,416 INFO  2019-02-15 10:46:33,416 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:33,508 INFO  2019-02-15 10:46:33,508 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:33,553 INFO  2019-02-15 10:46:33,553 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:33,643 INFO  2019-02-15 10:46:33,643 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:46:33,688 INFO  2019-02-15 10:46:33,688 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:46:33,780 INFO  2019-02-15 10:46:33,780 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:33,824 INFO  2019-02-15 10:46:33,824 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:33,915 INFO  2019-02-15 10:46:33,915 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:33,960 INFO  2019-02-15 10:46:33,960 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:34,450 INFO  2019-02-15 10:46:34,450 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802371
+10:46:35,023 INFO  2019-02-15 10:46:35,023 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:35,067 INFO  2019-02-15 10:46:35,067 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:35,255 INFO  2019-02-15 10:46:35,255 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'accesorios' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'accesorios')
+10:46:35,300 INFO  2019-02-15 10:46:35,300 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Accesorios'
+10:46:35,392 INFO  2019-02-15 10:46:35,392 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'jarrones y centros' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'jarrones y centros')
+10:46:35,436 INFO  2019-02-15 10:46:35,436 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Jarrones y centros'
+10:46:35,528 INFO  2019-02-15 10:46:35,528 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:35,572 INFO  2019-02-15 10:46:35,572 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:35,663 INFO  2019-02-15 10:46:35,663 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:35,707 INFO  2019-02-15 10:46:35,707 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:36,202 INFO  2019-02-15 10:46:36,202 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802373
+10:46:36,434 INFO  2019-02-15 10:46:36,434 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:36,479 INFO  2019-02-15 10:46:36,479 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:36,572 INFO  2019-02-15 10:46:36,572 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'accesorios' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'accesorios')
+10:46:36,616 INFO  2019-02-15 10:46:36,616 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Accesorios'
+10:46:36,708 INFO  2019-02-15 10:46:36,708 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'jarrones y centros' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'jarrones y centros')
+10:46:36,753 INFO  2019-02-15 10:46:36,753 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Jarrones y centros'
+10:46:36,845 INFO  2019-02-15 10:46:36,845 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:36,890 INFO  2019-02-15 10:46:36,890 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:36,983 INFO  2019-02-15 10:46:36,983 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:37,028 INFO  2019-02-15 10:46:37,028 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:37,516 INFO  2019-02-15 10:46:37,516 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802375
+10:46:37,743 INFO  2019-02-15 10:46:37,743 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:37,786 INFO  2019-02-15 10:46:37,786 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:37,878 INFO  2019-02-15 10:46:37,878 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'accesorios' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'accesorios')
+10:46:37,922 INFO  2019-02-15 10:46:37,922 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Accesorios'
+10:46:38,012 INFO  2019-02-15 10:46:38,012 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'jarrones y centros' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'jarrones y centros')
+10:46:38,056 INFO  2019-02-15 10:46:38,056 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Jarrones y centros'
+10:46:38,147 INFO  2019-02-15 10:46:38,147 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:38,191 INFO  2019-02-15 10:46:38,191 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:38,282 INFO  2019-02-15 10:46:38,282 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:38,325 INFO  2019-02-15 10:46:38,325 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:38,813 INFO  2019-02-15 10:46:38,813 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802377
+10:46:39,042 INFO  2019-02-15 10:46:39,042 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:39,086 INFO  2019-02-15 10:46:39,086 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:39,178 INFO  2019-02-15 10:46:39,178 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'accesorios' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'accesorios')
+10:46:39,222 INFO  2019-02-15 10:46:39,222 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Accesorios'
+10:46:39,313 INFO  2019-02-15 10:46:39,313 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'jarrones y centros' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'jarrones y centros')
+10:46:39,357 INFO  2019-02-15 10:46:39,357 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Jarrones y centros'
+10:46:39,448 INFO  2019-02-15 10:46:39,448 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:39,492 INFO  2019-02-15 10:46:39,492 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:39,582 INFO  2019-02-15 10:46:39,582 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:39,626 INFO  2019-02-15 10:46:39,626 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:40,121 INFO  2019-02-15 10:46:40,121 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802379
+10:46:40,350 INFO  2019-02-15 10:46:40,350 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:40,394 INFO  2019-02-15 10:46:40,394 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:40,488 INFO  2019-02-15 10:46:40,488 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'accesorios' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'accesorios')
+10:46:40,532 INFO  2019-02-15 10:46:40,532 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Accesorios'
+10:46:40,623 INFO  2019-02-15 10:46:40,623 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'jarrones y centros' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'jarrones y centros')
+10:46:40,667 INFO  2019-02-15 10:46:40,667 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Jarrones y centros'
+10:46:40,758 INFO  2019-02-15 10:46:40,758 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:40,802 INFO  2019-02-15 10:46:40,802 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:40,893 INFO  2019-02-15 10:46:40,893 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:40,940 INFO  2019-02-15 10:46:40,940 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:41,432 INFO  2019-02-15 10:46:41,432 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802381
+10:46:41,661 INFO  2019-02-15 10:46:41,661 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:41,706 INFO  2019-02-15 10:46:41,706 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:41,800 INFO  2019-02-15 10:46:41,800 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'accesorios' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'accesorios')
+10:46:41,844 INFO  2019-02-15 10:46:41,844 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Accesorios'
+10:46:41,936 INFO  2019-02-15 10:46:41,936 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'faroles y portavelas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'faroles y portavelas')
+10:46:41,980 INFO  2019-02-15 10:46:41,980 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Faroles y portavelas'
+10:46:42,073 INFO  2019-02-15 10:46:42,073 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:42,117 INFO  2019-02-15 10:46:42,117 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:42,208 INFO  2019-02-15 10:46:42,208 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:42,252 INFO  2019-02-15 10:46:42,252 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:43,185 INFO  2019-02-15 10:46:43,185 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802387
+10:46:43,413 INFO  2019-02-15 10:46:43,413 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:43,457 INFO  2019-02-15 10:46:43,457 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:43,548 INFO  2019-02-15 10:46:43,548 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:43,592 INFO  2019-02-15 10:46:43,592 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:43,684 INFO  2019-02-15 10:46:43,684 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de pie' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de pie')
+10:46:43,728 INFO  2019-02-15 10:46:43,728 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de pie'
+10:46:43,819 INFO  2019-02-15 10:46:43,819 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:43,863 INFO  2019-02-15 10:46:43,863 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:43,954 INFO  2019-02-15 10:46:43,954 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:43,998 INFO  2019-02-15 10:46:43,998 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:44,490 INFO  2019-02-15 10:46:44,490 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802389
+10:46:44,720 INFO  2019-02-15 10:46:44,720 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:44,764 INFO  2019-02-15 10:46:44,764 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:44,855 INFO  2019-02-15 10:46:44,855 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'iluminación' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'iluminación')
+10:46:44,899 INFO  2019-02-15 10:46:44,899 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Iluminación'
+10:46:44,990 INFO  2019-02-15 10:46:44,990 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'lámparas de sobremesa' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'lámparas de sobremesa')
+10:46:45,034 INFO  2019-02-15 10:46:45,034 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Lámparas de sobremesa'
+10:46:45,127 INFO  2019-02-15 10:46:45,127 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:45,171 INFO  2019-02-15 10:46:45,171 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:45,263 INFO  2019-02-15 10:46:45,263 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:45,307 INFO  2019-02-15 10:46:45,307 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:45,794 INFO  2019-02-15 10:46:45,794 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802391
+10:46:46,649 INFO  2019-02-15 10:46:46,649 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:46,693 INFO  2019-02-15 10:46:46,693 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:46,785 INFO  2019-02-15 10:46:46,785 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:46:46,829 INFO  2019-02-15 10:46:46,829 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:46:46,920 INFO  2019-02-15 10:46:46,920 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'taburetes')
+10:46:46,964 INFO  2019-02-15 10:46:46,964 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Taburetes'
+10:46:47,057 INFO  2019-02-15 10:46:47,057 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:47,101 INFO  2019-02-15 10:46:47,101 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:47,192 INFO  2019-02-15 10:46:47,192 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:47,237 INFO  2019-02-15 10:46:47,237 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:47,726 INFO  2019-02-15 10:46:47,726 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802393
+10:46:48,338 INFO  2019-02-15 10:46:48,338 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:48,382 INFO  2019-02-15 10:46:48,382 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:48,474 INFO  2019-02-15 10:46:48,474 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:48,518 INFO  2019-02-15 10:46:48,518 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:48,609 INFO  2019-02-15 10:46:48,609 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'espejos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'espejos')
+10:46:48,652 INFO  2019-02-15 10:46:48,652 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Espejos'
+10:46:49,283 INFO  2019-02-15 10:46:49,283 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:49,328 INFO  2019-02-15 10:46:49,328 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:50,039 INFO  2019-02-15 10:46:50,039 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:50,083 INFO  2019-02-15 10:46:50,083 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:50,570 INFO  2019-02-15 10:46:50,570 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802395
+10:46:50,798 INFO  2019-02-15 10:46:50,798 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:50,843 INFO  2019-02-15 10:46:50,843 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:50,934 INFO  2019-02-15 10:46:50,934 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas')
+10:46:50,977 INFO  2019-02-15 10:46:50,977 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas'
+10:46:51,068 INFO  2019-02-15 10:46:51,068 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas extensibles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas extensibles')
+10:46:51,111 INFO  2019-02-15 10:46:51,111 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas extensibles'
+10:46:51,367 INFO  2019-02-15 10:46:51,367 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:51,411 INFO  2019-02-15 10:46:51,411 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:51,502 INFO  2019-02-15 10:46:51,502 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:51,547 INFO  2019-02-15 10:46:51,547 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:52,035 INFO  2019-02-15 10:46:52,035 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802397
+10:46:52,264 INFO  2019-02-15 10:46:52,264 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:52,308 INFO  2019-02-15 10:46:52,308 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:52,418 INFO  2019-02-15 10:46:52,418 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas')
+10:46:52,462 INFO  2019-02-15 10:46:52,462 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas'
+10:46:52,553 INFO  2019-02-15 10:46:52,553 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas extensibles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas extensibles')
+10:46:52,597 INFO  2019-02-15 10:46:52,597 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas extensibles'
+10:46:52,689 INFO  2019-02-15 10:46:52,689 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:52,733 INFO  2019-02-15 10:46:52,733 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:52,824 INFO  2019-02-15 10:46:52,824 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:52,867 INFO  2019-02-15 10:46:52,867 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:53,357 INFO  2019-02-15 10:46:53,357 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802399
+10:46:53,585 INFO  2019-02-15 10:46:53,585 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:53,629 INFO  2019-02-15 10:46:53,629 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:53,721 INFO  2019-02-15 10:46:53,721 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas')
+10:46:53,765 INFO  2019-02-15 10:46:53,765 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas'
+10:46:53,856 INFO  2019-02-15 10:46:53,856 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas extensibles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas extensibles')
+10:46:53,900 INFO  2019-02-15 10:46:53,900 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas extensibles'
+10:46:53,991 INFO  2019-02-15 10:46:53,991 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:54,035 INFO  2019-02-15 10:46:54,035 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:54,127 INFO  2019-02-15 10:46:54,127 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:54,171 INFO  2019-02-15 10:46:54,171 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:54,660 INFO  2019-02-15 10:46:54,660 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802401
+10:46:54,890 INFO  2019-02-15 10:46:54,890 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:54,934 INFO  2019-02-15 10:46:54,934 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:55,025 INFO  2019-02-15 10:46:55,025 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas')
+10:46:55,069 INFO  2019-02-15 10:46:55,069 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas'
+10:46:55,160 INFO  2019-02-15 10:46:55,160 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas extensibles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas extensibles')
+10:46:55,203 INFO  2019-02-15 10:46:55,203 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas extensibles'
+10:46:55,295 INFO  2019-02-15 10:46:55,295 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:55,339 INFO  2019-02-15 10:46:55,339 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:55,430 INFO  2019-02-15 10:46:55,430 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:55,473 INFO  2019-02-15 10:46:55,473 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:55,961 INFO  2019-02-15 10:46:55,961 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802403
+10:46:56,191 INFO  2019-02-15 10:46:56,191 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:56,235 INFO  2019-02-15 10:46:56,235 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:56,326 INFO  2019-02-15 10:46:56,326 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas')
+10:46:56,370 INFO  2019-02-15 10:46:56,370 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas'
+10:46:56,461 INFO  2019-02-15 10:46:56,461 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas extensibles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas extensibles')
+10:46:56,505 INFO  2019-02-15 10:46:56,505 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas extensibles'
+10:46:56,595 INFO  2019-02-15 10:46:56,595 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:56,640 INFO  2019-02-15 10:46:56,640 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:56,731 INFO  2019-02-15 10:46:56,731 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:56,774 INFO  2019-02-15 10:46:56,774 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:57,286 INFO  2019-02-15 10:46:57,286 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802405
+10:46:57,518 INFO  2019-02-15 10:46:57,518 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:46:57,562 INFO  2019-02-15 10:46:57,562 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:46:57,655 INFO  2019-02-15 10:46:57,655 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas')
+10:46:57,701 INFO  2019-02-15 10:46:57,701 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas'
+10:46:57,794 INFO  2019-02-15 10:46:57,794 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas extensibles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas extensibles')
+10:46:57,838 INFO  2019-02-15 10:46:57,838 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas extensibles'
+10:46:57,931 INFO  2019-02-15 10:46:57,931 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:57,976 INFO  2019-02-15 10:46:57,976 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:46:58,073 INFO  2019-02-15 10:46:58,073 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:46:58,118 INFO  2019-02-15 10:46:58,118 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:46:59,047 INFO  2019-02-15 10:46:59,047 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802413
+10:46:59,274 INFO  2019-02-15 10:46:59,274 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:46:59,318 INFO  2019-02-15 10:46:59,318 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:46:59,410 INFO  2019-02-15 10:46:59,410 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:46:59,454 INFO  2019-02-15 10:46:59,454 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:46:59,753 INFO  2019-02-15 10:46:59,753 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'paneles decorativos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'paneles decorativos')
+10:46:59,797 INFO  2019-02-15 10:46:59,797 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Paneles decorativos'
+10:46:59,888 INFO  2019-02-15 10:46:59,888 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:46:59,933 INFO  2019-02-15 10:46:59,933 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:47:00,041 INFO  2019-02-15 10:47:00,041 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:47:00,102 INFO  2019-02-15 10:47:00,102 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:47:00,649 INFO  2019-02-15 10:47:00,649 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802415
+10:47:00,876 INFO  2019-02-15 10:47:00,876 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:47:00,920 INFO  2019-02-15 10:47:00,920 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:47:01,011 INFO  2019-02-15 10:47:01,011 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas')
+10:47:01,055 INFO  2019-02-15 10:47:01,055 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas'
+10:47:01,147 INFO  2019-02-15 10:47:01,147 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'mesas auxiliares' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'mesas auxiliares')
+10:47:01,191 INFO  2019-02-15 10:47:01,191 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Mesas auxiliares'
+10:47:01,283 INFO  2019-02-15 10:47:01,283 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:47:01,326 INFO  2019-02-15 10:47:01,326 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:47:01,418 INFO  2019-02-15 10:47:01,418 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:47:01,462 INFO  2019-02-15 10:47:01,462 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:47:01,951 INFO  2019-02-15 10:47:01,951 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802417
+10:47:02,180 INFO  2019-02-15 10:47:02,180 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:47:02,224 INFO  2019-02-15 10:47:02,224 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:47:02,320 INFO  2019-02-15 10:47:02,320 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:47:02,364 INFO  2019-02-15 10:47:02,364 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:47:02,455 INFO  2019-02-15 10:47:02,455 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas')
+10:47:02,499 INFO  2019-02-15 10:47:02,499 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas'
+10:47:02,591 INFO  2019-02-15 10:47:02,591 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:47:02,635 INFO  2019-02-15 10:47:02,635 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:47:02,727 INFO  2019-02-15 10:47:02,727 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:47:02,771 INFO  2019-02-15 10:47:02,771 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:47:03,702 INFO  2019-02-15 10:47:03,702 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802425
+10:47:03,932 INFO  2019-02-15 10:47:03,932 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:47:03,976 INFO  2019-02-15 10:47:03,976 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:47:04,071 INFO  2019-02-15 10:47:04,071 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:47:04,115 INFO  2019-02-15 10:47:04,115 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:47:04,647 INFO  2019-02-15 10:47:04,647 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas')
+10:47:04,692 INFO  2019-02-15 10:47:04,692 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas'
+10:47:04,783 INFO  2019-02-15 10:47:04,783 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:47:04,827 INFO  2019-02-15 10:47:04,827 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:47:04,920 INFO  2019-02-15 10:47:04,920 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:47:04,964 INFO  2019-02-15 10:47:04,964 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:47:05,458 INFO  2019-02-15 10:47:05,458 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802427
+10:47:05,688 INFO  2019-02-15 10:47:05,688 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:47:05,732 INFO  2019-02-15 10:47:05,732 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:47:05,824 INFO  2019-02-15 10:47:05,824 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:47:05,868 INFO  2019-02-15 10:47:05,868 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:47:05,960 INFO  2019-02-15 10:47:05,960 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas')
+10:47:06,004 INFO  2019-02-15 10:47:06,004 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas'
+10:47:06,096 INFO  2019-02-15 10:47:06,096 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:47:06,140 INFO  2019-02-15 10:47:06,140 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:47:06,233 INFO  2019-02-15 10:47:06,233 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:47:06,277 INFO  2019-02-15 10:47:06,277 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:47:06,766 INFO  2019-02-15 10:47:06,766 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802429
+10:47:06,996 INFO  2019-02-15 10:47:06,996 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración')
+10:47:07,039 INFO  2019-02-15 10:47:07,039 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración'
+10:47:07,131 INFO  2019-02-15 10:47:07,131 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'decoración mural' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'decoración mural')
+10:47:07,175 INFO  2019-02-15 10:47:07,175 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Decoración mural'
+10:47:07,266 INFO  2019-02-15 10:47:07,266 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'paneles decorativos' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'paneles decorativos')
+10:47:07,310 INFO  2019-02-15 10:47:07,310 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Paneles decorativos'
+10:47:07,401 INFO  2019-02-15 10:47:07,401 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:47:07,445 INFO  2019-02-15 10:47:07,445 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:47:07,536 INFO  2019-02-15 10:47:07,536 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:47:07,580 INFO  2019-02-15 10:47:07,580 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:47:08,068 INFO  2019-02-15 10:47:08,068 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802435
+10:47:08,295 INFO  2019-02-15 10:47:08,295 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'muebles' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'muebles')
+10:47:08,339 INFO  2019-02-15 10:47:08,339 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Muebles'
+10:47:08,431 INFO  2019-02-15 10:47:08,431 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas y taburetes' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas y taburetes')
+10:47:08,475 INFO  2019-02-15 10:47:08,475 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas y taburetes'
+10:47:08,565 INFO  2019-02-15 10:47:08,565 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'sillas' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'sillas')
+10:47:08,609 INFO  2019-02-15 10:47:08,609 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'Sillas'
+10:47:08,700 INFO  2019-02-15 10:47:08,700 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'aff' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'aff')
+10:47:08,745 INFO  2019-02-15 10:47:08,745 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'aff'
+10:47:08,835 INFO  2019-02-15 10:47:08,835 [main][TiendaAfiliada.java:459] : INSERT INTO etiquetas (nombre) SELECT 'kavehome' FROM dual WHERE NOT EXISTS (SELECT * FROM etiquetas WHERE nombre = 'kavehome')
+10:47:08,879 INFO  2019-02-15 10:47:08,879 [main][TiendaAfiliada.java:467] : SELECT id FROM etiquetas WHERE nombre = 'KaveHome'
+10:47:09,368 INFO  2019-02-15 10:47:09,368 [main][TiendaAfiliada.java:287] : Actualizando item con id_item_tienda_afiliada: 3068802437

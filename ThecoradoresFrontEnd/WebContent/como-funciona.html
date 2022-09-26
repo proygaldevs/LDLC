@@ -1,0 +1,770 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class=" conefectos no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class=" conefectos no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class=" conefectos no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="conefectos no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Como Funciona Decoradores - DecoTheCorador</title>
+<meta name="description" content="Bienvenido decorador, aquí aprenderás a utilizar toda la aplicación, uso de herramientas y mucho más." />
+<link rel="canonical" href="http://decoradores.decotheco.com/bienvenida.html" />
+<meta property="fb:app_id" content="437357506649824"> 
+<meta property="og:locale" content="es_ES">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="pinterest" content="nohover" /> 
+<link rel="stylesheet" href="css/bootstrap.min.css?versionCssJs=17"/>  
+<link rel="stylesheet" href="css/comofunciona.css?versionCssJs=17">
+<link rel="stylesheet" href="css/bootstrap-dialog.min.css?versionCssJs=17"/> 
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css?versionCssJs=17"/> 
+<link rel="stylesheet" href="css/dropzone.min.css?versionCssJs=17" type="text/css"/>
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css?versionCssJs=17" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" type="text/css" href="css/main.css?versionCssJs=17" media="all" /> 
+<link rel="stylesheet" type="text/css" href="css/home.css?versionCssJs=17" media="all" /> 
+<link rel="stylesheet" type="text/css" href="css/secciones.css?versionCssJs=17" media="all" />
+<link rel="stylesheet" href="css/fonts.css?versionCssJs=17"/>
+<link rel="stylesheet" href="css/buttons.css?versionCssJs=17"/>
+<link rel="stylesheet" href="css/buttonsreglao.css?versionCssJs=17"/>
+<link rel="stylesheet" href="css/bienvenida.css?versionCssJs=17"/> 
+<style type="text/css"> 
+.lista li {
+	margin-top:6%
+}
+.mob {
+	margin-bottom:70px;}
+.lista2 li {
+	margin-top:2%
+}
+.videos {
+	padding:5%;
+	margin-bottom:5%;
+	padding-top:1%;
+	background-color:#f5f8f7
+}
+.videos h2 {
+	text-align:center;
+    margin-bottom: 30px;
+}
+.videos p {
+	text-align: left;
+	padding-top:20px
+}
+.lista li a {
+	color:black!important;
+    padding: 5px 5px 2px;
+    line-height: 1.75;  
+    line-height: 1.75; 
+    text-decoration: none;  
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+    text-align: center;
+    white-space: nowrap; 
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none; 
+    border-radius: 1px;
+    border: 1px solid white;
+    transition: all .3s ease 0; 
+}
+
+.lista li a:hover, .lista li.active {
+	text-decoration: none;
+    background-color: #000;
+	color:white!important;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    text-transform: uppercase; 
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 1px;
+    transition: all .3s ease 0; 
+    margin:0
+}
+.lista2 li a {
+	color:black!important;
+    padding: 5px 5px 2px;
+    line-height: 1.75; 
+    text-decoration: none;  
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+    text-align: center;
+    white-space: nowrap; 
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none; 
+    border-radius: 1px;
+    transition: all .3s ease 0;  
+    border: 1px solid white;
+}
+
+.lista2 li a:hover, .lista2 li .active {
+	text-decoration: none;
+    background-color: #000; 
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    text-transform: uppercase; 
+    text-align: center;
+    white-space: nowrap; 
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 1px;
+    transition: all .3s ease 0;
+	color:white!important; 
+}
+#mc_embed_signup {
+	background: #fff;
+	clear: left;
+	font: 14px Helvetica, 'Lato', sans-serif, Arial, sans-serif;
+}  
+.carousel-inner>.item.next.left, .carousel-inner>.item.prev.right, .carousel-inner>.item.active {
+    left: 0;
+     -webkit-transform:0; 
+     transform: 0; 
+}
+.video {
+	margin-left:20%;
+	margin-top:5%;
+	width:700px;
+	height:450px
+}
+.boton-top {
+	position:fixed;
+	display:none;
+	bottom:5px;
+	right:5px;
+	font-size:40px;
+	cursor:pointer
+}
+@media (max-width: 1600px) {
+	.video {
+    	margin-left: 17%;
+    }
+}
+@media (max-width: 1500px) {
+	.video {
+    	margin-left: 15%;
+    }
+}
+@media (max-width: 1350px) {
+	.video {
+    	margin-left: 10%;
+    }
+}
+@media (max-width: 1450px) {
+	.lista2 {
+	  padding-left:25px
+	}
+	.lista {
+	  padding-left:0
+	}
+}
+
+@media (max-width: 1200px) {
+	.video {
+    	margin-left: 5%;
+    }
+}
+@media (max-width: 1100px) {
+	.lista li a {
+  	  letter-spacing: 1px!important; 
+      padding: 2px 2px 2px;
+      margin-left:0
+	}
+	.lista2 li a {
+  	  letter-spacing: 1px!important; 
+      padding: 2px 2px 2px;
+      margin-left:0
+	}
+	.video {
+		margin-left:10%;
+		margin-top:5%;
+		width:500px;
+		height:350px
+	}
+}
+@media (max-width: 1000px) {
+	.video {
+    	margin-left: 5%;
+    }
+}
+@media (max-width: 1000px) {
+	.video {
+    	margin-left: 0%;
+    }
+}
+@media (max-width: 840px) { 
+	.video { 
+		width:460px;
+	}
+}
+
+@media (max-width: 800px) { 
+	.video {
+		margin-left:14%;
+		margin-top:5%;
+		width:300px;
+		height:230px
+	}
+}
+@media (max-width: 768px){  
+		.navbar-collapse {
+		    width: 100%!important;
+		}
+		#ulforsustitution {
+			width:100%!important;
+			text-align:center
+		}
+		.dropdown-menu li, .navbar-nav .open .dropdown-menu>li>a {
+			text-align:center;
+			color: black!important;
+		}
+}
+@media (max-width: 700px) { 
+	.video {
+		margin-left:11%; 
+	}
+}
+@media (max-width: 600px) { 
+	.video {
+		margin-left:1%; 
+	}
+}
+@media (max-width: 510px) { 
+	
+    .video {
+		margin-left:12%; 
+	}
+	.lista {
+	  padding-left:15px; 
+	}
+	.lista li a {
+  	  letter-spacing: 5px!important; width: 93%; 
+	}
+	.lista2 li a {
+  	  letter-spacing: 5px!important;  width: 93%;
+	}
+}
+@media (max-width: 450px) { 
+	
+    .video {
+		margin-left:2%; 
+	}
+}
+@media (max-width: 400px) { 
+	
+    .video {
+		margin-left:0%; 
+	}
+}
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108225209-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108225209-1');
+</script>
+</head>
+<body onload="login('vacio2')">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg>   
+<!--[if lt IE 8]>
+       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- COMIENZO NAV -->
+
+<div id="sidebarmenubtnmoodboard" class="sidebarmenubtnmoodboard" onclick="alaAppDentro();">
+    <image style="width: 40px;" id="sidebarmenubtnmoodboardimage" />
+</div>
+	<!--[if lt IE 8]>
+            <p class=" conefectos browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<div id="elcontainerfluid" class=" conefectos supreme-container container-fluid col-xs-12" 
+		style="padding-right: 0px; padding-left: 0px;">
+		<nav class="navbar navbar-default navbar-fixed-top bordeInferior"
+		role="navigation" style="z-index: 5001;">
+		<div class="container-fluid">
+			<!-- Title -->
+			<div class="navbar-header pull-left">
+				<a style="padding-top: 0px;" class="navbar-brand letramodificada"
+					href="javascript:alahomeCom()"><img style="width: 140px;"
+					src="img/other/decotheco-logo.svg" alt="Decotheco"></a>
+			</div>
+
+			<div class="navbar-header  pull-right">
+				<button type="button" data-toggle="collapse"
+					data-target=".navbar-collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<!--                      pull-right keeps the drop-down in line -->
+				<ul id="ulforsustitution" class="nav navbar-nav pull-right ">
+				
+						<li><a
+							class=" colornegro letraArial  interspaciado_2  separacionnavbar"
+							href="javascript:alresto('/home.html')">HOME</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/como-funciona.html')">COMO FUNCIONA</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/facturacion.html')">FACTURACIÓN</a></li> 
+						<li id="liforsustitution" ><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar" data-toggle="modal"
+							href="#" data-target="#login-modal">INICIAR	SESIÓN</a></li>
+
+				</ul>
+			</div>
+
+
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+<!-- FIN NAV -->
+
+
+<!-- COMIENZO CONTENIDO -->
+<div class="col-xs-12 fondoCF" style="background:url('img/ForComoFuncion/fondoComoFunciona.jpg') center;width:100%;margin-bottom:7%;">
+	<div class="container-fluid text-center item active textoP1"> 
+		<h1 class="titulo_pantalla letra-negrita">CÓMO FUNCIONA</h1>
+			<p class="letra-s letra-height col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">Deco The Co. es la mejor solución de diseño de interiores en línea. 
+			Sin necesidad de moverte de tu casa te ofrecemos un servicio innovador, rápido y sencillo</p> 
+	</div>
+</div> 
+		
+		<div class="listaFixed col-xs-12 col-sm-4 col-lg-3" style="padding-top:0">
+		<ul class="lista" style="list-style:none">
+			<li style="margin-top:0">
+				<a class="letra-s letra-negrita" href="#registro" style="max-width: 100%;text-align:left;padding-left:15px"> REGISTRO </a>
+			</li>
+			<li>
+				<a class="letra-s letra-negrita" href="#extension" style="max-width: 100%;text-align:left;padding-left:15px"> EXTENSIÓN </a>
+			</li>
+			<li>
+				<a class="letra-s letra-negrita" href="#anadirProductos" style="max-width: 100%;text-align:left;padding-left:15px"> LISTA DE LA COMPRA </a>
+				<ul class="lista2" style="list-style:none">
+					<li>
+						<a class="letra-s "  href="#anadirProductos" style="max-width: 100%;text-align:left;"> AÑADIR PRODUCTOS </a> 
+					</li>
+					<li>
+						<a class="letra-s "  href="#editarLista" style="max-width: 100%;text-align:left;"> EDITAR LISTA </a> 
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a class="letra-s letra-negrita" href="#introduccion"  style="max-width: 100%;text-align:left;padding-left:15px"> GESTIONAR PROYECTO </a>
+				<ul class="lista2" style="list-style:none">
+					<li>
+						<a class="letra-s "  href="#introduccion" style="max-width: 100%;text-align:left;"> INTRODUCCIÓN </a> 
+					</li>
+					<li>
+						<a class="letra-s "  href="#paso1" style="max-width: 100%;text-align:left;"> PASO 1 </a> 
+					</li>
+					<li>
+						<a class="letra-s "  href="#paso2" style="max-width: 100%;text-align:left;"> PASO 2 </a> 
+					</li>
+					<li>
+						<a class="letra-s " href="#propuestas2D" style="max-width: 100%;text-align:left;"> PASO 3 </a> 
+					</li>
+					<ul class="lista2" style="list-style:none"> 
+						<li>
+							<a class="letra-s letra-menuda"  href="#propuestas2D" style="max-width: 100%;text-align:left;"> PROPUESTAS 2D </a> 
+						</li>
+						<li>
+							<a class="letra-s letra-menuda"  href="#propuestas3D" style="max-width: 100%;text-align:left;"> PROPUESTAS 3D </a> 
+						</li> 
+					</ul>
+					<li>
+						<a class="letra-s " href="#paso4" style="max-width: 100%;text-align:left;"> PASO 4 </a> 
+					</li>
+					<li>
+						<a class="letra-s "  href="#finalizar" style="max-width: 100%;text-align:left;"> FINALIZAR PROYECTO </a> 
+					</li>
+				</ul>
+			</li>
+			 
+		</ul>
+			
+		</div>
+		<div class="col-xs-12 col-sm-8 col-lg-9">
+			<div class="col-xs-12 videos">
+				<div  id="registro" class="mob"></div>
+				<h2 class="letra-l letra-negrita">REGISTRO</h2>
+				<p>- El primer paso para ser decorador de nuestra plataforma es registrarte. Sigue los pasos y rellena todos los datos posibles.</p>
+				<p>- Escoge tu imagen de perfil, puede ser una foto tuya o tu logo. El trabajo que quieras mostrar como principal, aparecerá en la parte superior de la pantalla cuando accedan a tu perfil, es importante que sea lo más representativo posible.</p>
+				<p>- Rellena tu portafolio, pulsa añadir proyeto y empieza. El primer paso será ponerle un nombre a nuestro proyecto y una breve descripción. Le damos a crear y rellenamos los campos nuevos que nos aparecen. Cuantas más imágenes e información añadas a tu proyecto, más fácil será para los usuarios entenderlo. Cuando la información haya terminado de cargar, guarda tu proyecto y volverás a tu perfil. Añade más proyectos, cuanto más completo sea tu portafolio más lo valorarán los usuarios.</p>
+				<p>- Una vez esté todo listo, guarda tu perfil. Tu trabajo ya está hecho, ahora somos nosotros los encargados de revisar tu perfil y aceptarlo en nuestra plataforma.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/sJbek0PYg7I?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="extension" class="mob"></div>
+				<h2 class="letra-l letra-negrita">EXTENSIÓN</h2>
+				<p>· Una vez te registras como decorador, podrás empezar a utilizar la herramienta de la lista de la compra. Para subir items a la composición podrás hacerlo de dos formas diferentes: de forma manual o a través de nuestra extensión que encontraréis en la chrome web store.</p>
+
+				<p>· Una vez instalada la extensión la encontrarás en la barra de tu navegador y podrás empezar a utilizarla. Para ello, solamente tendrás que entrar en la página que te interese, seleccionar un producto y pulsar el icono de la extensión de decotheco.</p>
+
+				<p>· Selecciona una imagen del producto, ponle un nombre, dos etiquetas como máximo, y escoge un precio. Comprueba que el precio que sale por defecto sea el correcto, sino siempre podéis ponerlo de forma manual. </p>
+				<iframe class="video" src="https://www.youtube.com/embed/F_Q_51fg9Ic?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			
+			<div class="col-xs-12 videos">
+				<div  id="anadirProductos" class="mob"></div>
+				<h2 class="letra-l letra-negrita">LISTA DE LA COMPRA: AÑADIR PRODUCTOS</h2>
+				<p>· Una vez te has registrado y logado, podrás utilizar la herramienta de la lista de la compra. Para subir items a la composición podrás hacerlo bien de forma manual (sube una imagen, un nombre, dos etiquetas, el precio y la url del producto) o bien a través de nuestra extensión.</p>
+
+				<p>· Cuando hayas añadido los productos de forma manual o mediante la extensión, podrás empezar a utilizarlos en la composición. Para ello sólo tienes que arrastrarlos desde la derecha al área vacía de la izquierda. Si quieres conservar esa composición podrás guardarla como un Borrador para utilizarlo más adelante </p>
+				<iframe class="video" src="https://www.youtube.com/embed/ZufAjyYxY8A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="editarLista" class="mob"></div>
+				<h2 class="letra-l letra-negrita">LISTA DE LA COMPRA: EDITAR</h2>
+				<p>· Podemos crear nuestras composiciones 2D con los elementos de la lista bien desde el apartado de “Listas de la Compra” (guardándolas como Borradores) o desde un proyecto cuando lleguemos a ese paso. Iremos añadiendo ítems a nuestra lista y añadiéndolos a nuestro Canvas arrastrándolos. </p>
+
+				<p>· Una vez que los elementos están en el Canvas podemos escalarlos, rotarlos, poner delante o detrás, borrarles el fondo, poner en espejo, aumentar el número de ítems sin que aparezcan en la composición (por ejemplo si queremos comprar dos sillas y que se sumen al precio pero queremos que en la composición aparezca sólo una, etc), deshacer o rehacer pasos y añadir textos. En el área de abajo del Canvas aparecerán todos los elementos que forman parte de la composición. Allí podrás aumentar el nº de ítems, hacer que sean visibles o invisibles (si no quieres que un elemento que forma parte de la lista de la compra e influye en el precio aparezca en la composición), eliminar productos o consultar la url. Es una herramienta muy intuitiva y te dará muchas posibilidades.</p>
+
+				<p>· Cuando tu composición esté lista, guárdala como un Borrador o asóciala a una de las propuestas 2D del paso 3.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/kFBd6nWSe_8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="introduccion" class="mob"></div>
+				<h2 class="letra-l letra-negrita">GESTIONAR UN PROYECTO: INTRODUCCIÓN</h2>
+				<p>· Una vez aceptados, desde tu perfil podrás acceder al listado de proyectos que tienes abiertos y ver en qué estado se encuentra cada uno. Cada vez que te entre un nuevo proyecto o haya un cambio de estado, también te llegará un correo al mail con el que te registraste.</p>
+				
+				<p>· Podrás entrar en cualquier proyecto y navegar a los pasos anteriores.</p>
+				
+				<p>· Si tienes cualquier duda, podrás pinchar en el icono de sobre que aparece debajo de los 4 pasos y te pondrás en contacto con nosotros. </p>
+				<iframe class="video" src="https://www.youtube.com/embed/hW7CD5A9Eb8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="paso1" class="mob"></div>
+				<h2 class="letra-l letra-negrita">PASO 1: INFORMACIÓN</h2>
+				<p>· Una vez logado en la plataforma, desde tu perfil podrás acceder al listado de proyectos que tienes abiertos. Podrás entrar en cualquier proyecto y navegar siempre a los pasos anteriores.</p>
+
+				<p>· Si tienes cualquier duda,  pincha en el icono de sobre que aparece debajo de los 4 pasos y te pondrás en contacto con nosotros. También tienes un chat en el que poder comunicarte en cualquier momento con el cliente. </p>
+
+				<p>· En el paso 1 “Info del Proyecto” podrás ver todos los datos que ha subido el usuario al rellenar los diferentes campos, incluidas imágenes, enlaces, medidas de la estancia, plano y presupuesto.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/TfS8R80Q8dc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="paso2" class="mob"></div>
+				<h2 class="letra-l letra-negrita">PASO 2: LA LLAMADA</h2>
+				<p>· Una vez logado en la plataforma, desde tu perfil podrás acceder al listado de proyectos que tienes abiertos y ver el estado en que se encuentran.</p>
+
+				<p>· Una vez que el usuario ha subido la información del proyecto, solicitará una cita con el decorador por teléfono o skype. Es tu turno para aceptar o rechazar la llamada. En caso de que no te venga bien la fecha y hora y  la rechaces, deberás concertar otra cita con el usuario. Podrás comunicarte directamente con él para hacerlo a través del chat. Si por el contrario le das a aceptar, realizaréis la llamada y el proyecto podrá pasar a la siguiente fase.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/T92znHq2oSw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="propuestas2D" class="mob"></div>
+				<h2 class="letra-l letra-negrita">PASO 3: PROPUESTAS 2D</h2>
+				<p>· Una vez establecida la cita con el usuario, podrás empezar a realizar las propuestas 2D asociadas al proyecto. Se le enviarán 2 propuestas 2D que podrás realizar añadiendo items a la lista de la compra y editando la lista de la compra.</p>
+
+				<p>· En el “Cajón de Sastre” podrás tambier añadir archivos pdf o imágenes para mandar al usuario. Una vez tengas las 2 propuestas terminadas, envíalas para que el usuario acepte una de ellas.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/KwvFcjdiNwk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="propuestas3D" class="mob"></div>
+				<h2 class="letra-l letra-negrita">PASO 3: PROPUESTAS 3D</h2>
+				<p>· Una vez que el usuario acepta una de las propuestas 2D, te llegará un correo notificándótelo y además, en la plataforma, el proyecto cambiará de estado.</p>
+
+				<p>· Es el momento de preparar el 3D de la propuesta aceptada. Una vez lo tengas listo, sube las imágenes (podrás cargar varias a la vez) y envía la propuesta 3D para que el usuario la acepte.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/ZBCnaZxZ6es?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="paso4" class="mob"></div>
+				<h2 class="letra-l letra-negrita">PASO 4: DOCUMENTACION</h2>
+				<p>· Una vez que el usuario acepta la propuesta 3D el proyecto cambiará de estado en la plataforma y también te llegará un correo para que le envíes la documentación. Entra en el proyecto y adjunta los archivos.</p>
+
+				<p>· Se le enviará el plano (en pdf e imagen) y la lista de la compra interactiva en la que al hacer clic sobre el item, te llevará directamente a la página web en la que está ese producto para que lo añadan directamente a la lsita de la compra.</p>
+
+				<p>· Ahora toca esperar a que el usuario acepte la propuesta.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/SV9VnU6Oe5o?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+			<div class="col-xs-12 videos">
+				<div  id="finalizar" class="mob"></div>
+				<h2 class="letra-l letra-negrita">FINALIZAR PROYECTO</h2>
+				<p>· Una vez que el usuario acepta el plano y la lista de la compra, el proyecto cambiará de estado en la plataforma y además te llegará un correo para finalices el proyecto y nos envíes la factura.</p>
+
+				<p>· Entra en el proyecto para finalizarlo. Rellena los datos que te solicita y sube tu factura por el importe indicado en formato de imagen y dale a enviar.</p>
+
+				<p>· El pago se realizara en los 10 primeros dias del mes siguiente</p>
+				
+				<p>· En el caso de que el usuario no acepte y finalice un proyecto, pasados 7 días laborales desde su envío podrás contactar con nosotros para finalizarlo.</p>
+				<iframe class="video" src="https://www.youtube.com/embed/6o2zS3ySbx0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				 
+			</div>
+		</div>
+</div>
+<div class="modal fade" id="cargando" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	<div style="max-width: 95%; width: 100%;" class="modal-dialog">
+			<div id="loading" class="col-xs-12" style=" height:200px; background: url(img/other/default.svg) center center no-repeat;">
+			</div>
+	</div>
+</div>	
+ <div class="modal fade" id="modalforDudasCon" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	
+	<div style="max-width: 95%; width: 600px;" class="modal-dialog">
+		<div class="modal-content" style="padding-left: 3vw; padding-right: 3vw; ">
+			<div class="modal-header" align="center">
+				<a style="position: absolute;right: 3px; top: 0px; color: black; cursor: pointer;" data-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i></a>
+				
+					<h4 style="padding-top: 30px; " id="titulo_for_advice" class="letra-xxl">¿TIENES ALGUNA DUDA?</h4>
+
+				
+					
+
+				<h4 style="margin-top: 0px;" class="letra-m">
+					<p class="letra-s" style="line-height:1.8!important;padding-top:10px">Envíanos tus consulta y te ayudaremos a resolverla</p>
+				</h4>
+				<div style="width: 100%; text-align: center;  padding-bottom: 0;"> 
+				</div>
+			</div>
+
+			<!-- Begin # DIV Form -->
+			<div id="div-forms">
+
+				<!-- Begin # Login Form -->
+				<form id="dudas-form">
+					<div class="modal-body">
+						<div id="div-login-msg">
+							
+							
+						</div>
+						
+							<input style="min-height: 150px; height: 20vh;  text-align:center; " maxlength="4000"
+							id="dudas_consultaCon" class="form-control  letra-m" type="text"
+							placeholder="INTRODUCE TU CONSULTA" required>
+						
+					</div>
+					<div class="modal-footer">
+						<div>
+							<div class="buttonstandard_invertido letra-xs"  onclick="sendDudas()" style="display: block; margin: 0 auto;padding-top:1px;padding-bottom:0;">ENVIAR</div>
+						<div style="width: 100%; text-align: center; padding-top: 1.5vw; padding-bottom: 2vw;">
+						 
+						</div>
+						</div>
+					</div>
+				</form>
+
+			</div> 
+
+		</div>
+	</div>
+</div> 
+<span class="boton-top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></span>
+<!-- COMIENZO FOOTER --> 
+	<div id="footer" style="text-align: center;margin-top:75px;background-color:#bfc3c3" class="col-xs-12" >  
+		<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1" style="color:white;margin-top:2%">
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 pie1">
+				<a class="letra-s"  onclick="alresto2('nosotros.html');" style="cursor: pointer;line-height:30px;color:white">SOBRE NOSOTROS</a><br/>
+				<a class="letra-s" onclick="dudasfunction();" style="cursor: pointer;line-height:30px;color:white">CONTACTO</a><br/>
+			</div>
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 pie2">
+				<a  class="letra-s" onclick="alresto('/como-funciona.html');" style="cursor: pointer;line-height:30px;color:white">COMO FUNCIONA</a><br/>   
+				<a class="letra-s"   onclick="alresto2('decoradores-online.html');" style="cursor: pointer;line-height:30px;color:white">DECORADORES</a><br/>  
+			</div>
+			<div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0"> 
+						<a  onclick="irainstagram();" style="cursor: pointer; margin-left: 10px;margin-right: 10px"	target="_blank"> 
+							<i class="fa fa-instagram" aria-hidden="true" style="color:white"> </i>
+						</a> 
+						<a  onclick="irafacebook();" style="cursor: pointer; margin-left: 10px;margin-right: 10px"	target="_blank"> 
+							<i class="fa  fa-facebook" style="color:white"> </i>
+						</a> 
+						<a onclick="iratwitter();" style="cursor: pointer; margin-left: 10px;margin-right: 10px" target="_blank"> 
+							<i	class="fa fa-twitter" style="color:white"> </i>
+						</a>
+						<a 
+						onclick="irapinterest();" style="cursor: pointer; margin-left: 10px;margin-right: 10px" target="_blank"> 
+							<i	class="fa fa-pinterest" style="color:white"> </i>
+						</a> 
+ 
+				<!-- Begin MailChimp Signup Form -->
+					
+					<div class="section letra-s" style="width: 100%; margin-top: 5px;">
+					SUSCRÍBETE A LA NEWSLETTER!
+								<form action="//decotheco.us16.list-manage.com/subscribe/post?u=43ef3e467d254af7ac325538d&amp;id=a2f41b6e01" method="post" id="mc-embedded-subscribe-form">
+									<input  type="email"  name="EMAIL" class="letra-s news"   placeholder="EMAIL*" style="margin-top:2px;text-transform:none;color:white;background-color:#bfc3c3;line-height: 22px;;padding-left:10px;border:1px solid #f2f2f2;letter-spacing:2px!" required>
+									<input type="submit" name="subscribe"   class="letra-xs letra-mayusculas newsEnviar" style="color:#bfc3c3;line-height: 22px;border:1px solid #f2f2f2;border-top:2px solid #f2f2f2;background-color:#f2f2f2" value="SUSCRIBIR">
+								</form> 
+					</div>
+					
+						<div id="mce-responses" class="clear" style="margin-top:2%">
+							<div class="response" id="mce-error-response" style="color:#bfc3c3;display:none;background-color:white;border:1px solid grey ;padding-top:2%;padding-bottom:2%"></div>
+							<div class="response letra-xs" id="mce-success-response" style="color:#bfc3c3;display:none;background-color:white;border:1px solid grey;padding-top:2%;padding-bottom:2%"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					   
+					
+					<script type='text/javascript' src='js/comprimido/mc-validate.js'></script>  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text'; /*
+					 * Translated default messages for the $ validation plugin.
+					 * Locale: ES
+					 */
+					$.extend($.validator.messages, {
+					  required: "Este campo es obligatorio.",
+					  remote: "Por favor, rellena este campo.",
+					  email: "Por favor, escribe una dirección de correo válida",
+					  url: "Por favor, escribe una URL válida.",
+					  date: "Por favor, escribe una fecha válida.",
+					  dateISO: "Por favor, escribe una fecha (ISO) válida.",
+					  number: "Por favor, escribe un número entero válido.",
+					  digits: "Por favor, escribe sólo dígitos.",
+					  creditcard: "Por favor, escribe un número de tarjeta válido.",
+					  equalTo: "Por favor, escribe el mismo valor de nuevo.",
+					  accept: "Por favor, escribe un valor con una extensión aceptada.",
+					  maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+					  minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+					  rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+					  range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+					  max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+					  min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+					});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+			</div>
+		</div> 
+		<div class="col-xs-12">
+			<br/>
+			<br/>
+			 <a class="letra-s"  onclick="aCondicionesFunction();" style="cursor: pointer;margin-top:10px;color:white">@decotheco.com 2017 &nbsp;&nbsp;&nbsp;AVISO LEGAL | POLÍTICA DE PRIVACIDAD | POLÍTICA DE COOKIES</a>
+			<br/>
+			<br/>
+		</div>
+		
+	
+	<link href="css/comprimido/mailchimp.css?versionCssJs=17" rel="stylesheet" type="text/css"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+	<script src="js/vendor/bootstrap.min.js?versionCssJs=17"></script> 
+	<script>
+		$('#cargando').modal('show');
+	</script> 
+	<script src="js/links.js?versionCssJs=17"></script> 
+	<script src="js/main.js?versionCssJs=17"></script> 
+	<script>
+
+	
+	$(document).ready(function(){ 
+		$(function(){
+
+		     $('a[href*=#]').click(function() {
+
+		     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		         && location.hostname == this.hostname) {
+
+		             var $target = $(this.hash);
+
+		             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+		             if ($target.length) {
+
+		                 var targetOffset = $target.offset().top;
+
+		                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+		                 return false;
+
+		            }
+
+		       }
+
+		   });
+
+		});
+	    var windowTop = $(document).scrollTop(); 
+	    var ventana_ancho = $(window).width();
+	    $('.boton-top').click(function(){
+	        $('body,html').animate({scrollTop : 0}, 500);
+	        return false;
+	    });
+	    $(window).scroll(function () {
+	        if ($(window).scrollTop() >= 700 && ventana_ancho>=510) { 
+	            $(".lista").css("position","fixed");
+	            $(".lista").css("top","80px");  
+	            $(".lista").css("width","23%");  
+	            $(".boton-top").css("display","block");  
+	        } else if($(window).scrollTop() < 700){
+	            $(".lista").css("position","inherit");  
+	            $(".lista").css("top","0"); 
+	            $(".lista").css("width","auto");  
+	            $(".boton-top").css("display","none");  
+	        	
+	        }
+	    })
+	    var alto = $(window).height();
+	    var lista = $(".lista").height();
+	    lista=lista+50;
+	    if(ventana_ancho>560){
+		    if(alto<lista) {
+		    	$(".lista").css("overflow-y", "scroll");
+		    	$(".lista").css("height", alto-100);
+		    } else { 
+		    	$(".lista").css("overflow-y", "auto");
+		    	$(".lista").css("height", "auto");
+		    }
+	    }
+	});
+	$( window ).resize(function() { 
+		var ventana_ancho = $(window).width();
+	    var alto = $(window).height();
+	    var lista = $(".lista").height();
+	    lista=lista+50;
+	    if(ventana_ancho>560){
+		    if(alto<lista) {
+		    	$(".lista").css("overflow-y", "scroll");
+		    	$(".lista").css("height", alto-100);
+		    } else { 
+		    	$(".lista").css("overflow-y", "auto");
+		    	$(".lista").css("height", "auto");
+		    }
+	    }
+	});
+	</script>
+		 
+		 
+</body>
+</html>

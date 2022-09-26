@@ -1,0 +1,199 @@
+<!DOCTYPE html >
+<!--[if lt IE 7 ]> <html lang="es"  class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="es"  class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="es"  class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="es"  class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="es"  class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Creando proyecto - TheCoradores</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Introduce un nombre y descripción de proyecto que sean lo más descriptivos posibles."/>
+		<link rel="canonical" href="http://decoradores.decotheco.com/trabajocrear.html" />
+        <meta name="keywords" content="decoracion, interiorismo, diy, diseño" />
+        <meta name="author" content="DecoTheco" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+		<meta name="pinterest" content="nohover" /> 
+		<link rel="stylesheet" href="css/bootstrap.min.css?versionCssJs=17"/> 
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css?versionCssJs=17"/> 
+		<link rel="stylesheet" type="text/css" href="css/main.css?versionCssJs=17" />
+		<link rel="stylesheet" type="text/css" href="css/fonts.css?versionCssJs=17" />
+		<link rel="stylesheet" href="css/dropzone.min.css?versionCssJs=17" type="text/css">
+		<link rel="stylesheet" href="css/buttons.css?versionCssJs=17"/>
+		<link rel="stylesheet" href="css/perfil.css?versionCssJs=17"/>
+		<link rel="stylesheet" href="css/trabajoCrear.css?versionCssJs=17"/>
+		<style>
+		.modal-dialog{
+			z-index:5000
+		}
+		</style> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108225209-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108225209-1');
+</script>
+<style>
+@media (max-width: 768px){  
+		.navbar-collapse {
+		    width: 100%!important;
+		}
+		#ulforsustitution {
+			width:100%!important;
+			text-align:center
+		}
+		.dropdown-menu li, .navbar-nav .open .dropdown-menu>li>a {
+			text-align:center;
+			color: black!important;
+		}
+}
+</style>
+</head>
+<body onload="login('trabajoCrear')" >
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0"
+		width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg>
+<div class="supreme-container">
+		<nav class="navbar navbar-default navbar-fixed-top bordeInferior"
+		role="navigation" style="z-index: 5001;">
+		<div class="container-fluid">
+			<!-- Title -->
+			<div class="navbar-header pull-left">
+				<a style="padding-top: 0px;" class="navbar-brand letramodificada"
+					href="javascript:alahomeCom()"><img style="width: 140px;"
+					src="img/other/decotheco-logo.svg" alt="Decotheco"></a>
+			</div>
+
+			<div class="navbar-header  pull-right">
+
+				<button type="button" data-toggle="collapse"
+					data-target=".navbar-collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right">
+				<!--                      pull-right keeps the drop-down in line -->
+				<ul id="ulforsustitution" class="nav navbar-nav pull-right ">
+				
+						<li><a
+							class=" colornegro letraArial  interspaciado_2  separacionnavbar"
+							href="javascript:alresto('/home.html')">HOME</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/como-funciona.html')">COMO FUNCIONA</a></li>
+						    <li><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar"
+							href="javascript:alresto('/facturacion.html')">FACTURACIÓN</a></li> 
+						<li id="liforsustitution" ><a
+							class="colornegro letraArial  interspaciado_2 separacionnavbar" data-toggle="modal"
+							href="#" data-target="#login-modal">INICIAR	SESIÓN</a></li>
+
+				</ul>
+			</div>
+
+
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+<!-- FIN NAV -->
+    
+    <div class="col-xs-12"  style="margin-top:90px;padding:0">
+		 
+    
+    	<div class="form_formularios text-center fondo col-xs-12" style=" padding:3% 7% 3% 7%;background-color:transparent;margin-top:1%;">
+				 	  
+				<div style="padding:2%;background-color:#fdfdfd;opacity: 0.8;filter:  alpha(opacity=80);" class="col-xs-12">	
+						<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								NOMBRE DEL PROYECTO
+							</span>
+						</h3> 
+							
+							
+							<input id="input_titulo" type="text"
+							class=" inputLinea letra-s col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center"
+							placeholder="Decoración salón"></input>
+						</div>
+						<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						
+						<h3 style="margin-top: 4%; margin-bottom: 2%">
+							<span  class="texto_letra_Arial_paso1 letra-ml">
+								¿CÓMO DESCRIBIRÍAS ESTE PROYECTO?
+							</span>
+						</h3> 	
+							 
+							<textarea id="input_texto"
+								class="letrainputformularios letra-s col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 text-center"
+								style="border:1px solid black;padding-top: 10px; padding-bottom: 10px; height: 100px;  background-color: rgba(1, 1, 1, 0);"
+								placeholder="Se trata de un espacio abierto y luminoso. La distribución del espacio se orientó a las vistas..."></textarea>
+						<br/><br/><br/><br/>
+						
+						</div>
+						<div style="display: block; margin: 0 auto;" class="col-xs-12">
+						<button style="margin: 0 auto;margin-top:4%; max-width: 150px"
+						onclick="saveTrabajo()"
+						class="botonesloginreglost btn btn-primary btn-lg btn-block">Crear</button>
+						</div>
+				</div>
+		</div>
+	</div>
+						
+ 
+</div>	
+     
+    	
+ 
+<div class="modal fade" id="cargando" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true"
+	style="display: none;">
+	<div style="max-width: 95%; width: 100%;" class="modal-dialog">
+			<div id="loading" class="col-xs-12" style=" height:200px; background: url(img/other/default.svg) center center no-repeat;">
+			</div>
+	</div>
+</div>	
+<!-- COMIENZO FOOTER -->
+ 
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/vendor/jquery.mobile.custom.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookiebar.js"></script>
+		<script src="js/barra.js?versionCssJs=17"></script> 
+ 
+	 
+
+	<script>
+		$('#cargando').modal('show');
+		$('.contacto').hover(function() {
+            $(this).html('<i  class="fa fa-envelope letra-xl" aria-hidden="true"> </i>');
+        }, function() {
+            $(this).html('<i  class="fa fa-envelope-o letra-xl" aria-hidden="true"> </i>'); 
+        }); 
+	</script> 
+	<script src="js/footer.js?versionCssJs=17"></script>
+	<script src="js/bootstrap-dialog.min.js"></script>
+	<script src="js/pasos.js?versionCssJs=17"></script>
+	<script src="js/main.js?versionCssJs=17"></script> 
+	<script src="js/links.js?versionCssJs=17"></script> 
+	<script src="js/vendor/dropzone.js"></script>
+	<script src="js/trabajocrear.js?versionCssJs=17"></script>
+	
+
+
+</body>
+</html>

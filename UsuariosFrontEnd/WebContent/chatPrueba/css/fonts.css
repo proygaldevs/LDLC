@@ -1,0 +1,114 @@
+*{
+	letter-spacing:3pt !important;
+	line-height: 1.8
+} 
+body{
+	background-color:white
+}
+textarea {
+	overflow-x:hidden
+}
+.letra-normal {
+	font-weight:normal!important;
+} 
+.letra-negrita{
+	font-weight: bolder!important;
+}
+.letra-menuda{
+	 font-weight: 400!important;
+}
+.letra-light{
+	 font-weight: lighter!important;
+}
+.letra-mayusculas{
+	text-transform: uppercase!important;
+}
+.letra-minusculas{
+	text-transform: lowercase!important;
+}
+.letra-interespaciado-titulo{
+	letter-spacing: 4pt !important;
+}
+.letra-xxxl {
+	font-size: calc(62px + .5vw)!important;
+} 
+.letra-xxxlp {
+	font-size: calc(22px + .8vw)!important;
+}
+.letra-xxl {
+	font-size: calc(15px + .8vw)!important;
+}
+.letra-xl {
+	font-size: calc(14px + .5vw)!important;
+}
+.letra-l {
+  font-size: calc(12px + .5vw)!important;
+}
+.letra-ml {
+  font-size: calc(9px + .5vw)!important;
+}
+.letra-m {
+  font-size: calc(8px + .5vw)!important;
+}
+.letra-ms {
+  font-size: calc(7px + .5vw)!important;
+}
+.letra-s {
+  font-size: calc(6px + .5vw)!important;
+} 
+<!-- Letra s con poca variacion -->
+.letra-sp {
+  font-size: calc(6px + .1vw)!important;
+}
+.letra-xs {
+  font-size: calc(5px + .4vw)!important;
+}
+.letra-xxs {
+  font-size: calc(4px + .3vw)!important;
+}
+.letra-xxxs {
+  font-size: calc(3px + .3vw)!important;
+}
+.news::-webkit-input-placeholder { 
+    color: white;
+}
+.news:-moz-placeholder { 
+   color:  white;
+   opacity:  1;
+}
+.news::-moz-placeholder { 
+   color: white;
+   opacity:  1;
+}
+.news:-ms-input-placeholder { 
+   color: white;
+}
+.news::-ms-input-placeholder {  
+   color: white;
+}
+input::-webkit-input-placeholder {
+  font-size: calc(7px + .3vw)!important;
+}
+input:-moz-placeholder {
+  font-size: calc(7px + .3vw)!important;
+}
+input:-ms-input-placeholder { 
+  font-size: calc(7px + .3vw)!important;
+}
+textarea::-webkit-input-placeholder {
+  font-size: calc(7px + .3vw)!important;
+}
+textarea:-moz-placeholder {
+  font-size: calc(7px + .3vw)!important;
+}
+textarea:-ms-input-placeholder { 
+  font-size: calc(7px + .3vw)!important;
+}
+.lro {
+	top:10px;
+}
+@media (max-width: 670px) { 
+	.lro {
+		top:0;
+	}
+}

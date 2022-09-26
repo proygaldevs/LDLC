@@ -1,0 +1,46 @@
+.fondo { 
+	width:100%;
+	height:500px;
+	background-image: url("../img/forNosotras/fondo.jpg"); 
+	background-repeat:no-repeat; 
+	background-position:bottom; 
+	background-size:cover; 
+} 
+.separacionSuperior2 {
+	margin-top:7%
+}
+.separacionSuperior {
+	margin-top:4%
+}
+@media (max-width: 1450px) { 
+	.fondo {  
+		height:350px; 
+	} 
+	.separacionSuperior2 {
+		margin-top:5%
+	}
+	.separacionSuperior {
+		margin-top:3%
+	}
+} 
+
+@media (max-width: 1000px) { 
+    .fondo {  
+		height:350px; 
+	} 
+	.separacionSuperior2 {
+		margin-top:3%
+	}
+} 
+
+@media (max-width: 800px) { 
+  
+} 
+
+@media (max-width: 600px) { 
+  
+} 
+
+@media (max-width: 400px) { 
+  
+} 

@@ -1,0 +1,1 @@
+este es el espacio para el script que recoge los productos de las tiendas y los sube a la plataforma 

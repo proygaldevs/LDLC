@@ -1,0 +1,113 @@
+
+
+/* 
+	<span id="conocememas" style="z-index: 1; text-align: center;  " class="letra-m letra-mayusculas ">
+		<a class="buttonstandard_invertido"  style="  width:300px; max-width: 100%; "  href="http://localhost:8080/UsuariosFrontEnd/decorador-online.html?decorador=Lorena&id=22">
+			[conóceme +]
+		</a>
+	</span>
+ */
+
+
+
+
+.buttonstandard-xl {
+	overflow:hidden;
+    text-overflow:ellipsis;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 2px;
+   padding-left:5px;
+   padding-right:5px;
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+	width:100%;
+	max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 1px;
+    transition: all 0.3s ease 0s;
+    line-height: 1.75;
+    color: black;
+    background-color: white;
+}
+
+.buttonstandard-xl:hover {
+	text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+.buttonstandardpack {
+	overflow:hidden;
+    text-overflow:ellipsis;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 2px;
+   padding-left:5px;
+   padding-right:5px;
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+	width:100%;
+	max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 1px;
+    transition: all 0.3s ease 0s;
+    line-height: 1.75;
+    color: black;
+    background-color: white;
+}
+
+.section:hover .buttonstandardpack {
+	text-decoration: none;
+    background-color: black;
+    color: white;
+}
+.buttonstandard_invertidopack {
+	overflow:hidden;
+    text-overflow:ellipsis;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 2px;
+   padding-left:5px;
+   padding-right:5px;
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+	width:100%;
+	max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 1px;
+    transition: all 0.3s ease 0s;
+    line-height: 1.75;
+    color: white;
+    background-color: black;
+}
+
+.section:hover .buttonstandard_invertidopack{
+	text-decoration: none;
+    background-color: white;
+    color: black;
+}
